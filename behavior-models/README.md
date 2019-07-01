@@ -7,3 +7,5 @@ This repository contains information related to experiments on CASAS project of 
 * Master bedroom
 * Meditater
 * Read
+
+The file "petrinet_v1.png" contains the Petri net of the Daily Behavior process model obtained with a threshold valueof 0.20 of the Infrequent Inductive Miner.
