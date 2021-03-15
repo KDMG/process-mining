@@ -1,0 +1,14 @@
+v 1 EPP
+v 2 SRP
+v 3 FRP
+v 4 HRHA
+v 5 HRRAN
+v 6 EPP
+v 7 SLRRP
+d 1 2 EPP__SRP
+d 3 4 FRP__HRHA
+d 3 5 FRP__HRRAN
+d 2 3 SRP__FRP
+d 6 7 EPP__SLRRP
+d 4 6 HRHA__EPP
+d 5 6 HRRAN__EPP
