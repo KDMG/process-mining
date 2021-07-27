@@ -1,4 +1,4 @@
-This repository contains supplementary material for the paper "Model Repair Supported by Frequent Anomalous Local Instance Graphs" submitted to BPM 2021.
+This repository contains supplementary material for the paper "Model Repair Supported by Frequent Anomalous Local Instance Graphs".
 
 * 'scripts' folder: the Python scripts implementing the algorithms discussed in the paper and the evaluation of metrics
 * testBank2000NoRandomNoise.xes: the synthetic dataset used for the experimental validation
