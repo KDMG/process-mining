@@ -6,26 +6,27 @@ from pm4py.objects.log.util import dataframe_utils
 from pm4py.objects.conversion.log import converter as log_converter
 # from pm4py.objects.log.adapters.pandas import csv_import_adapter as csv_importer #pm4py-1.5.0.1
 from pm4py.objects.log.importer.xes import importer as xes_importer
-from pm4py.objects.petri.importer import importer as pnml_importer
-from pm4py.visualization.petrinet import visualizer as petrinet_visualizer
-from pm4py.visualization.petrinet.variants import token_decoration_frequency
-from pm4py.objects.log.log import EventLog
-from pm4py.objects.log.log import Trace
-from pm4py.objects.log.log import Event
-from pm4py.objects.petri.petrinet import PetriNet
-from pm4py.objects.petri import utils
+from pm4py.objects.petri_net.importer import importer as pnml_importer
+from pm4py.visualization.petri_net import visualizer as petrinet_visualizer
+from pm4py.visualization.petri_net.variants import token_decoration_frequency
+from pm4py.objects.log.obj import EventLog
+from pm4py.objects.log.obj import Trace
+from pm4py.objects.log.obj import Event
+from pm4py.objects.petri_net.obj import PetriNet
+from pm4py.objects.petri_net.utils import petri_utils as utils
 from pm4py.algo.conformance.tokenreplay import algorithm as token_replay
 from scripts.database import query
-from pm4py.algo.conformance.alignments import algorithm as alignment
-from pm4py.evaluation.replay_fitness import evaluator as replay_evaluator
-from pm4py.evaluation.precision import evaluator as precision_evaluator
-from pm4py.evaluation.generalization import evaluator as generalization_evaluator
-from pm4py.evaluation.simplicity import evaluator as simplicity_evaluator
+from pm4py.algo.conformance.alignments.petri_net import algorithm as alignment
+from pm4py.algo.evaluation.replay_fitness import algorithm as replay_evaluator
+from pm4py.algo.evaluation.precision import algorithm as precision_evaluator
+from pm4py.algo.evaluation.generalization import algorithm as generalization_evaluator
+from pm4py.algo.evaluation.simplicity import algorithm as simplicity_evaluator
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 from pm4py.visualization.dfg import visualizer as dfg_visualization
 from progress.bar import IncrementalBar
 import random
-from pm4py.objects.petri.exporter import exporter as pnml_exporter
+import argparse
+from pm4py.objects.petri_net.exporter import exporter as pnml_exporter
 from pm4py.objects.log.exporter.xes import exporter as xes_exporter
 
 """ serve per splittare il file con le sub e ritorna una lista
@@ -61,7 +62,6 @@ def list_graph_occurence(sub_ocmatrix_file, subname):
     # df = csv_importer.import_dataframe_from_path(sub_ocmatrix_file, sep=";")  #pm4py-1.5.0.1
     df = pd.read_csv(sub_ocmatrix_file, sep=';')
     graphs = []
-
     for x in range(len(df)):
         if (df.loc[x]["Sub" + subname] == 1):
             grafo = df.loc[x]['grafo']
@@ -553,12 +553,13 @@ def search_alignment(pattern, dict_trace, graph):
             break
         else:
             trace_string = df.loc[j]['Case IDs']
+            #if(type(trace_string)=='str'):
             list_trace = trace_string.split('|')
 
         if dict_trace[graph] in list_trace:
             alignment = df.loc[j]['Match']
             break
-
+            
     text = alignment.split("|")
 
     return text
@@ -658,7 +659,7 @@ RETURN: -reached_marking: dizionario 'start':'marking'
 
 
 def dirk_marking_start(dataset, start, text, trace, pattern, sub):
-    net, initial_marking, final_marking = pnml_importer.apply('../' + dataset + '_petriNet.pnml')
+    net, initial_marking, final_marking = pnml_importer.apply(pattern + dataset + '_petriNet.pnml')
     new_trace = Trace(attributes=trace.attributes)
     im = str(initial_marking).strip('[]\'').split(':')
     i_marking = im[0]
@@ -703,10 +704,24 @@ def dirk_marking_start(dataset, start, text, trace, pattern, sub):
         new_log = EventLog()
         new_log.append(new_trace)
 
-        replayed_traces = token_replay.apply(new_log, net, initial_marking, final_marking)
+        replayed_traces = token_replay.apply(new_log, net, initial_marking, final_marking, parameters={"try_to_reach_final_marking_through_hidden":False})
         # print("Token-based Replay: ", replayed_traces)
         write_outputfile("Token-based Replay:  " + str(replayed_traces), pattern, sub, "a")
+        #count=0
+        #for u in replayed_traces[0]['activated_transitions']:
+        #    count = count + 1
 
+        #if(count>g):
+        #    print(trace[g-1]['concept:name'])
+        #    for tr in net.transitions:
+        #        if(tr.label==trace[g-1]['concept:name']):
+        #            for pl in net.places:
+        #                for arc in pl.out_arcs:
+        #                    if arc.target.name == tr.name:
+        #                        reached_marking.append(pl.name)
+
+        #    print('Correct Reached Marking ---- >',reached_marking)
+        #else:
         for v in replayed_traces[0]['reached_marking']:
             reached_marking.append(v.name)
     else:
@@ -730,7 +745,7 @@ RETURN: -reached_marking: dizionario 'end':'marking'
 
 
 def dirk_marking_end(dataset, end, text, trace, pattern, sub):
-    net, initial_marking, final_marking = pnml_importer.apply('../' + dataset + '_petriNet.pnml')
+    net, initial_marking, final_marking = pnml_importer.apply(pattern + dataset + '_petriNet.pnml')
     reached_marking = []
     m = str(massimo_lista(end))
 
@@ -766,11 +781,25 @@ def dirk_marking_end(dataset, end, text, trace, pattern, sub):
 
         new_log = EventLog()
         new_log.append(new_trace)
-
-        replayed_traces = token_replay.apply(new_log, net, initial_marking, final_marking)
+        replayed_traces = token_replay.apply(new_log, net, initial_marking, final_marking, parameters={"try_to_reach_final_marking_through_hidden":False})
         # print("Token-based Replay: ", replayed_traces)
         write_outputfile("Token-based Replay:  " + str(replayed_traces), pattern, sub, "a")
 
+        #count = 0
+        #for u in replayed_traces[0]['activated_transitions']:
+        #    count = count + 1
+
+        #if (count > g):
+        #    print(trace[g - 1]['concept:name'])
+        #    for tr in net.transitions:
+        #        if (tr.label == trace[g - 1]['concept:name']):
+        #            for pl in net.places:
+        #                for arc in pl.out_arcs:
+        #                    if arc.target.name == tr.name:
+        #                        reached_marking.append(pl.name)
+
+        #    print('Correct Reached Marking ---- >', reached_marking)
+        #else:
         for v in replayed_traces[0]['reached_marking']:
             reached_marking.append(v.name)
 
@@ -839,6 +868,8 @@ INPUT: -end: lista contenente i nodi di end della sub
        -text: alignment
        -subgraph: return di find_instances()
 RETURN: modifica l'oggetto subgraph nella funzione main
+NOTE: 07/21 correzione bug: nel caso in cui il nodo finale fosse [L/M] e prima ci fosse un [M] non veniva eliminato
+                            il nodo finale.
 """
 
 
@@ -846,17 +877,23 @@ def end_pre_process_repairing(end, text, subgraph):
     m = massimo_lista(end)
     k = 1
     x = 0
+    q = 0 #mi serve per controllare che quando k==m siamo sul nodo finale corretto.
     del_event = []
 
     for w in text:
         if k == m:
             while k == m:
                 if text[x][:3] == "[L]":
+                    q = q +1
                     break
                 elif text[x][:5] == "[L/M]":
                     del_event.append(text[x][5:])
                     x = x - 1
+                    q = q +1
                 elif text[x][:8] == "[M-REAL]" or text[x][:8] == "[M-INVI]":
+                    if q == 0:
+                        x = x + 1
+                        continue
                     break
             break
         elif w[:3] == "[L]":
@@ -1703,20 +1740,20 @@ def valutazione_rete_logcompleto(log, net, initial_marking, final_marking, patte
                                      variant=replay_evaluator.Variants.ALIGNMENT_BASED)
 
     write_outputfile("Fitness:  " + str(fitness), pattern, sub, "a")
-    print("Fitness: ", fitness)
+    #print("Fitness: ", fitness)
     precision = precision_evaluator.apply(log, net, initial_marking, final_marking,
                                           variant=precision_evaluator.Variants.ALIGN_ETCONFORMANCE)
 
     write_outputfile("Precision:  " + str(precision), pattern, sub, "a")
-    print("Precision: ", precision)
+    #print("Precision: ", precision)
     generalization = generalization_evaluator.apply(log, net, initial_marking, final_marking)
 
     write_outputfile("Generalization:  " + str(generalization), pattern, sub, "a")
-    print("Generalization: ", generalization)
+    #print("Generalization: ", generalization)
     simplicity = simplicity_evaluator.apply(net)
 
     write_outputfile("Simplicity:  " + str(simplicity), pattern, sub, "a")
-    print("Simplicity: ", simplicity)
+    #print("Simplicity: ", simplicity)
 
 
 """ visualizzazione rete semplice
@@ -2024,8 +2061,9 @@ def second_repairing(graph, graph_dict, log, dict_trace, start_name, end_name, n
         return rete, non_funzionanti
 
 
-def main(pattern, dataset):
+def main(pattern, dataset, numsub):
     debug = False
+
     # Eventlog
     log = xes_importer.apply(pattern + dataset + '.xes')
     # Modello Rete
@@ -2033,45 +2071,37 @@ def main(pattern, dataset):
     # qui per i test mi importavo la rete di Fahland per calcolare fitness ecc..
     # net, initial_marking, final_marking = pnml_importer.apply(pattern + '/reti_Fahland/repaired_'+str(x)+'.pnml')
 
-    # write_outputfile("\nValutazione rete iniziale:", pattern, sub, "a")
-    # print("\nValutazione rete sub_" + str(x) + ":")
-    # valutazione sul log composto dalle sole trace in cui occorre la sub
-    # valutazione_rete(new_graph_list, log, dict_trace, net, initial_marking, final_marking, pattern, sub)
-    # valutazione sul log completo
-    # valutazione_rete_logcompleto(log, net, initial_marking, final_marking, pattern, sub)
-    # visualizza rete
-    # visualizza_rete_performance(log, net, initial_marking, final_marking)
+    # passato il numero di pattern ritorna la lista di sub
+    # lista = list_sub_pattern(pattern + dataset + "_new_patterns_filtered.subs", 2)
+    # print("Pattern: ", lista)
+    # write_outputfile("Pattern:  " + str(lista), pattern, sub, "w")
+
+    sub = numsub  # lista[0] se prendiamo la sub dalla lista di pattern
+    # print("Sub Selected: ", sub)
+    write_outputfile("Sub Selected:  " + str(sub), pattern, sub, "w")
 
     # ritorna dizionario 'numTrace':'traceId'
     dict_trace = create_dict_trace(dataset)
     # crea il file subelements.txt con le sub estese (DECOMMENTARE SE GIÀ CREATO)
-    # create_subelements_file(dataset, pattern)
-
-    """ BPI2017Denied
-    #Sub_92 : [7][2]
-    #Sub_3 : [14][0]
-    #Sub_65 : [25][0]
-    #Sub_4 : [84][0]
-    #Sub_15 : [128][0]
-    """
-
-    # passato il numero di pattern ritorna la lista di sub
-    lista = list_sub_pattern(pattern + dataset + "_new_patterns_filtered.subs", 14)
-    sub = lista[0]
-    # print("Pattern: ", lista)
-    write_outputfile("Pattern:  " + str(lista), pattern, sub, "w")
-    # print("Sub Selected: ", sub)
-    write_outputfile("Sub Selected:  " + str(sub), pattern, sub, "a")
+    create_subelements_file(dataset, pattern)
 
     # passata una sub ritorna la lista di grafi in cui occorre la sub
     graph_list = list_graph_occurence(pattern + dataset + "_table2_on_file.csv", sub)
     new_graph_list = check_graphlist(graph_list, sub, pattern)
     write_outputfile("Numero di grafi in cui occorre la sub: " + str(len(new_graph_list)), pattern, sub, "a")
-
     dict_graph = create_dict_graph(pattern, "sub", new_graph_list, sub)
     graph = dict_graph[1][0]
     # print("Graph Selected: ", graph, " Matching Cost: ", dict_graph[1][1])
     write_outputfile("Graph Selected:  " + str(graph) + "  Matching Cost:  " + str(dict_graph[1][1]), pattern, sub, "a")
+
+    write_outputfile("\nValutazione rete iniziale:", pattern, sub, "a")
+    #print("\nValutazione rete sub_" + str(x) + ":")
+    # valutazione sul log composto dalle sole trace in cui occorre la sub
+    # valutazione_rete(new_graph_list, log, dict_trace, net, initial_marking, final_marking, pattern, sub)
+    # valutazione sul log completo
+    valutazione_rete_logcompleto(log, net, initial_marking, final_marking, pattern, sub)
+    # visualizza rete
+    visualizza_rete_performance(log, net, initial_marking, final_marking)
 
     # esegue sgiso e ritorna la sub con i nodi rispetto al grafo
     subgraph = find_instances(sub, graph, pattern)
@@ -2135,11 +2165,10 @@ def main(pattern, dataset):
     # valutazione sul log completo
     valutazione_rete_logcompleto(log, net_repaired, initial_marking, final_marking, pattern, sub)
     # visualizza rete
-    # visualizza_rete_performance(log, net, initial_marking, final_marking)
+    visualizza_rete_performance(log, net, initial_marking, final_marking)
 
     # ripara il modello una seconda volta con uno dei due algoritmi
-    rete, non_funzionanti = second_repairing(graph, dict_graph, log, dict_trace, start_name, end_name, net_repaired,
-                                             initial_marking, final_marking, sub_label, 4, pattern, sub)
+    rete, non_funzionanti = second_repairing(graph, dict_graph, log, dict_trace, start_name, end_name, net_repaired,initial_marking, final_marking, sub_label, 20, pattern, sub)
 
     # CALCOLO TEMPO DI ESECUZIONE ISTRUZIONI
     # tempo2 = timer()
@@ -2157,7 +2186,16 @@ def main(pattern, dataset):
 
     # esporta pnml rete
     pnml_exporter.apply(rete[0], rete[1], "../repaired_" + "Sub" + sub + "_petriNet.pnml", final_marking=rete[2])
-    
+
 
 if __name__ == '__main__':
-    main("../patterns_file/", "BPI2017Denied")
+
+    parser = argparse.ArgumentParser(description="Model Repair Supported by Frequent Anomalous Local Instance Graphs")
+    #parser.add_argument("path", type=str,
+      #                  help="Path della directory contenente: *_table2_on_file.csv | *_new_patterns_filtered.subs | rules_log.txt")
+    parser.add_argument("datasetname", type=str, help="Nome del dataset da analizzare")
+    parser.add_argument("numsub", type=str, help="Numero sub con cui riparare il modello")
+    args = parser.parse_args()
+    main("../patterns_file/", args.datasetname, args.numsub) #BPI2017Denied, testBank2000NoRandomNoise
+
+    #main("../patterns_file/", "fineExp", "59")
