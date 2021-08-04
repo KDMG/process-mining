@@ -2168,7 +2168,9 @@ def main(pattern, dataset, numsub):
     visualizza_rete_performance(log, net, initial_marking, final_marking)
 
     # ripara il modello una seconda volta con uno dei due algoritmi
-    rete, non_funzionanti = second_repairing(graph, dict_graph, log, dict_trace, start_name, end_name, net_repaired,initial_marking, final_marking, sub_label, 20, pattern, sub)
+    #CHANGE LAURA 13/07/2021: we only want to repair once, for now.
+    rete = [net_repaired, initial_marking, final_marking]                                                                                                                 
+    #rete, non_funzionanti = second_repairing(graph, dict_graph, log, dict_trace, start_name, end_name, net_repaired,initial_marking, final_marking, sub_label, 20, pattern, sub)
 
     # CALCOLO TEMPO DI ESECUZIONE ISTRUZIONI
     # tempo2 = timer()
