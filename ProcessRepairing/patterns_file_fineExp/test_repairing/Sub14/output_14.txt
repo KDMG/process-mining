@@ -1,0 +1,31 @@
+Sub Selected:  14
+Numero di grafi in cui occorre la sub: 25
+Graph Selected:  graph1538  Matching Cost:  0.0
+
+Valutazione rete iniziale:
+Fitness:  {'percFitTraces': 97.2703917790623, 'averageFitness': 0.9957202749256695}
+Precision:  0.8204281600929435
+Generalization:  0.9799217515640666
+Simplicity:  0.5833333333333333
+Subgraph:  ['Instance', '1:', 'v', '1', 'CreateFine', 'v', '2', 'SendFine', 'v', '3', 'AppealToPrefecture', 'v', '4', 'Notification', 'd', '1', '2', 'CreateFine__SendFine', 'd', '2', '3', 'SendFine__AppealToPrefecture', 'd', '3', '4', 'AppealToPrefecture__Notification', 'Found', '1', 'instances.']
+Sub iniziale:  ['CreateFine', 'SendFine', 'AppealToPrefecture', 'Notification']
+Trace:  S111699
+Alignment: ['[L/M]CreateFine', '[L/M]SendFine', '[L]AppealToPrefecture', '[L/M]Notification', '[M-INVI]AppealToPrefecture', '[L/M]SendAppeal', '[L]AddPenalty', '[L/M]ReceiveResults', '[L/M]NotifyOffenders', '[L/M]Payment', '[M-INVI]Inv3']
+Subgraph semplificata:  ['Instance', '1:', 'v', '3', 'AppealToPrefecture', 'Found', '1', 'instances.']
+Sub semplificata:  ['AppealToPrefecture']
+Start:  3
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, SendFine, n12], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 4, 'remaining_tokens': 0, 'produced_tokens': 4}]
+Reached Marking:  ['n3']
+End:  3
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, SendFine, n12], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 4, 'remaining_tokens': 0, 'produced_tokens': 4}]
+Reached Marking:  ['n3']
+Added: n3 -- > AppealToPrefecture s1
+Added: AppealToPrefecture s1 -- > n3
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 97.2703917790623, 'averageFitness': 0.9958778793385894}
+Precision:  0.8545345528355393
+Generalization:  0.9433292831300447
+Simplicity:  0.5686274509803921
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!

@@ -1,0 +1,5 @@
+Subdue start: 23/10/2017 09:01:41
+Subdue stop: 24/10/2017 10:02:52
+Reachability Graph start: 24/10/2017 10:02:52
+Reachability graph stop: 24/10/2017 10:02:54
+Compression start: 24/10/2017 10:02:55

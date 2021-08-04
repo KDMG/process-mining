@@ -1,0 +1,11 @@
+v 1 HRHA
+v 2 FRPP
+v 3 SUB_30
+v 4 SUB_482
+v 5 SUB_514
+
+e 5 3 SRPP__EPP
+e 3 4 FRP__SHRRPC
+e 3 1 FRP__HRHA
+e 1 2 HRHA__FRPP
+

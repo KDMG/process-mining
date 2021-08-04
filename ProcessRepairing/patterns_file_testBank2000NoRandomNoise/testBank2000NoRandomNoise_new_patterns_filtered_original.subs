@@ -1,0 +1,101 @@
+S
+v 1 Sub_31
+
+S
+v 1 Sub_21
+
+S
+v 1 Sub_33
+
+S
+v 1 Sub_26
+
+S
+v 1 Sub_20
+
+S
+v 1 Sub_29
+
+S
+v 1 Sub_22
+
+S
+v 1 Sub_18
+
+S
+v 1 Sub_2
+v 2 Sub_18
+d 1 2 strictlySeq
+
+S
+v 1 Sub_8
+
+S
+v 1 Sub_17
+
+S
+v 1 Sub_2
+v 2 Sub_17
+d 1 2 strictlySeq
+
+S
+v 1 Sub_48
+
+S
+v 1 Sub_2
+v 2 Sub_48
+d 1 2 strictlySeq
+
+S
+v 1 Sub_4
+
+S
+v 1 Sub_4
+v 2 Sub_105
+d 2 1 eventually
+
+S
+v 1 Sub_2
+v 2 Sub_4
+v 3 Sub_105
+d 1 2 sequentially
+d 1 3 interleaving
+d 3 2 eventually
+
+S
+v 1 Sub_2
+v 2 Sub_4
+d 1 2 sequentially
+
+S
+v 1 Sub_63
+
+S
+v 1 Sub_63
+v 2 Sub_105
+d 2 1 eventually
+
+S
+v 1 Sub_2
+v 2 Sub_63
+v 3 Sub_105
+d 1 2 strictlySeq
+d 1 3 interleaving
+d 3 2 eventually
+
+S
+v 1 Sub_2
+v 2 Sub_63
+d 1 2 interleaving
+
+S
+v 1 Sub_105
+
+S
+v 1 Sub_2
+v 2 Sub_105
+d 1 2 interleaving
+
+S
+v 1 Sub_2
+

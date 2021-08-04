@@ -1,0 +1,10 @@
+v 1 SLRRP
+v 2 SUB_2
+v 3 SUB_8
+v 4 SUB_413
+
+e 4 2 FRPP__EPP
+e 3 4 FRPP__SRPP
+e 1 2 SLRRP__LRRR
+e 2 1 LRIRV__SLRRP
+

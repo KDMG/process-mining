@@ -1,0 +1,1409 @@
+S
+v 1 Sub_107
+
+S
+v 1 Sub_171
+
+S
+v 1 Sub_227
+
+S
+v 1 Sub_95
+
+S
+v 1 Sub_93
+
+S
+v 1 Sub_83
+
+S
+v 1 Sub_80
+
+S
+v 1 Sub_78
+
+S
+v 1 Sub_78
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_78
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_78
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_78
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_78
+d 1 2 interleaving
+
+S
+v 1 Sub_75
+
+S
+v 1 Sub_138
+
+S
+v 1 Sub_219
+
+S
+v 1 Sub_133
+
+S
+v 1 Sub_65
+
+S
+v 1 Sub_64
+
+S
+v 1 Sub_251
+
+S
+v 1 Sub_132
+v 2 Sub_251
+d 1 2 interleaving
+
+S
+v 1 Sub_72
+
+S
+v 1 Sub_37
+v 2 Sub_72
+d 1 2 interleaving
+
+S
+v 1 Sub_220
+
+S
+v 1 Sub_172
+
+S
+v 1 Sub_26
+v 2 Sub_172
+d 1 2 interleaving
+
+S
+v 1 Sub_55
+
+S
+v 1 Sub_50
+
+S
+v 1 Sub_132
+
+S
+v 1 Sub_66
+v 2 Sub_132
+d 1 2 interleaving
+
+S
+v 1 Sub_132
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_132
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_132
+v 3 Sub_174
+d 1 2 eventually
+d 1 3 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_132
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_132
+d 1 2 eventually
+
+S
+v 1 Sub_30
+
+S
+v 1 Sub_30
+v 2 Sub_66
+d 1 2 interleaving
+
+S
+v 1 Sub_30
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_30
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_30
+d 1 2 interleaving
+
+S
+v 1 Sub_30
+v 2 Sub_37
+d 1 2 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_87
+d 1 2 interleaving
+
+S
+v 1 Sub_87
+
+S
+v 1 Sub_42
+v 2 Sub_92
+d 1 2 interleaving
+
+S
+v 1 Sub_92
+
+S
+v 1 Sub_82
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_149
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_148
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_142
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_121
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+v 2 Sub_106
+d 1 2 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_82
+d 1 2 interleaving
+
+S
+v 1 Sub_82
+
+S
+v 1 Sub_286
+
+S
+v 1 Sub_254
+
+S
+v 1 Sub_68
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_68
+d 1 2 interleaving
+
+S
+v 1 Sub_68
+v 2 Sub_283
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_256
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_253
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_202
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_163
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_149
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_148
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_142
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+v 2 Sub_121
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_68
+
+S
+v 1 Sub_68
+v 2 Sub_106
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_37
+v 2 Sub_68
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_283
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_256
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_253
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_202
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_163
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_149
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_148
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_142
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_121
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_56
+v 2 Sub_106
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_42
+v 2 Sub_56
+d 1 2 interleaving
+
+S
+v 1 Sub_56
+
+S
+v 1 Sub_90
+v 2 Sub_174
+v 3 Sub_283
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_174
+v 3 Sub_256
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_174
+v 3 Sub_253
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_174
+v 3 Sub_202
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_163
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_149
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_148
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_142
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_121
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_106
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_90
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_149
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_148
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_142
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_121
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+v 2 Sub_106
+d 1 2 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_90
+d 1 2 interleaving
+
+S
+v 1 Sub_90
+
+S
+v 1 Sub_26
+v 2 Sub_90
+d 1 2 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_90
+d 1 2 interleaving
+
+S
+v 1 Sub_259
+
+S
+v 1 Sub_241
+
+S
+v 1 Sub_177
+
+S
+v 1 Sub_166
+
+S
+v 1 Sub_150
+
+S
+v 1 Sub_129
+
+S
+v 1 Sub_115
+
+S
+v 1 Sub_42
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_42
+v 3 Sub_174
+d 1 2 eventually
+d 1 3 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_174
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_174
+v 3 Sub_283
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_174
+v 3 Sub_283
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_174
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_174
+v 3 Sub_256
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_174
+v 3 Sub_256
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_174
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_174
+v 3 Sub_253
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_174
+v 3 Sub_253
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_174
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_174
+v 3 Sub_202
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_174
+v 3 Sub_202
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_163
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_163
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_163
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_149
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_149
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_149
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_148
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_148
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_148
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_142
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_142
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_142
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_121
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_121
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_174
+
+S
+v 1 Sub_28
+v 2 Sub_121
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_106
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_106
+v 2 Sub_154
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_106
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_174
+v 3 Sub_283
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_174
+v 3 Sub_256
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_174
+v 3 Sub_253
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_174
+v 3 Sub_202
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_163
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_149
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_148
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_142
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_121
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_106
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_66
+v 3 Sub_174
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_154
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_174
+d 1 2 interleaving
+
+S
+v 1 Sub_66
+v 2 Sub_283
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_256
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_253
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_202
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_163
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_149
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_148
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_142
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_121
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_66
+v 2 Sub_106
+d 1 1 strictlySeq
+d 1 2 interleaving
+d 1 2 strictlySeq
+
+S
+v 1 Sub_42
+v 2 Sub_66
+d 1 2 interleaving
+
+S
+v 1 Sub_66
+
+S
+v 1 Sub_26
+v 2 Sub_66
+d 1 2 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_66
+d 1 2 interleaving
+
+S
+v 1 Sub_283
+
+S
+v 1 Sub_154
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_283
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_283
+d 1 2 interleaving
+
+S
+v 1 Sub_256
+
+S
+v 1 Sub_154
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_256
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_256
+d 1 2 interleaving
+
+S
+v 1 Sub_253
+
+S
+v 1 Sub_154
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_253
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_253
+d 1 2 interleaving
+
+S
+v 1 Sub_202
+
+S
+v 1 Sub_154
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_202
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_202
+d 1 2 interleaving
+
+S
+v 1 Sub_163
+
+S
+v 1 Sub_154
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_163
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_163
+d 1 2 interleaving
+
+S
+v 1 Sub_149
+
+S
+v 1 Sub_149
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_149
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_149
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_149
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_149
+d 1 2 interleaving
+
+S
+v 1 Sub_148
+
+S
+v 1 Sub_148
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_148
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_148
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_148
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_148
+d 1 2 interleaving
+
+S
+v 1 Sub_142
+
+S
+v 1 Sub_142
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_142
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_142
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_142
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_142
+d 1 2 interleaving
+
+S
+v 1 Sub_121
+
+S
+v 1 Sub_121
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_121
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_121
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_121
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_121
+d 1 2 interleaving
+
+S
+v 1 Sub_106
+
+S
+v 1 Sub_106
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_106
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_106
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_106
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_37
+v 2 Sub_106
+d 1 2 interleaving
+
+S
+v 1 Sub_42
+
+S
+v 1 Sub_26
+v 2 Sub_42
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_37
+v 3 Sub_42
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_42
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+v 2 Sub_42
+d 1 2 eventually
+
+S
+v 1 Sub_37
+v 2 Sub_42
+d 1 2 interleaving
+
+S
+v 1 Sub_8
+
+S
+v 1 Sub_154
+
+S
+v 1 Sub_37
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_154
+d 1 2 interleaving
+
+S
+v 1 Sub_28
+
+S
+v 1 Sub_28
+v 2 Sub_37
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+v 2 Sub_28
+d 1 2 interleaving
+
+S
+v 1 Sub_26
+
+S
+v 1 Sub_26
+v 2 Sub_37
+d 1 2 interleaving
+
+S
+v 1 Sub_37
+

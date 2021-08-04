@@ -1,0 +1,42 @@
+Pattern:  ['2']
+Sub Selected:  2
+Numero di grafi in cui occorre la sub: 846
+Graph Selected:  graph1  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '15', 'FRPP', 'v', '16', 'RBPC', 'v', '17', 'RIBPC', 'v', '18', 'REPC', 'v', '19', 'SRPP', 'd', '15', '16', 'FRPP__RBPC', 'd', '15', '17', 'FRPP__RIBPC', 'd', '15', '18', 'FRPP__REPC', 'd', '18', '19', 'REPC__SRPP', 'd', '17', '19', 'RIBPC__SRPP', 'd', '16', '19', 'RBPC__SRPP', 'Found', '1', 'instances.']
+Sub iniziale:  ['FRPP', 'RBPC', 'RIBPC', 'REPC', 'SRPP']
+Trace:  trace_0
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]REPP', '[L]REPP', '[L/M]SRPP', '[L/M]RIBPC', '[L/M]REPC', '[L/M]RBPC', '[L/M]FRPP', '[L/M]REPP', '[M-REAL]SRPP', '[L]FRPP', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]REPC', '[M-REAL]FRPP', '[L]SRPP', '[L/M]EPP', '[L/M]SLRRP', '[L/M]LRERV', '[L/M]LRIRV', '[M-REAL]LRRR', '[L/M]FLRRP', '[L]LRRR', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '15', 'FRPP', 'v', '16', 'RBPC', 'v', '17', 'RIBPC', 'v', '18', 'REPC', 'v', '19', 'SRPP', 'd', '15', '16', 'FRPP__RBPC', 'd', '15', '17', 'FRPP__RIBPC', 'd', '15', '18', 'FRPP__REPC', 'd', '18', '19', 'REPC__SRPP', 'd', '17', '19', 'RIBPC__SRPP', 'd', '16', '19', 'RBPC__SRPP', 'Found', '1', 'instances.']
+Sub semplificata:  ['FRPP', 'RBPC', 'RIBPC', 'REPC', 'SRPP']
+Start:  15
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9444444444444444, 'activated_transitions': [SRP, SRPP, RBPC, RIBPC, REPC, FRPP, REPP, SRPP, RIBPC, REPC, RBPC, FRPP, REPP], 'reached_marking': ['n19:1'], 'enabled_transitions_in_marking': {SRPP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 18, 'remaining_tokens': 1, 'produced_tokens': 18}]
+Reached Marking:  ['n19']
+End:  19
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.96, 'activated_transitions': [SRP, SRPP, RBPC, RIBPC, REPC, FRPP, REPP, SRPP, RIBPC, REPC, RBPC, FRPP, REPP, SRPP, RBPC, RIBPC, REPC, FRPP], 'reached_marking': ['n26:1'], 'enabled_transitions_in_marking': {EPP, REPP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 25, 'remaining_tokens': 1, 'produced_tokens': 25}]
+Reached Marking:  ['n26']
+Added:  FRPP s1 --> n51
+Added:  n51 --> RBPC s2
+Added:  FRPP s1 --> n52
+Added:  n52 --> RIBPC s3
+Added:  FRPP s1 --> n53
+Added:  n53 --> REPC s4
+Added:  REPC s4 --> n54
+Added:  n54 --> SRPP s5
+Added:  RIBPC s3 --> n55
+Added:  n55 --> SRPP s5
+Added:  RBPC s2 --> n56
+Added:  n56 --> SRPP s5
+Added: n19 -- > FRPP s1
+Added: SRPP s5 -- > n26
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 21.266666666666666, 'averageFitness': 0.9289943836114215, 'percentage_of_fitting_traces': 21.266666666666666, 'average_trace_fitness': 0.9289943836114215}
+Precision:  0.9057205446025012
+Generalization:  0.9667826861451666
+Simplicity:  0.7349397590361446
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 21.266666666666666, 'averageFitness': 0.9289943836114215, 'percentage_of_fitting_traces': 21.266666666666666, 'average_trace_fitness': 0.9289943836114215}
+Precision:  0.9057205446025012
+Generalization:  0.9667826861451666
+Simplicity:  0.7349397590361446

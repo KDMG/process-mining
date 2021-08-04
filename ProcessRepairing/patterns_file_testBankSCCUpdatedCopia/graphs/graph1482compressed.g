@@ -1,0 +1,8 @@
+v 1 SUB_5
+v 2 SUB_313
+v 3 SUB_511
+
+e 2 1 FRP__SHRRPC
+e 3 2 FRPP__SRP
+e 1 2 FHRRPC__EPP
+

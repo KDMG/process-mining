@@ -1,0 +1,39 @@
+Pattern:  ['6', '24']
+Sub Selected:  6
+Numero di grafi in cui occorre la sub: 1068
+Graph Selected:  graph1000  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '26', 'W-Validate-application-suspend', 'v', '27', 'A-Denied', 'v', '28', 'O-Refused', 'v', '29', 'W-Validate-application-ate-abort', 'v', '30', 'end', 'd', '29', '30', 'W-Validate-application-ate-abort__end', 'd', '28', '29', 'O-Refused__W-Validate-application-ate-abort', 'd', '26', '27', 'W-Validate-application-suspend__A-Denied', 'd', '27', '28', 'A-Denied__O-Refused', 'Found', '1', 'instances.']
+Sub iniziale:  ['W-Validate-application-suspend', 'A-Denied', 'O-Refused', 'W-Validate-application-ate-abort', 'end']
+Trace:  Application_937274209
+Alignment: ['[L/M]start', '[L/M]A-Create-Application', '[M-INVI]Inv1', '[M-INVI]Inv4', '[L/M]W-Complete-application-schedule', '[L/M]W-Complete-application-start', '[L/M]A-Concept', '[M-INVI]Inv5', '[M-INVI]Inv6', '[M-INVI]Inv8', '[L/M]A-Accepted', '[M-REAL]W-Complete-application-suspend', '[M-INVI]Inv10', '[M-INVI]Inv12', '[M-INVI]Inv9', '[M-INVI]Inv13', '[L/M]O-Create-Offer', '[M-INVI]Inv14', '[L/M]O-Created', '[L/M]O-Sent-mail-and-online', '[M-INVI]Inv15', '[L/M]W-Complete-application-complete', '[L/M]W-Call-after-offers-schedule', '[L/M]W-Call-after-offers-start', '[L/M]A-Complete', '[M-INVI]Inv16', '[L/M]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-resume', '[L]W-Call-after-offers-suspend', '[L/M]W-Call-after-offers-ate-abort', '[M-INVI]Inv17', '[M-INVI]Inv18', '[L/M]W-Validate-application-schedule', '[L/M]W-Validate-application-start', '[L/M]A-Validating', '[M-INVI]Inv21', '[L]O-Returned', '[L/M]W-Validate-application-suspend', '[L/M]W-Validate-application-resume', '[M-INVI]Inv22', '[L]W-Validate-application-suspend', '[L]W-Validate-application-resume', '[L]W-Validate-application-suspend', '[L]A-Denied', '[L]O-Refused', '[L/M]W-Validate-application-ate-abort', '[M-INVI]Inv29', '[L/M]end']
+Subgraph semplificata:  ['Instance', '1:', 'v', '26', 'W-Validate-application-suspend', 'v', '27', 'A-Denied', 'v', '28', 'O-Refused', 'v', '29', 'W-Validate-application-ate-abort', 'd', '28', '29', 'O-Refused__W-Validate-application-ate-abort', 'd', '26', '27', 'W-Validate-application-suspend__A-Denied', 'd', '27', '28', 'A-Denied__O-Refused', 'Found', '1', 'instances.']
+Sub semplificata:  ['W-Validate-application-suspend', 'A-Denied', 'O-Refused', 'W-Validate-application-ate-abort']
+Start:  26
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9648394241417497, 'activated_transitions': [start, A-Create-Application, n70, n81, W-Complete-application-schedule, W-Complete-application-start, A-Concept, n82, n86, n91, A-Accepted, W-Complete-application-suspend, n95, n98, n92, n99, O-Create-Offer, n102, O-Created, O-Sent-mail-and-online, n103, W-Complete-application-complete, W-Call-after-offers-schedule, W-Call-after-offers-start, A-Complete, n111, W-Call-after-offers-suspend, W-Call-after-offers-resume, W-Call-after-offers-ate-abort, n112, n116, W-Validate-application-schedule, W-Validate-application-start, A-Validating, n127, W-Validate-application-suspend, W-Validate-application-resume], 'reached_marking': ['n54:1', 'n56:1'], 'enabled_transitions_in_marking': {W-Validate-application-ate-abort, W-Validate-application-complete, W-Call-incomplete-files-schedule, end}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 42, 'remaining_tokens': 2, 'produced_tokens': 43}]
+Reached Marking:  ['n54', 'n56']
+End:  29
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9777777777777777, 'activated_transitions': [start, A-Create-Application, n70, n81, W-Complete-application-schedule, W-Complete-application-start, A-Concept, n82, n86, n91, A-Accepted, W-Complete-application-suspend, n95, n98, n92, n99, O-Create-Offer, n102, O-Created, O-Sent-mail-and-online, n103, W-Complete-application-complete, W-Call-after-offers-schedule, W-Call-after-offers-start, A-Complete, n111, W-Call-after-offers-suspend, W-Call-after-offers-resume, W-Call-after-offers-ate-abort, n112, n116, W-Validate-application-schedule, W-Validate-application-start, A-Validating, n127, W-Validate-application-suspend, W-Validate-application-resume, n128, W-Validate-application-ate-abort], 'reached_marking': ['n47:1'], 'enabled_transitions_in_marking': {W-Call-incomplete-files-schedule, end}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 45, 'remaining_tokens': 1, 'produced_tokens': 45}]
+Reached Marking:  ['n47']
+Added:  O-Refused s3 --> n154
+Added:  n154 --> W-Validate-application-ate-abort s4
+Added:  W-Validate-application-suspend s1 --> n155
+Added:  n155 --> A-Denied s2
+Added:  A-Denied s2 --> n156
+Added:  n156 --> O-Refused s3
+Added: n54 -- > W-Validate-application-suspend s1
+Added: n56 -- > W-Validate-application-suspend s1
+Added: W-Validate-application-ate-abort s4 -- > n47
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 0.0, 'averageFitness': 0.8272596012760267, 'percentage_of_fitting_traces': 0.0, 'average_trace_fitness': 0.8272596012760267}
+Precision:  0.7750628678090893
+Generalization:  0.880197424403269
+Simplicity:  0.7207207207207206
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 0.0, 'averageFitness': 0.8272596012760267, 'percentage_of_fitting_traces': 0.0, 'average_trace_fitness': 0.8272596012760267}
+Precision:  0.7750628678090893
+Generalization:  0.880197424403269
+Simplicity:  0.7207207207207206

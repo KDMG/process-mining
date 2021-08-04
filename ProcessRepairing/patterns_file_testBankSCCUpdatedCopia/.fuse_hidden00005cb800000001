@@ -1,0 +1,935 @@
+// Subdue 5.2.2 output in dot format
+
+digraph Subdue {
+
+  compound=true;
+
+subgraph cluster_SUB_1 {
+  1 [label="Sub_32",color=black,fontcolor=black];
+  2 [label="Sub_99",color=black,fontcolor=black];
+  1 -> 2 [label="sequentially",color=black,fontcolor=black];
+  label="SUB_1";
+}
+
+subgraph cluster_SUB_2 {
+  3 [label="Sub_298",color=black,fontcolor=black];
+  4 [label="Sub_99",color=black,fontcolor=black];
+  3 -> 4 [label="eventually",color=black,fontcolor=black];
+  label="SUB_2";
+}
+
+subgraph cluster_SUB_3 {
+  5 [label="Sub_310",color=black,fontcolor=black];
+  6 [label="Sub_99",color=black,fontcolor=black];
+  6 -> 5 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_3";
+}
+
+subgraph cluster_SUB_4 {
+  7 [label="Sub_665",color=black,fontcolor=black];
+  8 [label="Sub_39",color=black,fontcolor=black];
+  7 -> 8 [label="overlapping",color=black,fontcolor=black];
+  8 -> 7 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_4";
+}
+
+subgraph cluster_SUB_5 {
+  9 [label="Sub_27",color=black,fontcolor=black];
+  10 [label="Sub_39",color=black,fontcolor=black];
+  10 -> 9 [label="sequentially",color=black,fontcolor=black];
+  10 -> 9 [label="eventually",color=black,fontcolor=black];
+  label="SUB_5";
+}
+
+subgraph cluster_SUB_6 {
+  11 [label="Sub_81",color=black,fontcolor=black];
+  12 [label="Sub_59",color=black,fontcolor=black];
+  11 -> 12 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_6";
+}
+
+subgraph cluster_SUB_7 {
+  13 [label="Sub_32",color=black,fontcolor=black];
+  14 [label="Sub_59",color=black,fontcolor=black];
+  13 -> 14 [label="eventually",color=black,fontcolor=black];
+  label="SUB_7";
+}
+
+subgraph cluster_SUB_8 {
+  15 [label="Sub_298",color=black,fontcolor=black];
+  16 [label="Sub_59",color=black,fontcolor=black];
+  15 -> 16 [label="eventually",color=black,fontcolor=black];
+  label="SUB_8";
+}
+
+subgraph cluster_SUB_9 {
+  17 [label="Sub_27",color=black,fontcolor=black];
+  18 [label="Sub_665",color=black,fontcolor=black];
+  18 -> 17 [label="sequentially",color=black,fontcolor=black];
+  18 -> 17 [label="eventually",color=black,fontcolor=black];
+  label="SUB_9";
+}
+
+subgraph cluster_SUB_10 {
+  19 [label="Sub_32",color=black,fontcolor=black];
+  20 [label="Sub_81",color=black,fontcolor=black];
+  19 -> 20 [label="eventually",color=black,fontcolor=black];
+  label="SUB_10";
+}
+
+subgraph cluster_SUB_11 {
+  21 [label="Sub_298",color=black,fontcolor=black];
+  22 [label="Sub_32",color=black,fontcolor=black];
+  23 [label="Sub_81",color=black,fontcolor=black];
+  21 -> 22 [label="overlapping",color=black,fontcolor=black];
+  21 -> 23 [label="eventually",color=black,fontcolor=black];
+  22 -> 23 [label="eventually",color=black,fontcolor=black];
+  label="SUB_11";
+}
+
+subgraph cluster_SUB_12 {
+  24 [label="Sub_298",color=black,fontcolor=black];
+  25 [label="Sub_81",color=black,fontcolor=black];
+  24 -> 25 [label="eventually",color=black,fontcolor=black];
+  label="SUB_12";
+}
+
+subgraph cluster_SUB_13 {
+  26 [label="Sub_39",color=black,fontcolor=black];
+  27 [label="Sub_666",color=black,fontcolor=black];
+  26 -> 27 [label="overlapping",color=black,fontcolor=black];
+  27 -> 26 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_13";
+}
+
+subgraph cluster_SUB_14 {
+  28 [label="Sub_665",color=black,fontcolor=black];
+  29 [label="Sub_39",color=black,fontcolor=black];
+  30 [label="Sub_666",color=black,fontcolor=black];
+  28 -> 29 [label="overlapping",color=black,fontcolor=black];
+  28 -> 30 [label="overlapping",color=black,fontcolor=black];
+  29 -> 28 [label="overlapping",color=black,fontcolor=black];
+  29 -> 30 [label="overlapping",color=black,fontcolor=black];
+  30 -> 28 [label="overlapping",color=black,fontcolor=black];
+  30 -> 29 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_14";
+}
+
+subgraph cluster_SUB_15 {
+  31 [label="Sub_665",color=black,fontcolor=black];
+  32 [label="Sub_666",color=black,fontcolor=black];
+  31 -> 32 [label="overlapping",color=black,fontcolor=black];
+  32 -> 31 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_15";
+}
+
+subgraph cluster_SUB_16 {
+  33 [label="Sub_27",color=black,fontcolor=black];
+  34 [label="Sub_666",color=black,fontcolor=black];
+  34 -> 33 [label="sequentially",color=black,fontcolor=black];
+  34 -> 33 [label="eventually",color=black,fontcolor=black];
+  label="SUB_16";
+}
+
+subgraph cluster_SUB_17 {
+  35 [label="Sub_32",color=black,fontcolor=black];
+  36 [label="Sub_121",color=black,fontcolor=black];
+  35 -> 35 [label="eventually",color=black,fontcolor=black];
+  35 -> 36 [label="sequentially",color=black,fontcolor=black];
+  36 -> 35 [label="eventually",color=black,fontcolor=black];
+  label="SUB_17";
+}
+
+subgraph cluster_SUB_18 {
+  37 [label="Sub_298",color=black,fontcolor=black];
+  38 [label="Sub_32",color=black,fontcolor=black];
+  39 [label="Sub_121",color=black,fontcolor=black];
+  37 -> 37 [label="eventually",color=black,fontcolor=black];
+  37 -> 38 [label="overlapping",color=black,fontcolor=black];
+  37 -> 39 [label="eventually",color=black,fontcolor=black];
+  38 -> 37 [label="eventually",color=black,fontcolor=black];
+  38 -> 38 [label="eventually",color=black,fontcolor=black];
+  38 -> 39 [label="sequentially",color=black,fontcolor=black];
+  39 -> 37 [label="overlapping",color=black,fontcolor=black];
+  39 -> 38 [label="eventually",color=black,fontcolor=black];
+  label="SUB_18";
+}
+
+subgraph cluster_SUB_19 {
+  40 [label="Sub_298",color=black,fontcolor=black];
+  41 [label="Sub_121",color=black,fontcolor=black];
+  40 -> 40 [label="eventually",color=black,fontcolor=black];
+  40 -> 41 [label="eventually",color=black,fontcolor=black];
+  41 -> 40 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_19";
+}
+
+subgraph cluster_SUB_20 {
+  42 [label="Sub_25",color=black,fontcolor=black];
+  43 [label="Sub_121",color=black,fontcolor=black];
+  42 -> 42 [label="eventually",color=black,fontcolor=black];
+  42 -> 43 [label="sequentially",color=black,fontcolor=black];
+  43 -> 42 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_20";
+}
+
+subgraph cluster_SUB_21 {
+  44 [label="Sub_32",color=black,fontcolor=black];
+  45 [label="Sub_25",color=black,fontcolor=black];
+  46 [label="Sub_121",color=black,fontcolor=black];
+  44 -> 44 [label="eventually",color=black,fontcolor=black];
+  44 -> 45 [label="eventually",color=black,fontcolor=black];
+  44 -> 46 [label="sequentially",color=black,fontcolor=black];
+  45 -> 44 [label="overlapping",color=black,fontcolor=black];
+  45 -> 45 [label="eventually",color=black,fontcolor=black];
+  45 -> 46 [label="sequentially",color=black,fontcolor=black];
+  46 -> 44 [label="eventually",color=black,fontcolor=black];
+  46 -> 45 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_21";
+}
+
+subgraph cluster_SUB_22 {
+  47 [label="Sub_298",color=black,fontcolor=black];
+  48 [label="Sub_32",color=black,fontcolor=black];
+  49 [label="Sub_25",color=black,fontcolor=black];
+  50 [label="Sub_121",color=black,fontcolor=black];
+  47 -> 47 [label="eventually",color=black,fontcolor=black];
+  47 -> 48 [label="overlapping",color=black,fontcolor=black];
+  47 -> 49 [label="overlapping",color=black,fontcolor=black];
+  47 -> 50 [label="eventually",color=black,fontcolor=black];
+  48 -> 47 [label="eventually",color=black,fontcolor=black];
+  48 -> 48 [label="eventually",color=black,fontcolor=black];
+  48 -> 49 [label="eventually",color=black,fontcolor=black];
+  48 -> 50 [label="sequentially",color=black,fontcolor=black];
+  49 -> 47 [label="overlapping",color=black,fontcolor=black];
+  49 -> 48 [label="overlapping",color=black,fontcolor=black];
+  49 -> 49 [label="eventually",color=black,fontcolor=black];
+  49 -> 50 [label="sequentially",color=black,fontcolor=black];
+  50 -> 47 [label="overlapping",color=black,fontcolor=black];
+  50 -> 48 [label="eventually",color=black,fontcolor=black];
+  50 -> 49 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_22";
+}
+
+subgraph cluster_SUB_23 {
+  51 [label="Sub_298",color=black,fontcolor=black];
+  52 [label="Sub_25",color=black,fontcolor=black];
+  53 [label="Sub_121",color=black,fontcolor=black];
+  51 -> 51 [label="eventually",color=black,fontcolor=black];
+  51 -> 52 [label="overlapping",color=black,fontcolor=black];
+  51 -> 53 [label="eventually",color=black,fontcolor=black];
+  52 -> 51 [label="overlapping",color=black,fontcolor=black];
+  52 -> 52 [label="eventually",color=black,fontcolor=black];
+  52 -> 53 [label="sequentially",color=black,fontcolor=black];
+  53 -> 51 [label="overlapping",color=black,fontcolor=black];
+  53 -> 52 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_23";
+}
+
+subgraph cluster_SUB_24 {
+  54 [label="Sub_945",color=black,fontcolor=black];
+  55 [label="Sub_43",color=black,fontcolor=black];
+  54 -> 55 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_24";
+}
+
+subgraph cluster_SUB_25 {
+  56 [label="Sub_298",color=black,fontcolor=black];
+  57 [label="Sub_945",color=black,fontcolor=black];
+  58 [label="Sub_43",color=black,fontcolor=black];
+  56 -> 57 [label="eventually",color=black,fontcolor=black];
+  56 -> 58 [label="eventually",color=black,fontcolor=black];
+  57 -> 58 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_25";
+}
+
+subgraph cluster_SUB_26 {
+  59 [label="Sub_32",color=black,fontcolor=black];
+  60 [label="Sub_43",color=black,fontcolor=black];
+  59 -> 60 [label="eventually",color=black,fontcolor=black];
+  label="SUB_26";
+}
+
+subgraph cluster_SUB_27 {
+  61 [label="Sub_298",color=black,fontcolor=black];
+  62 [label="Sub_32",color=black,fontcolor=black];
+  63 [label="Sub_43",color=black,fontcolor=black];
+  61 -> 62 [label="overlapping",color=black,fontcolor=black];
+  61 -> 63 [label="eventually",color=black,fontcolor=black];
+  62 -> 63 [label="eventually",color=black,fontcolor=black];
+  label="SUB_27";
+}
+
+subgraph cluster_SUB_28 {
+  64 [label="Sub_298",color=black,fontcolor=black];
+  65 [label="Sub_43",color=black,fontcolor=black];
+  64 -> 65 [label="eventually",color=black,fontcolor=black];
+  label="SUB_28";
+}
+
+subgraph cluster_SUB_29 {
+  66 [label="Sub_32",color=black,fontcolor=black];
+  67 [label="Sub_167",color=black,fontcolor=black];
+  66 -> 67 [label="eventually",color=black,fontcolor=black];
+  label="SUB_29";
+}
+
+subgraph cluster_SUB_30 {
+  68 [label="Sub_298",color=black,fontcolor=black];
+  69 [label="Sub_32",color=black,fontcolor=black];
+  70 [label="Sub_167",color=black,fontcolor=black];
+  68 -> 69 [label="overlapping",color=black,fontcolor=black];
+  68 -> 70 [label="eventually",color=black,fontcolor=black];
+  69 -> 70 [label="eventually",color=black,fontcolor=black];
+  label="SUB_30";
+}
+
+subgraph cluster_SUB_31 {
+  71 [label="Sub_298",color=black,fontcolor=black];
+  72 [label="Sub_167",color=black,fontcolor=black];
+  71 -> 72 [label="eventually",color=black,fontcolor=black];
+  label="SUB_31";
+}
+
+subgraph cluster_SUB_32 {
+  73 [label="Sub_50",color=black,fontcolor=black];
+  74 [label="Sub_167",color=black,fontcolor=black];
+  74 -> 73 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_32";
+}
+
+subgraph cluster_SUB_33 {
+  75 [label="Sub_32",color=black,fontcolor=black];
+  76 [label="Sub_50",color=black,fontcolor=black];
+  77 [label="Sub_167",color=black,fontcolor=black];
+  75 -> 76 [label="eventually",color=black,fontcolor=black];
+  75 -> 77 [label="eventually",color=black,fontcolor=black];
+  77 -> 76 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_33";
+}
+
+subgraph cluster_SUB_34 {
+  78 [label="Sub_298",color=black,fontcolor=black];
+  79 [label="Sub_50",color=black,fontcolor=black];
+  80 [label="Sub_167",color=black,fontcolor=black];
+  78 -> 79 [label="eventually",color=black,fontcolor=black];
+  78 -> 80 [label="eventually",color=black,fontcolor=black];
+  80 -> 79 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_34";
+}
+
+subgraph cluster_SUB_35 {
+  81 [label="Sub_27",color=black,fontcolor=black];
+  82 [label="Sub_50",color=black,fontcolor=black];
+  83 [label="Sub_167",color=black,fontcolor=black];
+  81 -> 82 [label="eventually",color=black,fontcolor=black];
+  81 -> 83 [label="eventually",color=black,fontcolor=black];
+  83 -> 82 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_35";
+}
+
+subgraph cluster_SUB_36 {
+  84 [label="Sub_25",color=black,fontcolor=black];
+  85 [label="Sub_167",color=black,fontcolor=black];
+  84 -> 85 [label="eventually",color=black,fontcolor=black];
+  label="SUB_36";
+}
+
+subgraph cluster_SUB_37 {
+  86 [label="Sub_27",color=black,fontcolor=black];
+  87 [label="Sub_167",color=black,fontcolor=black];
+  86 -> 87 [label="eventually",color=black,fontcolor=black];
+  label="SUB_37";
+}
+
+subgraph cluster_SUB_38 {
+  88 [label="Sub_298",color=black,fontcolor=black];
+  89 [label="Sub_27",color=black,fontcolor=black];
+  90 [label="Sub_167",color=black,fontcolor=black];
+  88 -> 89 [label="eventually",color=black,fontcolor=black];
+  88 -> 90 [label="eventually",color=black,fontcolor=black];
+  89 -> 90 [label="eventually",color=black,fontcolor=black];
+  label="SUB_38";
+}
+
+subgraph cluster_SUB_39 {
+  91 [label="Sub_32",color=black,fontcolor=black];
+  92 [label="Sub_64",color=black,fontcolor=black];
+  91 -> 92 [label="eventually",color=black,fontcolor=black];
+  label="SUB_39";
+}
+
+subgraph cluster_SUB_40 {
+  93 [label="Sub_298",color=black,fontcolor=black];
+  94 [label="Sub_32",color=black,fontcolor=black];
+  95 [label="Sub_64",color=black,fontcolor=black];
+  93 -> 94 [label="overlapping",color=black,fontcolor=black];
+  93 -> 95 [label="eventually",color=black,fontcolor=black];
+  94 -> 95 [label="eventually",color=black,fontcolor=black];
+  label="SUB_40";
+}
+
+subgraph cluster_SUB_41 {
+  96 [label="Sub_298",color=black,fontcolor=black];
+  97 [label="Sub_64",color=black,fontcolor=black];
+  96 -> 97 [label="eventually",color=black,fontcolor=black];
+  label="SUB_41";
+}
+
+subgraph cluster_SUB_42 {
+  98 [label="Sub_54",color=black,fontcolor=black];
+  99 [label="Sub_64",color=black,fontcolor=black];
+  99 -> 98 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_42";
+}
+
+subgraph cluster_SUB_43 {
+  100 [label="Sub_298",color=black,fontcolor=black];
+  101 [label="Sub_54",color=black,fontcolor=black];
+  102 [label="Sub_64",color=black,fontcolor=black];
+  100 -> 101 [label="eventually",color=black,fontcolor=black];
+  100 -> 102 [label="eventually",color=black,fontcolor=black];
+  102 -> 101 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_43";
+}
+
+subgraph cluster_SUB_44 {
+  103 [label="Sub_32",color=black,fontcolor=black];
+  104 [label="Sub_945",color=black,fontcolor=black];
+  103 -> 104 [label="eventually",color=black,fontcolor=black];
+  label="SUB_44";
+}
+
+subgraph cluster_SUB_45 {
+  105 [label="Sub_298",color=black,fontcolor=black];
+  106 [label="Sub_32",color=black,fontcolor=black];
+  107 [label="Sub_945",color=black,fontcolor=black];
+  105 -> 106 [label="overlapping",color=black,fontcolor=black];
+  105 -> 107 [label="eventually",color=black,fontcolor=black];
+  106 -> 107 [label="eventually",color=black,fontcolor=black];
+  label="SUB_45";
+}
+
+subgraph cluster_SUB_46 {
+  108 [label="Sub_298",color=black,fontcolor=black];
+  109 [label="Sub_945",color=black,fontcolor=black];
+  108 -> 109 [label="eventually",color=black,fontcolor=black];
+  label="SUB_46";
+}
+
+subgraph cluster_SUB_47 {
+  110 [label="Sub_298",color=black,fontcolor=black];
+  111 [label="Sub_32",color=black,fontcolor=black];
+  110 -> 111 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_47";
+}
+
+subgraph cluster_SUB_48 {
+  112 [label="Sub_32",color=black,fontcolor=black];
+  113 [label="Sub_70",color=black,fontcolor=black];
+  113 -> 112 [label="eventually",color=black,fontcolor=black];
+  label="SUB_48";
+}
+
+subgraph cluster_SUB_49 {
+  114 [label="Sub_298",color=black,fontcolor=black];
+  115 [label="Sub_32",color=black,fontcolor=black];
+  116 [label="Sub_70",color=black,fontcolor=black];
+  114 -> 115 [label="overlapping",color=black,fontcolor=black];
+  116 -> 114 [label="overlapping",color=black,fontcolor=black];
+  116 -> 115 [label="eventually",color=black,fontcolor=black];
+  label="SUB_49";
+}
+
+subgraph cluster_SUB_50 {
+  117 [label="Sub_298",color=black,fontcolor=black];
+  118 [label="Sub_70",color=black,fontcolor=black];
+  118 -> 117 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_50";
+}
+
+subgraph cluster_SUB_51 {
+  119 [label="Sub_25",color=black,fontcolor=black];
+  120 [label="Sub_70",color=black,fontcolor=black];
+  120 -> 119 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_51";
+}
+
+subgraph cluster_SUB_52 {
+  121 [label="Sub_32",color=black,fontcolor=black];
+  122 [label="Sub_25",color=black,fontcolor=black];
+  123 [label="Sub_70",color=black,fontcolor=black];
+  122 -> 121 [label="overlapping",color=black,fontcolor=black];
+  123 -> 121 [label="eventually",color=black,fontcolor=black];
+  123 -> 122 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_52";
+}
+
+subgraph cluster_SUB_53 {
+  124 [label="Sub_298",color=black,fontcolor=black];
+  125 [label="Sub_32",color=black,fontcolor=black];
+  126 [label="Sub_25",color=black,fontcolor=black];
+  127 [label="Sub_70",color=black,fontcolor=black];
+  124 -> 125 [label="overlapping",color=black,fontcolor=black];
+  126 -> 124 [label="overlapping",color=black,fontcolor=black];
+  126 -> 125 [label="overlapping",color=black,fontcolor=black];
+  127 -> 124 [label="overlapping",color=black,fontcolor=black];
+  127 -> 125 [label="eventually",color=black,fontcolor=black];
+  127 -> 126 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_53";
+}
+
+subgraph cluster_SUB_54 {
+  128 [label="Sub_298",color=black,fontcolor=black];
+  129 [label="Sub_25",color=black,fontcolor=black];
+  130 [label="Sub_70",color=black,fontcolor=black];
+  129 -> 128 [label="overlapping",color=black,fontcolor=black];
+  130 -> 128 [label="overlapping",color=black,fontcolor=black];
+  130 -> 129 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_54";
+}
+
+subgraph cluster_SUB_55 {
+  131 [label="Sub_39",color=black,fontcolor=black];
+  132 [label="Sub_92",color=black,fontcolor=black];
+  132 -> 131 [label="eventually",color=black,fontcolor=black];
+  label="SUB_55";
+}
+
+subgraph cluster_SUB_56 {
+  133 [label="Sub_665",color=black,fontcolor=black];
+  134 [label="Sub_39",color=black,fontcolor=black];
+  135 [label="Sub_92",color=black,fontcolor=black];
+  133 -> 134 [label="overlapping",color=black,fontcolor=black];
+  134 -> 133 [label="overlapping",color=black,fontcolor=black];
+  135 -> 133 [label="eventually",color=black,fontcolor=black];
+  135 -> 134 [label="eventually",color=black,fontcolor=black];
+  label="SUB_56";
+}
+
+subgraph cluster_SUB_57 {
+  136 [label="Sub_665",color=black,fontcolor=black];
+  137 [label="Sub_92",color=black,fontcolor=black];
+  137 -> 136 [label="eventually",color=black,fontcolor=black];
+  label="SUB_57";
+}
+
+subgraph cluster_SUB_58 {
+  138 [label="Sub_666",color=black,fontcolor=black];
+  139 [label="Sub_92",color=black,fontcolor=black];
+  139 -> 138 [label="eventually",color=black,fontcolor=black];
+  label="SUB_58";
+}
+
+subgraph cluster_SUB_59 {
+  140 [label="Sub_39",color=black,fontcolor=black];
+  141 [label="Sub_666",color=black,fontcolor=black];
+  142 [label="Sub_92",color=black,fontcolor=black];
+  140 -> 141 [label="overlapping",color=black,fontcolor=black];
+  141 -> 140 [label="overlapping",color=black,fontcolor=black];
+  142 -> 140 [label="eventually",color=black,fontcolor=black];
+  142 -> 141 [label="eventually",color=black,fontcolor=black];
+  label="SUB_59";
+}
+
+subgraph cluster_SUB_60 {
+  143 [label="Sub_665",color=black,fontcolor=black];
+  144 [label="Sub_39",color=black,fontcolor=black];
+  145 [label="Sub_666",color=black,fontcolor=black];
+  146 [label="Sub_92",color=black,fontcolor=black];
+  143 -> 144 [label="overlapping",color=black,fontcolor=black];
+  143 -> 145 [label="overlapping",color=black,fontcolor=black];
+  144 -> 143 [label="overlapping",color=black,fontcolor=black];
+  144 -> 145 [label="overlapping",color=black,fontcolor=black];
+  145 -> 143 [label="overlapping",color=black,fontcolor=black];
+  145 -> 144 [label="overlapping",color=black,fontcolor=black];
+  146 -> 143 [label="eventually",color=black,fontcolor=black];
+  146 -> 144 [label="eventually",color=black,fontcolor=black];
+  146 -> 145 [label="eventually",color=black,fontcolor=black];
+  label="SUB_60";
+}
+
+subgraph cluster_SUB_61 {
+  147 [label="Sub_665",color=black,fontcolor=black];
+  148 [label="Sub_666",color=black,fontcolor=black];
+  149 [label="Sub_92",color=black,fontcolor=black];
+  147 -> 148 [label="overlapping",color=black,fontcolor=black];
+  148 -> 147 [label="overlapping",color=black,fontcolor=black];
+  149 -> 147 [label="eventually",color=black,fontcolor=black];
+  149 -> 148 [label="eventually",color=black,fontcolor=black];
+  label="SUB_61";
+}
+
+subgraph cluster_SUB_62 {
+  150 [label="Sub_32",color=black,fontcolor=black];
+  151 [label="Sub_310",color=black,fontcolor=black];
+  150 -> 151 [label="eventually",color=black,fontcolor=black];
+  label="SUB_62";
+}
+
+subgraph cluster_SUB_63 {
+  152 [label="Sub_298",color=black,fontcolor=black];
+  153 [label="Sub_310",color=black,fontcolor=black];
+  152 -> 153 [label="eventually",color=black,fontcolor=black];
+  label="SUB_63";
+}
+
+subgraph cluster_SUB_64 {
+  154 [label="Sub_32",color=black,fontcolor=black];
+  155 [label="Sub_54",color=black,fontcolor=black];
+  154 -> 155 [label="eventually",color=black,fontcolor=black];
+  label="SUB_64";
+}
+
+subgraph cluster_SUB_65 {
+  156 [label="Sub_298",color=black,fontcolor=black];
+  157 [label="Sub_32",color=black,fontcolor=black];
+  158 [label="Sub_54",color=black,fontcolor=black];
+  156 -> 157 [label="overlapping",color=black,fontcolor=black];
+  156 -> 158 [label="eventually",color=black,fontcolor=black];
+  157 -> 158 [label="eventually",color=black,fontcolor=black];
+  label="SUB_65";
+}
+
+subgraph cluster_SUB_66 {
+  159 [label="Sub_298",color=black,fontcolor=black];
+  160 [label="Sub_54",color=black,fontcolor=black];
+  159 -> 160 [label="eventually",color=black,fontcolor=black];
+  label="SUB_66";
+}
+
+subgraph cluster_SUB_67 {
+  161 [label="Sub_32",color=black,fontcolor=black];
+  162 [label="Sub_50",color=black,fontcolor=black];
+  161 -> 162 [label="eventually",color=black,fontcolor=black];
+  label="SUB_67";
+}
+
+subgraph cluster_SUB_68 {
+  163 [label="Sub_298",color=black,fontcolor=black];
+  164 [label="Sub_32",color=black,fontcolor=black];
+  165 [label="Sub_50",color=black,fontcolor=black];
+  163 -> 164 [label="overlapping",color=black,fontcolor=black];
+  163 -> 165 [label="eventually",color=black,fontcolor=black];
+  164 -> 165 [label="eventually",color=black,fontcolor=black];
+  label="SUB_68";
+}
+
+subgraph cluster_SUB_69 {
+  166 [label="Sub_70",color=black,fontcolor=black];
+  167 [label="Sub_50",color=black,fontcolor=black];
+  166 -> 167 [label="eventually",color=black,fontcolor=black];
+  label="SUB_69";
+}
+
+subgraph cluster_SUB_70 {
+  168 [label="Sub_298",color=black,fontcolor=black];
+  169 [label="Sub_50",color=black,fontcolor=black];
+  168 -> 169 [label="eventually",color=black,fontcolor=black];
+  label="SUB_70";
+}
+
+subgraph cluster_SUB_71 {
+  170 [label="Sub_25",color=black,fontcolor=black];
+  171 [label="Sub_50",color=black,fontcolor=black];
+  170 -> 171 [label="eventually",color=black,fontcolor=black];
+  label="SUB_71";
+}
+
+subgraph cluster_SUB_72 {
+  172 [label="Sub_298",color=black,fontcolor=black];
+  173 [label="Sub_25",color=black,fontcolor=black];
+  174 [label="Sub_50",color=black,fontcolor=black];
+  172 -> 173 [label="overlapping",color=black,fontcolor=black];
+  172 -> 174 [label="eventually",color=black,fontcolor=black];
+  173 -> 174 [label="eventually",color=black,fontcolor=black];
+  label="SUB_72";
+}
+
+subgraph cluster_SUB_73 {
+  175 [label="Sub_27",color=black,fontcolor=black];
+  176 [label="Sub_50",color=black,fontcolor=black];
+  175 -> 176 [label="eventually",color=black,fontcolor=black];
+  label="SUB_73";
+}
+
+subgraph cluster_SUB_74 {
+  177 [label="Sub_32",color=black,fontcolor=black];
+  178 [label="Sub_27",color=black,fontcolor=black];
+  179 [label="Sub_50",color=black,fontcolor=black];
+  177 -> 178 [label="sequentially",color=black,fontcolor=black];
+  177 -> 179 [label="eventually",color=black,fontcolor=black];
+  178 -> 179 [label="eventually",color=black,fontcolor=black];
+  label="SUB_74";
+}
+
+subgraph cluster_SUB_75 {
+  180 [label="Sub_298",color=black,fontcolor=black];
+  181 [label="Sub_27",color=black,fontcolor=black];
+  182 [label="Sub_50",color=black,fontcolor=black];
+  180 -> 181 [label="eventually",color=black,fontcolor=black];
+  180 -> 182 [label="eventually",color=black,fontcolor=black];
+  181 -> 182 [label="eventually",color=black,fontcolor=black];
+  label="SUB_75";
+}
+
+subgraph cluster_SUB_76 {
+  183 [label="Sub_43",color=black,fontcolor=black];
+  184 [label="Sub_1080",color=black,fontcolor=black];
+  184 -> 183 [label="sequentially",color=black,fontcolor=black];
+  label="SUB_76";
+}
+
+subgraph cluster_SUB_77 {
+  185 [label="Sub_945",color=black,fontcolor=black];
+  186 [label="Sub_43",color=black,fontcolor=black];
+  187 [label="Sub_1080",color=black,fontcolor=black];
+  185 -> 186 [label="overlapping",color=black,fontcolor=black];
+  187 -> 185 [label="overlapping",color=black,fontcolor=black];
+  187 -> 186 [label="sequentially",color=black,fontcolor=black];
+  label="SUB_77";
+}
+
+subgraph cluster_SUB_78 {
+  188 [label="Sub_945",color=black,fontcolor=black];
+  189 [label="Sub_1080",color=black,fontcolor=black];
+  189 -> 188 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_78";
+}
+
+subgraph cluster_SUB_79 {
+  190 [label="Sub_32",color=black,fontcolor=black];
+  191 [label="Sub_945",color=black,fontcolor=black];
+  192 [label="Sub_1080",color=black,fontcolor=black];
+  190 -> 191 [label="eventually",color=black,fontcolor=black];
+  190 -> 192 [label="eventually",color=black,fontcolor=black];
+  192 -> 191 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_79";
+}
+
+subgraph cluster_SUB_80 {
+  193 [label="Sub_298",color=black,fontcolor=black];
+  194 [label="Sub_945",color=black,fontcolor=black];
+  195 [label="Sub_1080",color=black,fontcolor=black];
+  193 -> 194 [label="eventually",color=black,fontcolor=black];
+  193 -> 195 [label="eventually",color=black,fontcolor=black];
+  195 -> 194 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_80";
+}
+
+subgraph cluster_SUB_81 {
+  196 [label="Sub_32",color=black,fontcolor=black];
+  197 [label="Sub_1080",color=black,fontcolor=black];
+  label="SUB_81";
+}
+
+subgraph cluster_SUB_82 {
+  198 [label="Sub_298",color=black,fontcolor=black];
+  199 [label="Sub_32",color=black,fontcolor=black];
+  200 [label="Sub_1080",color=black,fontcolor=black];
+  198 -> 199 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_82";
+}
+
+subgraph cluster_SUB_83 {
+  201 [label="Sub_298",color=black,fontcolor=black];
+  202 [label="Sub_1080",color=black,fontcolor=black];
+  label="SUB_83";
+}
+
+subgraph cluster_SUB_84 {
+  203 [label="Sub_32",color=black,fontcolor=black];
+  204 [label="Sub_25",color=black,fontcolor=black];
+  204 -> 203 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_84";
+}
+
+subgraph cluster_SUB_85 {
+  205 [label="Sub_298",color=black,fontcolor=black];
+  206 [label="Sub_32",color=black,fontcolor=black];
+  207 [label="Sub_25",color=black,fontcolor=black];
+  205 -> 206 [label="overlapping",color=black,fontcolor=black];
+  205 -> 207 [label="overlapping",color=black,fontcolor=black];
+  207 -> 206 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_85";
+}
+
+subgraph cluster_SUB_86 {
+  208 [label="Sub_298",color=black,fontcolor=black];
+  209 [label="Sub_25",color=black,fontcolor=black];
+  208 -> 209 [label="overlapping",color=black,fontcolor=black];
+  label="SUB_86";
+}
+
+subgraph cluster_SUB_87 {
+  210 [label="Sub_32",color=black,fontcolor=black];
+  211 [label="Sub_27",color=black,fontcolor=black];
+  210 -> 211 [label="sequentially",color=black,fontcolor=black];
+  label="SUB_87";
+}
+
+subgraph cluster_SUB_88 {
+  212 [label="Sub_298",color=black,fontcolor=black];
+  213 [label="Sub_32",color=black,fontcolor=black];
+  214 [label="Sub_27",color=black,fontcolor=black];
+  212 -> 213 [label="overlapping",color=black,fontcolor=black];
+  212 -> 214 [label="eventually",color=black,fontcolor=black];
+  213 -> 214 [label="sequentially",color=black,fontcolor=black];
+  label="SUB_88";
+}
+
+subgraph cluster_SUB_89 {
+  215 [label="Sub_70",color=black,fontcolor=black];
+  216 [label="Sub_27",color=black,fontcolor=black];
+  215 -> 216 [label="eventually",color=black,fontcolor=black];
+  label="SUB_89";
+}
+
+subgraph cluster_SUB_90 {
+  217 [label="Sub_32",color=black,fontcolor=black];
+  218 [label="Sub_70",color=black,fontcolor=black];
+  219 [label="Sub_27",color=black,fontcolor=black];
+  217 -> 219 [label="sequentially",color=black,fontcolor=black];
+  218 -> 217 [label="eventually",color=black,fontcolor=black];
+  218 -> 219 [label="eventually",color=black,fontcolor=black];
+  label="SUB_90";
+}
+
+subgraph cluster_SUB_91 {
+  220 [label="Sub_298",color=black,fontcolor=black];
+  221 [label="Sub_32",color=black,fontcolor=black];
+  222 [label="Sub_70",color=black,fontcolor=black];
+  223 [label="Sub_27",color=black,fontcolor=black];
+  220 -> 221 [label="overlapping",color=black,fontcolor=black];
+  220 -> 223 [label="eventually",color=black,fontcolor=black];
+  221 -> 223 [label="sequentially",color=black,fontcolor=black];
+  222 -> 220 [label="overlapping",color=black,fontcolor=black];
+  222 -> 221 [label="eventually",color=black,fontcolor=black];
+  222 -> 223 [label="eventually",color=black,fontcolor=black];
+  label="SUB_91";
+}
+
+subgraph cluster_SUB_92 {
+  224 [label="Sub_298",color=black,fontcolor=black];
+  225 [label="Sub_70",color=black,fontcolor=black];
+  226 [label="Sub_27",color=black,fontcolor=black];
+  224 -> 226 [label="eventually",color=black,fontcolor=black];
+  225 -> 224 [label="overlapping",color=black,fontcolor=black];
+  225 -> 226 [label="eventually",color=black,fontcolor=black];
+  label="SUB_92";
+}
+
+subgraph cluster_SUB_93 {
+  227 [label="Sub_25",color=black,fontcolor=black];
+  228 [label="Sub_70",color=black,fontcolor=black];
+  229 [label="Sub_27",color=black,fontcolor=black];
+  227 -> 229 [label="sequentially",color=black,fontcolor=black];
+  227 -> 229 [label="eventually",color=black,fontcolor=black];
+  228 -> 227 [label="overlapping",color=black,fontcolor=black];
+  228 -> 229 [label="eventually",color=black,fontcolor=black];
+  label="SUB_93";
+}
+
+subgraph cluster_SUB_94 {
+  230 [label="Sub_32",color=black,fontcolor=black];
+  231 [label="Sub_25",color=black,fontcolor=black];
+  232 [label="Sub_70",color=black,fontcolor=black];
+  233 [label="Sub_27",color=black,fontcolor=black];
+  230 -> 233 [label="sequentially",color=black,fontcolor=black];
+  231 -> 230 [label="overlapping",color=black,fontcolor=black];
+  231 -> 233 [label="sequentially",color=black,fontcolor=black];
+  231 -> 233 [label="eventually",color=black,fontcolor=black];
+  232 -> 230 [label="eventually",color=black,fontcolor=black];
+  232 -> 231 [label="overlapping",color=black,fontcolor=black];
+  232 -> 233 [label="eventually",color=black,fontcolor=black];
+  label="SUB_94";
+}
+
+subgraph cluster_SUB_95 {
+  234 [label="Sub_298",color=black,fontcolor=black];
+  235 [label="Sub_32",color=black,fontcolor=black];
+  236 [label="Sub_25",color=black,fontcolor=black];
+  237 [label="Sub_70",color=black,fontcolor=black];
+  238 [label="Sub_27",color=black,fontcolor=black];
+  234 -> 235 [label="overlapping",color=black,fontcolor=black];
+  234 -> 238 [label="eventually",color=black,fontcolor=black];
+  235 -> 238 [label="sequentially",color=black,fontcolor=black];
+  236 -> 234 [label="overlapping",color=black,fontcolor=black];
+  236 -> 235 [label="overlapping",color=black,fontcolor=black];
+  236 -> 238 [label="sequentially",color=black,fontcolor=black];
+  236 -> 238 [label="eventually",color=black,fontcolor=black];
+  237 -> 234 [label="overlapping",color=black,fontcolor=black];
+  237 -> 235 [label="eventually",color=black,fontcolor=black];
+  237 -> 236 [label="overlapping",color=black,fontcolor=black];
+  237 -> 238 [label="eventually",color=black,fontcolor=black];
+  label="SUB_95";
+}
+
+subgraph cluster_SUB_96 {
+  239 [label="Sub_298",color=black,fontcolor=black];
+  240 [label="Sub_25",color=black,fontcolor=black];
+  241 [label="Sub_70",color=black,fontcolor=black];
+  242 [label="Sub_27",color=black,fontcolor=black];
+  239 -> 242 [label="eventually",color=black,fontcolor=black];
+  240 -> 239 [label="overlapping",color=black,fontcolor=black];
+  240 -> 242 [label="sequentially",color=black,fontcolor=black];
+  240 -> 242 [label="eventually",color=black,fontcolor=black];
+  241 -> 239 [label="overlapping",color=black,fontcolor=black];
+  241 -> 240 [label="overlapping",color=black,fontcolor=black];
+  241 -> 242 [label="eventually",color=black,fontcolor=black];
+  label="SUB_96";
+}
+
+subgraph cluster_SUB_97 {
+  243 [label="Sub_298",color=black,fontcolor=black];
+  244 [label="Sub_27",color=black,fontcolor=black];
+  243 -> 244 [label="eventually",color=black,fontcolor=black];
+  label="SUB_97";
+}
+
+subgraph cluster_SUB_98 {
+  245 [label="Sub_25",color=black,fontcolor=black];
+  246 [label="Sub_27",color=black,fontcolor=black];
+  245 -> 246 [label="sequentially",color=black,fontcolor=black];
+  245 -> 246 [label="eventually",color=black,fontcolor=black];
+  label="SUB_98";
+}
+
+subgraph cluster_SUB_99 {
+  247 [label="Sub_32",color=black,fontcolor=black];
+  248 [label="Sub_25",color=black,fontcolor=black];
+  249 [label="Sub_27",color=black,fontcolor=black];
+  247 -> 249 [label="sequentially",color=black,fontcolor=black];
+  248 -> 247 [label="overlapping",color=black,fontcolor=black];
+  248 -> 249 [label="sequentially",color=black,fontcolor=black];
+  248 -> 249 [label="eventually",color=black,fontcolor=black];
+  label="SUB_99";
+}
+
+subgraph cluster_SUB_100 {
+  250 [label="Sub_298",color=black,fontcolor=black];
+  251 [label="Sub_32",color=black,fontcolor=black];
+  252 [label="Sub_25",color=black,fontcolor=black];
+  253 [label="Sub_27",color=black,fontcolor=black];
+  250 -> 251 [label="overlapping",color=black,fontcolor=black];
+  250 -> 252 [label="overlapping",color=black,fontcolor=black];
+  250 -> 253 [label="eventually",color=black,fontcolor=black];
+  251 -> 253 [label="sequentially",color=black,fontcolor=black];
+  252 -> 251 [label="overlapping",color=black,fontcolor=black];
+  252 -> 253 [label="sequentially",color=black,fontcolor=black];
+  252 -> 253 [label="eventually",color=black,fontcolor=black];
+  label="SUB_100";
+}
+
+subgraph cluster_SUB_101 {
+  254 [label="Sub_298",color=black,fontcolor=black];
+  255 [label="Sub_25",color=black,fontcolor=black];
+  256 [label="Sub_27",color=black,fontcolor=black];
+  254 -> 255 [label="overlapping",color=black,fontcolor=black];
+  254 -> 256 [label="eventually",color=black,fontcolor=black];
+  255 -> 256 [label="sequentially",color=black,fontcolor=black];
+  255 -> 256 [label="eventually",color=black,fontcolor=black];
+  label="SUB_101";
+}
+
+}

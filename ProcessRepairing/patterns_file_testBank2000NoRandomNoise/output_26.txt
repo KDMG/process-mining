@@ -1,0 +1,32 @@
+Pattern:  ['26']
+Sub Selected:  26
+Numero di grafi in cui occorre la sub: 106
+Graph Selected:  graph1004  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '7', 'EPP', 'v', '8', 'SLRRP', 'v', '9', 'LRIRV', 'v', '10', 'LRIRV', 'v', '11', 'LRERV', 'v', '12', 'LRRR', 'v', '13', 'FLRRP', 'v', '14', 'FRP', 'd', '7', '8', 'EPP__SLRRP', 'd', '8', '9', 'SLRRP__LRIRV', 'd', '8', '11', 'SLRRP__LRERV', 'd', '11', '12', 'LRERV__LRRR', 'd', '12', '13', 'LRRR__FLRRP', 'd', '13', '14', 'FLRRP__FRP', 'd', '10', '12', 'LRIRV__LRRR', 'd', '9', '10', 'LRIRV__LRIRV', 'Found', '1', 'instances.']
+Sub iniziale:  ['EPP', 'SLRRP', 'LRIRV', 'LRIRV', 'LRERV', 'LRRR', 'FLRRP', 'FRP']
+Trace:  trace_1343
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]REPC', '[L/M]RIBPC', '[L/M]FRPP', '[L/M]EPP', '[L/M]SLRRP', '[L/M]LRIRV', '[L]LRIRV', '[L/M]LRERV', '[L/M]LRRR', '[L/M]FLRRP', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '10', 'LRIRV', 'Found', '1', 'instances.']
+Sub semplificata:  ['LRIRV']
+Start:  10
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8814102564102564, 'activated_transitions': [SRP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP, SLRRP, LRIRV], 'reached_marking': ['n6:1', 'n9:1'], 'enabled_transitions_in_marking': {LRERV}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 12, 'remaining_tokens': 2, 'produced_tokens': 13}]
+Reached Marking:  ['n6', 'n9']
+End:  10
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8814102564102564, 'activated_transitions': [SRP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP, SLRRP, LRIRV], 'reached_marking': ['n6:1', 'n9:1'], 'enabled_transitions_in_marking': {LRERV}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 12, 'remaining_tokens': 2, 'produced_tokens': 13}]
+Reached Marking:  ['n6', 'n9']
+Added: n6 -- > LRIRV s13
+Added: n9 -- > LRIRV s13
+Added: LRIRV s13 -- > n6
+Added: LRIRV s13 -- > n9
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 79.46666666666667, 'averageFitness': 0.9941082831728673, 'percentage_of_fitting_traces': 79.46666666666667, 'average_trace_fitness': 0.9941082831728673}
+Precision:  0.8634081162043922
+Generalization:  0.9598972461234513
+Simplicity:  0.5901639344262294
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 79.46666666666667, 'averageFitness': 0.9941082831728673, 'percentage_of_fitting_traces': 79.46666666666667, 'average_trace_fitness': 0.9941082831728673}
+Precision:  0.8634081162043922
+Generalization:  0.9598972461234513
+Simplicity:  0.5901639344262294

@@ -1,0 +1,25 @@
+Sub Selected:  7
+Numero di grafi in cui occorre la sub: 39
+Graph Selected:  graph1088  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '1', 'CreateFine', 'v', '2', 'SendFine', 'v', '3', 'Notification', 'v', '4', 'AppealToPrefecture', 'v', '5', 'SendAppeal', 'v', '6', 'ReceiveResults', 'v', '7', 'AddPenalty', 'v', '8', 'NotifyOffenders', 'd', '1', '2', 'CreateFine__SendFine', 'd', '2', '3', 'SendFine__Notification', 'd', '3', '4', 'Notification__AppealToPrefecture', 'd', '4', '5', 'AppealToPrefecture__SendAppeal', 'd', '5', '6', 'SendAppeal__ReceiveResults', 'd', '6', '7', 'ReceiveResults__AddPenalty', 'd', '7', '8', 'AddPenalty__NotifyOffenders', 'Found', '1', 'instances.']
+Sub iniziale:  ['CreateFine', 'SendFine', 'Notification', 'AppealToPrefecture', 'SendAppeal', 'ReceiveResults', 'AddPenalty', 'NotifyOffenders']
+Trace:  N81255
+Alignment: ['[L/M]CreateFine', '[L/M]SendFine', '[L/M]Notification', '[L/M]AppealToPrefecture', '[L/M]SendAppeal', '[L/M]ReceiveResults', '[L]AddPenalty', '[L/M]NotifyOffenders', '[L/M]Payment', '[M-INVI]Inv3']
+Subgraph semplificata:  ['Instance', '1:', 'v', '7', 'AddPenalty', 'Found', '1', 'instances.']
+Sub semplificata:  ['AddPenalty']
+Start:  7
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8571428571428572, 'activated_transitions': [CreateFine, SendFine, Notification, n22, SendAppeal, ReceiveResults], 'reached_marking': ['n9:1'], 'enabled_transitions_in_marking': {NotifyOffenders}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 7, 'remaining_tokens': 1, 'produced_tokens': 7}]
+Reached Marking:  ['n9']
+End:  7
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8571428571428572, 'activated_transitions': [CreateFine, SendFine, Notification, n22, SendAppeal, ReceiveResults], 'reached_marking': ['n9:1'], 'enabled_transitions_in_marking': {NotifyOffenders}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 7, 'remaining_tokens': 1, 'produced_tokens': 7}]
+Reached Marking:  ['n9']
+Added: n9 -- > AddPenalty s1
+Added: AddPenalty s1 -- > n9
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 97.2703917790623, 'averageFitness': 0.9957514648776352}
+Precision:  0.8204281600929435
+Generalization:  0.9798486781914524
+Simplicity:  0.5686274509803921
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!

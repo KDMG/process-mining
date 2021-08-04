@@ -1,0 +1,11 @@
+state state7 label <html>[p23]</html>
+state state16 label <html>[p4]</html>
+state state17 label <html>[p5]</html>
+state state26 label <html>[p12]</html>
+0
+state7
+state16
+1
+state17
+state26
+Done

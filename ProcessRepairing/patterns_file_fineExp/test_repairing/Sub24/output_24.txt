@@ -1,0 +1,31 @@
+Sub Selected:  24
+Numero di grafi in cui occorre la sub: 15
+Graph Selected:  graph1179  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '6', 'ReceiveResults', 'v', '7', 'NotifyOffenders', 'v', '8', 'SendForCreditCollection', 'v', '9', 'SendAppeal', 'd', '6', '7', 'ReceiveResults__NotifyOffenders', 'd', '7', '8', 'NotifyOffenders__SendForCreditCollection', 'd', '8', '9', 'SendForCreditCollection__SendAppeal', 'Found', '1', 'instances.']
+Sub iniziale:  ['ReceiveResults', 'NotifyOffenders', 'SendForCreditCollection', 'SendAppeal']
+Trace:  N91819
+Alignment: ['[L/M]CreateFine', '[L/M]SendFine', '[L/M]Notification', '[L/M]AddPenalty', '[L/M]AppealToPrefecture', '[M-REAL]SendAppeal', '[L/M]ReceiveResults', '[L/M]NotifyOffenders', '[L/M]SendForCreditCollection', '[L]SendAppeal']
+Subgraph semplificata:  ['Instance', '1:', 'v', '6', 'ReceiveResults', 'v', '7', 'NotifyOffenders', 'v', '8', 'SendForCreditCollection', 'v', '9', 'SendAppeal', 'd', '6', '7', 'ReceiveResults__NotifyOffenders', 'd', '7', '8', 'NotifyOffenders__SendForCreditCollection', 'd', '8', '9', 'SendForCreditCollection__SendAppeal', 'Found', '1', 'instances.']
+Sub semplificata:  ['ReceiveResults', 'NotifyOffenders', 'SendForCreditCollection', 'SendAppeal']
+Start:  6
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, SendFine, Notification, AddPenalty, n16], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 6, 'remaining_tokens': 0, 'produced_tokens': 6}]
+Reached Marking:  ['n3']
+End:  9
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, SendFine, Notification, AddPenalty, n22, SendAppeal, ReceiveResults, NotifyOffenders, SendForCreditCollection], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 10, 'remaining_tokens': 0, 'produced_tokens': 10}]
+Reached Marking:  ['n3']
+Added:  ReceiveResults s1 --> n29
+Added:  n29 --> NotifyOffenders s2
+Added:  NotifyOffenders s2 --> n30
+Added:  n30 --> SendForCreditCollection s3
+Added:  SendForCreditCollection s3 --> n31
+Added:  n31 --> SendAppeal s4
+Added: n3 -- > ReceiveResults s1
+Added: SendAppeal s4 -- > n3
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 97.2703917790623, 'averageFitness': 0.9957413937513631}
+Precision:  0.7256872294165
+Generalization:  0.7657694328669058
+Simplicity:  0.6140350877192983
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!

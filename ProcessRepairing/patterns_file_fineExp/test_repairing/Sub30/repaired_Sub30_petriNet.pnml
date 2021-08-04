@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <page id="n0">
+      <place id="n6">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="1180.0" y="30.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n2">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="270.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n29">
+        <name>
+          <text>n29</text>
+        </name>
+      </place>
+      <place id="n7">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="910.0" y="180.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n1">
+        <name>
+          <text>
+          </text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+        <graphics>
+          <position x="90.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n8">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="1050.0" y="230.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n4">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="440.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n9">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="940.0" y="140.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n5">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="620.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <place id="n3">
+        <name>
+          <text>
+          </text>
+        </name>
+        <graphics>
+          <position x="670.0" y="420.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </place>
+      <transition id="n26">
+        <name>
+          <text>CreateFine</text>
+        </name>
+        <graphics>
+          <position x="180.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n15">
+        <name>
+          <text>AddPenalty</text>
+        </name>
+        <graphics>
+          <position x="690.0" y="30.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n11">
+        <name>
+          <text>Notification</text>
+        </name>
+        <graphics>
+          <position x="497.0" y="97.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+      </transition>
+      <transition id="s1">
+        <name>
+          <text>AppealToPrefecture</text>
+        </name>
+      </transition>
+      <transition id="n28">
+        <name>
+          <text>n28</text>
+        </name>
+        <graphics>
+          <position x="287.0" y="217.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ffb34e7f-5cea-48c1-9cc7-b8f6655be8ad"/>
+      </transition>
+      <transition id="s2">
+        <name>
+          <text>SendAppeal</text>
+        </name>
+      </transition>
+      <transition id="n12">
+        <name>
+          <text>n12</text>
+        </name>
+        <graphics>
+          <position x="437.0" y="187.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="2f53bfb5-0bbd-4eaf-8c17-1073c3f253b7"/>
+      </transition>
+      <transition id="n14">
+        <name>
+          <text>Payment</text>
+        </name>
+        <graphics>
+          <position x="600.0" y="30.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n13">
+        <name>
+          <text>Payment</text>
+        </name>
+        <graphics>
+          <position x="430.0" y="10.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n16">
+        <name>
+          <text>n16</text>
+        </name>
+        <graphics>
+          <position x="547.0" y="167.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5fe8a1e0-33f7-4fa6-9c10-6cf62bcc244c"/>
+      </transition>
+      <transition id="n18">
+        <name>
+          <text>SendForCreditCollection</text>
+        </name>
+        <graphics>
+          <position x="660.0" y="190.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n17">
+        <name>
+          <text>AppealToJudge</text>
+        </name>
+        <graphics>
+          <position x="900.0" y="70.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n19">
+        <name>
+          <text>n19</text>
+        </name>
+        <graphics>
+          <position x="1357.0" y="447.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="93187599-d049-41aa-ab5f-8674739d8f7c"/>
+      </transition>
+      <transition id="n21">
+        <name>
+          <text>SendAppeal</text>
+        </name>
+        <graphics>
+          <position x="980.0" y="230.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n20">
+        <name>
+          <text>n20</text>
+        </name>
+        <graphics>
+          <position x="847.0" y="-2.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="56265de6-4754-4c81-a6ec-4016895700b2"/>
+      </transition>
+      <transition id="n23">
+        <name>
+          <text>NotifyOffenders</text>
+        </name>
+        <graphics>
+          <position x="840.0" y="120.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n22">
+        <name>
+          <text>n22</text>
+        </name>
+        <graphics>
+          <position x="767.0" y="147.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9ae02b4e-b924-423d-9215-fd7a77b533cb"/>
+      </transition>
+      <transition id="n25">
+        <name>
+          <text>n25</text>
+        </name>
+        <graphics>
+          <position x="1107.0" y="287.0"/>
+          <dimension x="15.0" y="15.0"/>
+        </graphics>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="77e8dee6-380d-4816-b7f2-38f03916ae4f"/>
+      </transition>
+      <transition id="n24">
+        <name>
+          <text>ReceiveResults</text>
+        </name>
+        <graphics>
+          <position x="1020.0" y="160.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n10">
+        <name>
+          <text>Payment</text>
+        </name>
+        <graphics>
+          <position x="270.0" y="10.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <transition id="n27">
+        <name>
+          <text>SendFine</text>
+        </name>
+        <graphics>
+          <position x="350.0" y="110.0"/>
+          <dimension x="40.0" y="40.0"/>
+        </graphics>
+      </transition>
+      <arc id="-9223363241473748476" source="n14" target="n5"/>
+      <arc id="8795381027336" source="n6" target="n19"/>
+      <arc id="-9223363241473748469" source="n9" target="n23"/>
+      <arc id="8795381027343" source="n16" target="n3"/>
+      <arc id="-9223363241473748462" source="n5" target="n14"/>
+      <arc id="8795381024916" source="n1" target="n26"/>
+      <arc id="8795381027350" source="n2" target="n27"/>
+      <arc id="-9223363241473750889" source="n23" target="n5"/>
+      <arc id="8795381024923" source="n18" target="n3"/>
+      <arc id="-9223363241473750882" source="n4" target="n11"/>
+      <arc id="8795381024930" source="n19" target="n3"/>
+      <arc id="-9223363241473750875" source="n8" target="n25"/>
+      <arc id="8795381024937" source="n11" target="n5"/>
+      <arc id="-9223363241473750868" source="n8" target="n24"/>
+      <arc id="8795381024944" source="n6" target="n20"/>
+      <arc id="-9223363241473750861" source="n4" target="n13"/>
+      <arc id="8795381024951" source="n12" target="n3"/>
+      <arc id="-9223363241473750854" source="n28" target="n3"/>
+      <arc id="8795381024958" source="n24" target="n9"/>
+      <arc id="-9223363241473750847" source="n5" target="n22"/>
+      <arc id="-9223363241473744703" source="s1" target="n29"/>
+      <arc id="8795381024965" source="n5" target="n17"/>
+      <arc id="-9223363241473750840" source="n7" target="n21"/>
+      <arc id="8795381024972" source="n10" target="n2"/>
+      <arc id="-9223363241473750833" source="n13" target="n4"/>
+      <arc id="-9223363241473744689" source="n29" target="s2"/>
+      <arc id="8795381024979" source="n17" target="n6"/>
+      <arc id="-9223363241473750826" source="n22" target="n7"/>
+      <arc id="8795381024986" source="n26" target="n2"/>
+      <arc id="-9223363241473750819" source="n15" target="n5"/>
+      <arc id="8795381024993" source="n20" target="n5"/>
+      <arc id="-9223363241473750812" source="n2" target="n28"/>
+      <arc id="-9223363241425987482" source="n27" target="n4"/>
+      <arc id="8795381025000" source="n5" target="n16"/>
+      <arc id="-9223363241473750805" source="n5" target="n15"/>
+      <arc id="-9223363241473744787" source="n3" target="s1"/>
+      <arc id="8795381025007" source="n4" target="n12"/>
+      <arc id="-9223363241473750798" source="n25" target="n3"/>
+      <arc id="8795381025014" source="n5" target="n18"/>
+      <arc id="-9223363241473750791" source="n21" target="n8"/>
+      <arc id="-9223363241473744773" source="s2" target="n3"/>
+      <arc id="8795381025021" source="n2" target="n10"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="n3">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

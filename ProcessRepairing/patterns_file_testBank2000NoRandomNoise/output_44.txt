@@ -1,0 +1,3 @@
+Pattern:  ['44']
+Sub Selected:  44
+Numero di grafi in cui occorre la sub: 49

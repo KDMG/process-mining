@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tsml label="StateSpace of Petrinet from _graph_on_file449.txt" layout="true">
+<state id="state1" start="true">
+<name>
+<text>
+&lt;html&gt;[pini0]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state2">
+<name>
+<text>
+&lt;html&gt;[p14]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state3">
+<name>
+<text>
+&lt;html&gt;[p17,p16,p15]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state4">
+<name>
+<text>
+&lt;html&gt;[p20,p17,p16]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state5">
+<name>
+<text>
+&lt;html&gt;[p19,p17,p15]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state6">
+<name>
+<text>
+&lt;html&gt;[p18,p16,p15]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state7">
+<name>
+<text>
+&lt;html&gt;[p20,p18,p16]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state8">
+<name>
+<text>
+&lt;html&gt;[p19,p18,p15]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state9">
+<name>
+<text>
+&lt;html&gt;[p20,p19,p17]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state10">
+<name>
+<text>
+&lt;html&gt;[p20,p19,p18]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state11">
+<name>
+<text>
+&lt;html&gt;[p21]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state12">
+<name>
+<text>
+&lt;html&gt;[p22]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state13">
+<name>
+<text>
+&lt;html&gt;[p26]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state14">
+<name>
+<text>
+&lt;html&gt;[p23,p25,p24]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state15">
+<name>
+<text>
+&lt;html&gt;[p25,p24,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state16">
+<name>
+<text>
+&lt;html&gt;[p23,p25,p28]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state17">
+<name>
+<text>
+&lt;html&gt;[p23,p2,p24]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state18">
+<name>
+<text>
+&lt;html&gt;[p25,p28,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state19">
+<name>
+<text>
+&lt;html&gt;[p2,p24,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state20">
+<name>
+<text>
+&lt;html&gt;[p23,p2,p28]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state21">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state22">
+<name>
+<text>
+&lt;html&gt;[p23,p25,p27]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state23">
+<name>
+<text>
+&lt;html&gt;[p2,p28,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state24">
+<name>
+<text>
+&lt;html&gt;[p24,p1,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state25">
+<name>
+<text>
+&lt;html&gt;[p25,p27,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state26">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state27">
+<name>
+<text>
+&lt;html&gt;[p23,p4,p24]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state28">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p2]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state29">
+<name>
+<text>
+&lt;html&gt;[p27,p2,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state30">
+<name>
+<text>
+&lt;html&gt;[p28,p1,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state31">
+<name>
+<text>
+&lt;html&gt;[p4,p24,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state32">
+<name>
+<text>
+&lt;html&gt;[p23,p4,p28]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state33">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p5]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state34">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state35">
+<name>
+<text>
+&lt;html&gt;[p27,p1,p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state36">
+<name>
+<text>
+&lt;html&gt;[p4,p28,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state37">
+<name>
+<text>
+&lt;html&gt;[p24,p5,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state38">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p5]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state39">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state40">
+<name>
+<text>
+&lt;html&gt;[p23,p4,p27]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state41">
+<name>
+<text>
+&lt;html&gt;[p4,p27,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state42">
+<name>
+<text>
+&lt;html&gt;[p28,p5,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state43">
+<name>
+<text>
+&lt;html&gt;[p24,p1,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state44">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p5]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state45">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state46">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state47">
+<name>
+<text>
+&lt;html&gt;[p27,p5,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state48">
+<name>
+<text>
+&lt;html&gt;[p28,p1,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state49">
+<name>
+<text>
+&lt;html&gt;[p24,p1,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state50">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state51">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state52">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state53">
+<name>
+<text>
+&lt;html&gt;[p27,p1,p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state54">
+<name>
+<text>
+&lt;html&gt;[p28,p1,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state55">
+<name>
+<text>
+&lt;html&gt;[p24,p1,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state56">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state57">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state58">
+<name>
+<text>
+&lt;html&gt;[p9,p23,p24]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state59">
+<name>
+<text>
+&lt;html&gt;[p27,p1,p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state60">
+<name>
+<text>
+&lt;html&gt;[p28,p1,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state61">
+<name>
+<text>
+&lt;html&gt;[p9,p24,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state62">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state63">
+<name>
+<text>
+&lt;html&gt;[p9,p23,p28]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state64">
+<name>
+<text>
+&lt;html&gt;[p23,p24,p13]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state65">
+<name>
+<text>
+&lt;html&gt;[p27,p1,p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state66">
+<name>
+<text>
+&lt;html&gt;[p9,p28,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state67">
+<name>
+<text>
+&lt;html&gt;[p24,p13,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state68">
+<name>
+<text>
+&lt;html&gt;[p9,p23,p27]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state69">
+<name>
+<text>
+&lt;html&gt;[p23,p28,p13]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state70">
+<name>
+<text>
+&lt;html&gt;[p10,p23,p24]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state71">
+<name>
+<text>
+&lt;html&gt;[p9,p27,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state72">
+<name>
+<text>
+&lt;html&gt;[p28,p13,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state73">
+<name>
+<text>
+&lt;html&gt;[p10,p24,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state74">
+<name>
+<text>
+&lt;html&gt;[p23,p27,p13]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state75">
+<name>
+<text>
+&lt;html&gt;[p10,p23,p28]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state76">
+<name>
+<text>
+&lt;html&gt;[p27,p13,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state77">
+<name>
+<text>
+&lt;html&gt;[p10,p28,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state78">
+<name>
+<text>
+&lt;html&gt;[p10,p23,p27]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state79">
+<name>
+<text>
+&lt;html&gt;[p10,p27,p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state80">
+<name>
+<text>
+&lt;html&gt;[p11]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state81">
+<name>
+<text>
+&lt;html&gt;[p12]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state82" accept="true">
+<name>
+<text>
+&lt;html&gt;[pfin0]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<transition id="transition1" source="state1" target="state2">
+<name>
+<text>
+1</text>
+</name>
+</transition>
+<transition id="transition2" source="state2" target="state3">
+<name>
+<text>
+2</text>
+</name>
+</transition>
+<transition id="transition3" source="state3" target="state4">
+<name>
+<text>
+3</text>
+</name>
+</transition>
+<transition id="transition4" source="state3" target="state5">
+<name>
+<text>
+4</text>
+</name>
+</transition>
+<transition id="transition5" source="state3" target="state6">
+<name>
+<text>
+5</text>
+</name>
+</transition>
+<transition id="transition6" source="state6" target="state7">
+<name>
+<text>
+3</text>
+</name>
+</transition>
+<transition id="transition7" source="state6" target="state8">
+<name>
+<text>
+4</text>
+</name>
+</transition>
+<transition id="transition8" source="state4" target="state9">
+<name>
+<text>
+4</text>
+</name>
+</transition>
+<transition id="transition9" source="state4" target="state7">
+<name>
+<text>
+5</text>
+</name>
+</transition>
+<transition id="transition10" source="state5" target="state9">
+<name>
+<text>
+3</text>
+</name>
+</transition>
+<transition id="transition11" source="state5" target="state8">
+<name>
+<text>
+5</text>
+</name>
+</transition>
+<transition id="transition12" source="state7" target="state10">
+<name>
+<text>
+4</text>
+</name>
+</transition>
+<transition id="transition13" source="state8" target="state10">
+<name>
+<text>
+3</text>
+</name>
+</transition>
+<transition id="transition14" source="state9" target="state10">
+<name>
+<text>
+5</text>
+</name>
+</transition>
+<transition id="transition15" source="state10" target="state11">
+<name>
+<text>
+6</text>
+</name>
+</transition>
+<transition id="transition16" source="state11" target="state12">
+<name>
+<text>
+7</text>
+</name>
+</transition>
+<transition id="transition17" source="state12" target="state13">
+<name>
+<text>
+8</text>
+</name>
+</transition>
+<transition id="transition18" source="state13" target="state14">
+<name>
+<text>
+9</text>
+</name>
+</transition>
+<transition id="transition19" source="state14" target="state15">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition20" source="state14" target="state16">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition21" source="state14" target="state17">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition22" source="state15" target="state18">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition23" source="state15" target="state19">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition24" source="state17" target="state19">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition25" source="state17" target="state20">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition26" source="state17" target="state21">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition27" source="state16" target="state18">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition28" source="state16" target="state22">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition29" source="state16" target="state20">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition30" source="state19" target="state23">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition31" source="state19" target="state24">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition32" source="state18" target="state25">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition33" source="state18" target="state23">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition34" source="state21" target="state24">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition35" source="state21" target="state26">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition36" source="state21" target="state27">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition37" source="state20" target="state23">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition38" source="state20" target="state28">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition39" source="state20" target="state26">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition40" source="state22" target="state25">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition41" source="state22" target="state28">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition42" source="state23" target="state29">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition43" source="state23" target="state30">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition44" source="state24" target="state30">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition45" source="state24" target="state31">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition46" source="state25" target="state29">
+<name>
+<text>
+13</text>
+</name>
+</transition>
+<transition id="transition47" source="state27" target="state31">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition48" source="state27" target="state32">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition49" source="state27" target="state33">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition50" source="state26" target="state30">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition51" source="state26" target="state34">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition52" source="state26" target="state32">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition53" source="state28" target="state29">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition54" source="state28" target="state34">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition55" source="state30" target="state35">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition56" source="state30" target="state36">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition57" source="state29" target="state35">
+<name>
+<text>
+14</text>
+</name>
+</transition>
+<transition id="transition58" source="state31" target="state36">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition59" source="state31" target="state37">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition60" source="state33" target="state37">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition61" source="state33" target="state38">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition62" source="state33" target="state39">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition63" source="state32" target="state36">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition64" source="state32" target="state40">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition65" source="state32" target="state38">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition66" source="state34" target="state35">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition67" source="state34" target="state40">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition68" source="state36" target="state41">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition69" source="state36" target="state42">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition70" source="state35" target="state41">
+<name>
+<text>
+15</text>
+</name>
+</transition>
+<transition id="transition71" source="state37" target="state42">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition72" source="state37" target="state43">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition73" source="state38" target="state42">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition74" source="state38" target="state44">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition75" source="state38" target="state45">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition76" source="state39" target="state43">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition77" source="state39" target="state45">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition78" source="state39" target="state46">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition79" source="state40" target="state41">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition80" source="state40" target="state44">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition81" source="state41" target="state47">
+<name>
+<text>
+16</text>
+</name>
+</transition>
+<transition id="transition82" source="state42" target="state47">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition83" source="state42" target="state48">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition84" source="state43" target="state48">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition85" source="state43" target="state49">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition86" source="state45" target="state48">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition87" source="state45" target="state50">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition88" source="state45" target="state51">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition89" source="state44" target="state47">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition90" source="state44" target="state50">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition91" source="state46" target="state49">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition92" source="state46" target="state51">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition93" source="state46" target="state52">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition94" source="state47" target="state53">
+<name>
+<text>
+17</text>
+</name>
+</transition>
+<transition id="transition95" source="state48" target="state53">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition96" source="state48" target="state54">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition97" source="state49" target="state54">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition98" source="state49" target="state55">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition99" source="state50" target="state53">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition100" source="state50" target="state56">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition101" source="state51" target="state54">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition102" source="state51" target="state56">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition103" source="state51" target="state57">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition104" source="state52" target="state55">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition105" source="state52" target="state57">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition106" source="state52" target="state58">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition107" source="state53" target="state59">
+<name>
+<text>
+18</text>
+</name>
+</transition>
+<transition id="transition108" source="state54" target="state59">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition109" source="state54" target="state60">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition110" source="state55" target="state60">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition111" source="state55" target="state61">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition112" source="state56" target="state59">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition113" source="state56" target="state62">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition114" source="state57" target="state60">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition115" source="state57" target="state62">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition116" source="state57" target="state63">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition117" source="state58" target="state61">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition118" source="state58" target="state63">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition119" source="state58" target="state64">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition120" source="state59" target="state65">
+<name>
+<text>
+19</text>
+</name>
+</transition>
+<transition id="transition121" source="state60" target="state65">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition122" source="state60" target="state66">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition123" source="state61" target="state66">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition124" source="state61" target="state67">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition125" source="state62" target="state65">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition126" source="state62" target="state68">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition127" source="state63" target="state66">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition128" source="state63" target="state68">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition129" source="state63" target="state69">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition130" source="state64" target="state67">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition131" source="state64" target="state69">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition132" source="state64" target="state70">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition133" source="state65" target="state71">
+<name>
+<text>
+20</text>
+</name>
+</transition>
+<transition id="transition134" source="state66" target="state71">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition135" source="state66" target="state72">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition136" source="state67" target="state72">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition137" source="state67" target="state73">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition138" source="state68" target="state71">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition139" source="state68" target="state74">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition140" source="state69" target="state72">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition141" source="state69" target="state74">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition142" source="state69" target="state75">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition143" source="state70" target="state73">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition144" source="state70" target="state75">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition145" source="state71" target="state76">
+<name>
+<text>
+21</text>
+</name>
+</transition>
+<transition id="transition146" source="state72" target="state76">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition147" source="state72" target="state77">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition148" source="state73" target="state77">
+<name>
+<text>
+11</text>
+</name>
+</transition>
+<transition id="transition149" source="state74" target="state76">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition150" source="state74" target="state78">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition151" source="state75" target="state77">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition152" source="state75" target="state78">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition153" source="state76" target="state79">
+<name>
+<text>
+22</text>
+</name>
+</transition>
+<transition id="transition154" source="state77" target="state79">
+<name>
+<text>
+12</text>
+</name>
+</transition>
+<transition id="transition155" source="state78" target="state79">
+<name>
+<text>
+10</text>
+</name>
+</transition>
+<transition id="transition156" source="state79" target="state80">
+<name>
+<text>
+23</text>
+</name>
+</transition>
+<transition id="transition157" source="state80" target="state81">
+<name>
+<text>
+24</text>
+</name>
+</transition>
+<transition id="transition158" source="state81" target="state82">
+<name>
+<text>
+25</text>
+</name>
+</transition>
+</tsml>

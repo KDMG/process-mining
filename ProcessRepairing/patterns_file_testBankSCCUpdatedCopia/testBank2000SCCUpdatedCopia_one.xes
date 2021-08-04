@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<string key="lifecycle:model" value="standard"/>
+	<string key="creator" value="Fluxicon Disco"/>
+	<string key="library" value="Fluxicon Octane"/>
+	<string key="concept:name" value="Anonymous log imported from 2000-subprocess6-WithDeviatins(0.3,0.1).xes (filtered on trace attributes)"/>
+	<trace>
+		<string key="variant" value="Variant 199"/>
+		<int key="variant-index" value="199"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<string key="concept:name" value="trace_0"/>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="SRP"/>
+			<date key="time:timestamp" value="2013-12-01T08:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="SRPP"/>
+			<date key="time:timestamp" value="2013-12-01T09:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="RBPC"/>
+			<date key="time:timestamp" value="2013-12-01T10:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="RIBPC"/>
+			<date key="time:timestamp" value="2013-12-01T11:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="REPC"/>
+			<date key="time:timestamp" value="2013-12-01T12:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="FRPP"/>
+			<date key="time:timestamp" value="2013-12-01T13:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="REPP"/>
+			<date key="time:timestamp" value="2013-12-01T14:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="SRPP"/>
+			<date key="time:timestamp" value="2013-12-01T15:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="RIBPC"/>
+			<date key="time:timestamp" value="2013-12-01T16:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="REPC"/>
+			<date key="time:timestamp" value="2013-12-01T17:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="RBPC"/>
+			<date key="time:timestamp" value="2013-12-01T18:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="FRPP"/>
+			<date key="time:timestamp" value="2013-12-01T19:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="REPP"/>
+			<date key="time:timestamp" value="2013-12-01T20:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="flag" value="1"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="FRPP"/>
+			<date key="time:timestamp" value="2013-12-01T21:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="RBPC"/>
+			<date key="time:timestamp" value="2013-12-01T22:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="REPC"/>
+			<date key="time:timestamp" value="2013-12-02T00:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="flag" value="1"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="SRPP"/>
+			<date key="time:timestamp" value="2013-12-02T01:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="EPP"/>
+			<date key="time:timestamp" value="2013-12-02T02:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="SLRRP"/>
+			<date key="time:timestamp" value="2013-12-02T03:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="LRERV"/>
+			<date key="time:timestamp" value="2013-12-02T04:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="LRIRV"/>
+			<date key="time:timestamp" value="2013-12-02T05:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="LRRR"/>
+			<date key="time:timestamp" value="2013-12-02T06:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="FLRRP"/>
+			<date key="time:timestamp" value="2013-12-02T07:01:24.772+01:00"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="AHRRPC"/>
+			<date key="time:timestamp" value="2013-12-02T07:31:24.772+01:00"/>
+			<string key="isInsertion" value="true"/>
+		</event>
+		<event>
+			<string key="org:resource" value="NONE"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="concept:name" value="FRP"/>
+			<date key="time:timestamp" value="2013-12-02T08:01:24.772+01:00"/>
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tsml label="StateSpace of Unlabeled net" layout="true">
+<state id="state1" start="true">
+<name>
+<text>
+&lt;html&gt;[p1]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state2">
+<name>
+<text>
+&lt;html&gt;[p2]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state3">
+<name>
+<text>
+&lt;html&gt;[p4]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state4" accept="true">
+<name>
+<text>
+&lt;html&gt;[p3]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state5">
+<name>
+<text>
+&lt;html&gt;[p5]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state6">
+<name>
+<text>
+&lt;html&gt;[p6]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state7">
+<name>
+<text>
+&lt;html&gt;[p7]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state8">
+<name>
+<text>
+&lt;html&gt;[p8]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<state id="state9">
+<name>
+<text>
+&lt;html&gt;[p9]&lt;/html&gt;</text>
+</name>
+<graphics>
+<position x="30.0" y="20.0"/>
+<dimension x="50.0" y="30.0"/>
+<fill color="#c0c0c0"/>
+</graphics>
+</state>
+<transition id="transition1" source="state1" target="state2">
+<name>
+<text>
+CreateFine</text>
+</name>
+</transition>
+<transition id="transition2" source="state2" target="state2">
+<name>
+<text>
+Payment</text>
+</name>
+</transition>
+<transition id="transition3" source="state2" target="state3">
+<name>
+<text>
+SendFine</text>
+</name>
+</transition>
+<transition id="transition4" source="state2" target="state4">
+<name>
+<text>
+Inv1</text>
+</name>
+</transition>
+<transition id="transition5" source="state3" target="state5">
+<name>
+<text>
+Notification</text>
+</name>
+</transition>
+<transition id="transition6" source="state3" target="state4">
+<name>
+<text>
+Inv2</text>
+</name>
+</transition>
+<transition id="transition7" source="state3" target="state3">
+<name>
+<text>
+Payment</text>
+</name>
+</transition>
+<transition id="transition8" source="state5" target="state5">
+<name>
+<text>
+Payment</text>
+</name>
+</transition>
+<transition id="transition9" source="state5" target="state5">
+<name>
+<text>
+AddPenalty</text>
+</name>
+</transition>
+<transition id="transition10" source="state5" target="state4">
+<name>
+<text>
+Inv3</text>
+</name>
+</transition>
+<transition id="transition11" source="state5" target="state6">
+<name>
+<text>
+AppealToJudge</text>
+</name>
+</transition>
+<transition id="transition12" source="state5" target="state4">
+<name>
+<text>
+SendForCreditCollection</text>
+</name>
+</transition>
+<transition id="transition13" source="state5" target="state7">
+<name>
+<text>
+AppealToPrefecture</text>
+</name>
+</transition>
+<transition id="transition14" source="state7" target="state8">
+<name>
+<text>
+SendAppeal</text>
+</name>
+</transition>
+<transition id="transition15" source="state6" target="state4">
+<name>
+<text>
+Inv4</text>
+</name>
+</transition>
+<transition id="transition16" source="state6" target="state5">
+<name>
+<text>
+Inv5</text>
+</name>
+</transition>
+<transition id="transition17" source="state8" target="state9">
+<name>
+<text>
+ReceiveResults</text>
+</name>
+</transition>
+<transition id="transition18" source="state8" target="state4">
+<name>
+<text>
+Inv6</text>
+</name>
+</transition>
+<transition id="transition19" source="state9" target="state5">
+<name>
+<text>
+NotifyOffenders</text>
+</name>
+</transition>
+</tsml>

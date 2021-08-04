@@ -1,0 +1,140 @@
+p p1
+p p2
+p p3
+p p4
+p p5
+p p6
+p p7
+p p8
+p p9
+p p10
+p p11
+p p12
+p p13
+p p14
+p p15
+p p16
+p p17
+p p18
+p p19
+p p20
+p p21
+p p22
+p p23
+p p24
+p p25
+p p26
+p p27
+p p28
+p p29
+p p30
+p p31
+p p32
+p p33
+p p34
+p p35
+p pini0
+p pfin0
+t 1
+t 2
+t 3
+t 4
+t 5
+t 6
+t 7
+t 8
+t 9
+t 10
+t 11
+t 12
+t 13
+t 14
+t 15
+t 16
+t 17
+t 18
+t 19
+t 20
+t 21
+t 22
+t 23
+t 24
+t 25
+t 26
+t 27
+t 28
+t 29
+t 30
+t 31
+f 1 p1 
+f p1 2 
+f 2 p2 
+f p2 3 
+f 2 p3 
+f p3 4 
+f 3 p4 
+f p4 5 
+f 4 p5 
+f p5 5 
+f 7 p6 
+f p6 8 
+f 8 p7 
+f p7 9 
+f 8 p8 
+f p8 10 
+f 8 p9 
+f p9 11 
+f 9 p10 
+f p10 12 
+f 10 p11 
+f p11 12 
+f 11 p12 
+f p12 12 
+f 12 p13 
+f p13 13 
+f 13 p14 
+f p14 14 
+f 14 p15 
+f p15 15 
+f 14 p16 
+f p16 16 
+f 14 p17 
+f p17 18 
+f 15 p18 
+f p18 17 
+f 16 p19 
+f p19 29 
+f 17 p20 
+f p20 20 
+f 20 p21 
+f p21 21 
+f 21 p22 
+f p22 22 
+f 22 p23 
+f p23 23 
+f 23 p24 
+f p24 24 
+f 24 p25 
+f p25 25 
+f 25 p26 
+f p26 26 
+f 26 p27 
+f p27 27 
+f 27 p28 
+f p28 28 
+f 28 p29 
+f p29 29 
+f 29 p30 
+f p30 30 
+f 30 p31 
+f p31 31 
+f 5 p32 
+f p32 6 
+f 6 p33 
+f p33 7 
+f 19 p34 
+f p34 29 
+f 18 p35 
+f p35 19 
+f pini0 1 
+f 31 pfin0 

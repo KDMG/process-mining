@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autodue>
+    <subdue>
+        <prefix>/var/www/html/ESub/GraphManager/browsing_workflow2/files/fineExp</prefix>
+        <graphname>fineExp.g</graphname>
+        <bindir>/opt/subdue-master/bin</bindir>
+        <nthreads>1</nthreads>
+        <img>png</img>
+        <exp>
+            <iterations>
+                <value>10000</value>
+            </iterations>
+            <beam>
+                <value>4</value>
+            </beam>
+            <parameters/>
+            <measures>
+                <cov>true</cov>
+                <rep>true</rep>
+                <div>true</div>
+                <verbose>true</verbose>
+                <keepfiles>true</keepfiles>
+            </measures>
+        </exp>
+        
+    </subdue>
+</autodue>

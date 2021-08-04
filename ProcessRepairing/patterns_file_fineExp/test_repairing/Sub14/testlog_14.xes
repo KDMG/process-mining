@@ -1,0 +1,1539 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log xes.version="1849-2016">
+  <trace>
+    <string key="concept:name" value="S111699"/>
+    <string key="variant" value="Variant 126"/>
+    <int key="variant-index" value="126"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2006-07-13T00:00:00.000+02:00"/>
+      <float key="amount" value="35.0"/>
+      <string key="org:resource" value="11"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="7"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2006-12-04T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="22.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2006-12-21T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2006-12-21T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-02-02T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-02-19T00:00:00.000+01:00"/>
+      <float key="amount" value="71.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-04-10T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-04-19T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-05-15T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="92.0"/>
+      <float key="paymentAmount" value="92.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S112486"/>
+    <string key="variant" value="Variant 176"/>
+    <int key="variant-index" value="176"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2006-12-20T00:00:00.000+01:00"/>
+      <float key="amount" value="138.0"/>
+      <string key="org:resource" value="56"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="C"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="146"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-04-05T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="22.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-05-16T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-06-27T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-07-06T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-08-26T00:00:00.000+02:00"/>
+      <float key="amount" value="275.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-21T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-27T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-01-23T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="149.0"/>
+      <float key="paymentAmount" value="149.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-02-22T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="298.0"/>
+      <float key="paymentAmount" value="149.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S120737"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-07-18T00:00:00.000+02:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value="49"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="158"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-10-31T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-12T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-19T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-01-18T00:00:00.000+01:00"/>
+      <float key="amount" value="148.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S123702"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-12-29T00:00:00.000+01:00"/>
+      <float key="amount" value="143.0"/>
+      <string key="org:resource" value="56"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="146"/>
+      <int key="points" value="6"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-02-09T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-02-20T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-02-20T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-04-20T00:00:00.000+02:00"/>
+      <float key="amount" value="285.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S128931"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-08-22T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="854"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="7"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-12-10T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.5"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-12-22T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-02T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-03-03T00:00:00.000+01:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S130468"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-09-22T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="852"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="M"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="158"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-03T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.5"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-03-15T00:00:00.000+01:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S144491"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-09-18T00:00:00.000+02:00"/>
+      <float key="amount" value="38.0"/>
+      <string key="org:resource" value="856"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="158"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2010-01-19T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.5"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2010-02-05T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2010-02-05T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2010-04-06T00:00:00.000+02:00"/>
+      <float key="amount" value="77.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="A28658"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-04-01T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="559"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-06-05T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-06-13T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-06-23T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-08-22T00:00:00.000+02:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S165080"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-08-10T00:00:00.000+02:00"/>
+      <float key="amount" value="39.0"/>
+      <string key="org:resource" value="46"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-04T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="15.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-20T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-20T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-19T00:00:00.000+01:00"/>
+      <float key="amount" value="79.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="A32727"/>
+    <string key="variant" value="Variant 133"/>
+    <int key="variant-index" value="133"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-07-08T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="566"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-09-11T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="26.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-09-23T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-09-23T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-11-22T00:00:00.000+01:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-12-15T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-02-04T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-02-07T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2010-10-15T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S174235"/>
+    <string key="variant" value="Variant 91"/>
+    <int key="variant-index" value="91"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-08-20T00:00:00.000+02:00"/>
+      <float key="amount" value="39.0"/>
+      <string key="org:resource" value="857"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="7"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-08T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="15.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-28T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-11-04T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-01-03T00:00:00.000+01:00"/>
+      <float key="amount" value="79.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-01-24T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="54.0"/>
+      <float key="paymentAmount" value="54.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S174777"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-10-26T00:00:00.000+02:00"/>
+      <float key="amount" value="39.0"/>
+      <string key="org:resource" value="45"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="7"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-01-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="15.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-01-24T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-01-27T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-03-27T00:00:00.000+02:00"/>
+      <float key="amount" value="79.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2012-04-11T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="#"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="A34027"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-08-03T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="541"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="7"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-10-21T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.5"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-11-03T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-11-03T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-02T00:00:00.000+01:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-01-30T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S60717"/>
+    <string key="variant" value="Variant 91"/>
+    <int key="variant-index" value="91"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2001-04-09T00:00:00.000+02:00"/>
+      <float key="amount" value="32.8"/>
+      <string key="org:resource" value="11"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="158"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2001-06-07T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="11.88"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2001-06-29T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2001-07-11T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2001-09-09T00:00:00.000+02:00"/>
+      <float key="amount" value="65.6"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-01-29T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="77.48"/>
+      <float key="paymentAmount" value="77.48"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S73249"/>
+    <string key="variant" value="Variant 195"/>
+    <int key="variant-index" value="195"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-07-06T00:00:00.000+02:00"/>
+      <float key="amount" value="32.0"/>
+      <string key="org:resource" value="833"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-05T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="10.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-12T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-12T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-13T00:00:00.000+02:00"/>
+      <string key="org:resource" value="0"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="AppealToJudge"/>
+      <int key="matricola" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-13T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-11-11T00:00:00.000+01:00"/>
+      <float key="amount" value="65.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-11-29T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="42.0"/>
+      <float key="paymentAmount" value="42.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="A39656"/>
+    <string key="variant" value="Variant 52"/>
+    <int key="variant-index" value="52"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-05-01T00:00:00.000+02:00"/>
+      <float key="amount" value="38.0"/>
+      <string key="org:resource" value="550"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-07-28T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.5"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-08-03T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-08-03T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2009-10-02T00:00:00.000+02:00"/>
+      <float key="amount" value="77.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2011-09-07T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="#"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="V12383"/>
+    <string key="variant" value="Variant 125"/>
+    <int key="variant-index" value="125"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-07-08T00:00:00.000+02:00"/>
+      <float key="amount" value="137.55"/>
+      <string key="org:resource" value="29"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="142"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-11-03T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="16.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-11-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-11-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-12-22T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-01-09T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-01-13T00:00:00.000+01:00"/>
+      <float key="amount" value="275.1"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-03-27T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="V8809"/>
+    <string key="variant" value="Variant 127"/>
+    <int key="variant-index" value="127"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-03-26T00:00:00.000+01:00"/>
+      <float key="amount" value="131.0"/>
+      <string key="org:resource" value="28"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="142"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-06-10T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="10.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-06-18T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-06-19T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-06-19T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-08-18T00:00:00.000+02:00"/>
+      <float key="amount" value="262.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-06-18T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="147.55"/>
+      <float key="paymentAmount" value="147.55"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="V9180"/>
+    <string key="variant" value="Variant 127"/>
+    <int key="variant-index" value="127"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-06-20T00:00:00.000+02:00"/>
+      <float key="amount" value="131.0"/>
+      <string key="org:resource" value="28"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="142"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-05T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="10.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-11T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-11T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-12T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-11-10T00:00:00.000+01:00"/>
+      <float key="amount" value="262.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-05-20T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="141.0"/>
+      <float key="paymentAmount" value="141.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="A14194"/>
+    <string key="variant" value="Variant 91"/>
+    <int key="variant-index" value="91"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-06-21T00:00:00.000+02:00"/>
+      <float key="amount" value="36.0"/>
+      <string key="org:resource" value="557"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-10-31T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="18.6"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-13T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-11-13T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-01-12T00:00:00.000+01:00"/>
+      <float key="amount" value="74.0"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2008-10-10T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="92.6"/>
+      <float key="paymentAmount" value="92.6"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N41192"/>
+    <string key="variant" value="Variant 125"/>
+    <int key="variant-index" value="125"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-10-02T00:00:00.000+02:00"/>
+      <float key="amount" value="32.0"/>
+      <string key="org:resource" value="541"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-01-15T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="16.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-01-31T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-02-03T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-02-28T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-03-28T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-04-04T00:00:00.000+02:00"/>
+      <float key="amount" value="65.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-07-23T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N41527"/>
+    <string key="variant" value="Variant 92"/>
+    <int key="variant-index" value="92"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-02-23T00:00:00.000+01:00"/>
+      <float key="amount" value="32.0"/>
+      <string key="org:resource" value="550"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-04-27T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="25.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-05-06T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-05-06T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-05-23T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-07-05T00:00:00.000+02:00"/>
+      <float key="amount" value="65.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-07-10T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-10-25T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N43645"/>
+    <string key="variant" value="Variant 126"/>
+    <int key="variant-index" value="126"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-08-11T00:00:00.000+02:00"/>
+      <float key="amount" value="32.0"/>
+      <string key="org:resource" value="536"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-12T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-18T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-09-18T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-10-14T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-11-17T00:00:00.000+01:00"/>
+      <float key="amount" value="65.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-12-14T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-03-12T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-04-26T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Payment"/>
+      <float key="totalPaymentAmount" value="75.0"/>
+      <float key="paymentAmount" value="75.0"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N43871"/>
+    <string key="variant" value="Variant 92"/>
+    <int key="variant-index" value="92"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-07-23T00:00:00.000+02:00"/>
+      <float key="amount" value="32.0"/>
+      <string key="org:resource" value="538"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-10-25T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="13.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-11-07T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-11-13T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="N"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2002-12-02T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-01-12T00:00:00.000+01:00"/>
+      <float key="amount" value="65.5"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-01-30T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2003-04-02T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-12-25T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N63049"/>
+    <string key="variant" value="Variant 92"/>
+    <int key="variant-index" value="92"/>
+    <string key="creator" value="Fluxicon Disco"/>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-09-10T00:00:00.000+02:00"/>
+      <float key="amount" value="33.6"/>
+      <string key="org:resource" value="546"/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="CreateFine"/>
+      <string key="vehicleClass" value="A"/>
+      <float key="totalPaymentAmount" value="0.0"/>
+      <int key="article" value="157"/>
+      <int key="points" value="0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2004-12-24T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendFine"/>
+      <float key="expense" value="16.0"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-01-04T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AppealToPrefecture"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-01-11T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="Notification"/>
+      <string key="notificationType" value="P"/>
+      <string key="lastSent" value="P"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-03-11T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="dismissal" value="NIL"/>
+      <string key="concept:name" value="SendAppeal"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-03-12T00:00:00.000+01:00"/>
+      <float key="amount" value="68.77"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="AddPenalty"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-06-07T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="ReceiveResults"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2005-07-19T00:00:00.000+02:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="NotifyOffenders"/>
+    </event>
+    <event>
+      <string key="lifecycle:transition" value="complete"/>
+      <date key="time:timestamp" value="2007-02-28T00:00:00.000+01:00"/>
+      <string key="org:resource" value=""/>
+      <string key="concept:name" value="SendForCreditCollection"/>
+    </event>
+  </trace>
+</log>

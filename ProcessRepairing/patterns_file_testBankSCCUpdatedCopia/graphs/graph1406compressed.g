@@ -1,0 +1,10 @@
+v 1 FRPP
+v 2 SUB_39
+v 3 SUB_73
+v 4 SUB_362
+
+e 3 4 FRPP__REPP
+e 4 2 SRPP__RIBPC
+e 1 4 FRPP__FRPP
+e 2 1 SRPP__FRPP
+

@@ -1,0 +1,33 @@
+Pattern:  ['4']
+Sub Selected:  4
+Numero di grafi in cui occorre la sub: 278
+Graph Selected:  graph1  Matching Cost:  1.0
+Subgraph:  ['Instance', '1:', 'v', '20', 'EPP', 'v', '21', 'SLRRP', 'v', '22', 'LRERV', 'v', '23', 'LRIRV', 'v', '24', 'FLRRP', 'v', '25', 'LRRR', 'v', '26', 'FRP', 'd', '20', '21', 'EPP__SLRRP', 'd', '21', '22', 'SLRRP__LRERV', 'd', '23', '24', 'LRIRV__FLRRP', 'd', '22', '24', 'LRERV__FLRRP', 'd', '24', '25', 'FLRRP__LRRR', 'd', '25', '26', 'LRRR__FRP', 'Found', '1', 'instances.']
+Sub iniziale:  ['EPP', 'SLRRP', 'LRERV', 'LRIRV', 'FLRRP', 'LRRR', 'FRP']
+Trace:  trace_0
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]REPP', '[L]REPP', '[L/M]SRPP', '[L/M]RIBPC', '[L/M]REPC', '[L/M]RBPC', '[L/M]FRPP', '[L/M]REPP', '[L/M]FRPP', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]REPC', '[L/M]SRPP', '[L/M]EPP', '[L/M]SLRRP', '[L/M]LRERV', '[L/M]LRIRV', '[M-REAL]LRRR', '[L/M]FLRRP', '[L]LRRR', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '24', 'FLRRP', 'v', '25', 'LRRR', 'd', '24', '25', 'FLRRP__LRRR', 'Found', '1', 'instances.']
+Sub semplificata:  ['FLRRP', 'LRRR']
+Start:  24
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9494252873563218, 'activated_transitions': [SRP, SRPP, RBPC, RIBPC, REPC, FRPP, REPP, SRPP, RIBPC, REPC, RBPC, FRPP, REPP, FRPP, RBPC, RIBPC, REPC, SRPP, EPP, SLRRP, LRERV, LRIRV], 'reached_marking': ['n8:1', 'n9:1'], 'enabled_transitions_in_marking': {LRRR}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 29, 'remaining_tokens': 2, 'produced_tokens': 30}]
+Reached Marking:  ['n8', 'n9']
+End:  25
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.96875, 'activated_transitions': [SRP, SRPP, RBPC, RIBPC, REPC, FRPP, REPP, SRPP, RIBPC, REPC, RBPC, FRPP, REPP, FRPP, RBPC, RIBPC, REPC, SRPP, EPP, SLRRP, LRERV, LRIRV, LRRR, FLRRP], 'reached_marking': ['n16:1'], 'enabled_transitions_in_marking': {FRP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 32, 'remaining_tokens': 1, 'produced_tokens': 32}]
+Reached Marking:  ['n16']
+Added:  FLRRP s6 --> n57
+Added:  n57 --> LRRR s7
+Added: n8 -- > FLRRP s6
+Added: n9 -- > FLRRP s6
+Added: LRRR s7 -- > n16
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 33.666666666666664, 'averageFitness': 0.9439449732128425, 'percentage_of_fitting_traces': 33.666666666666664, 'average_trace_fitness': 0.9439449732128425}
+Precision:  0.9051936452948659
+Generalization:  0.9647124990276427
+Simplicity:  0.7111111111111111
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 33.666666666666664, 'averageFitness': 0.9439449732128425, 'percentage_of_fitting_traces': 33.666666666666664, 'average_trace_fitness': 0.9439449732128425}
+Precision:  0.9051936452948659
+Generalization:  0.9647124990276427
+Simplicity:  0.7111111111111111

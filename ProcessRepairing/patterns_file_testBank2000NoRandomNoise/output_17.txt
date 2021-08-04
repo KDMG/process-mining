@@ -1,0 +1,34 @@
+Pattern:  ['17']
+Sub Selected:  17
+Numero di grafi in cui occorre la sub: 203
+Graph Selected:  graph1032  Matching Cost:  7.0
+Subgraph:  ['Instance', '1:', 'v', '7', 'EPP', 'v', '8', 'SRP', 'v', '9', 'FRP', 'v', '12', 'HRHA', 'v', '13', 'HRRAN', 'v', '15', 'HRRR', 'v', '16', 'FHRRP', 'v', '17', 'FRP', 'd', '12', '15', 'HRHA__HRRR', 'd', '13', '15', 'HRRAN__HRRR', 'd', '15', '16', 'HRRR__FHRRP', 'd', '16', '17', 'FHRRP__FRP', 'd', '7', '8', 'EPP__SRP', 'd', '9', '12', 'FRP__HRHA', 'd', '9', '13', 'FRP__HRRAN', 'd', '8', '9', 'SRP__FRP', 'Found', '1', 'instances.']
+Sub iniziale:  ['EPP', 'SRP', 'FRP', 'HRHA', 'HRRAN', 'HRRR', 'FHRRP', 'FRP']
+Trace:  trace_1377
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]REPC', '[L/M]RIBPC', '[L/M]FRPP', '[L/M]EPP', '[L]SRP', '[M-REAL]SHRRP', '[L]FRP', '[L/M]SHRRPC', '[L/M]MHRRPC', '[L/M]HRHA', '[L/M]HRRAN', '[L/M]FHRRPC', '[L/M]HRRR', '[L/M]FHRRP', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '8', 'SRP', 'v', '9', 'FRP', 'd', '8', '9', 'SRP__FRP', 'Found', '1', 'instances.']
+Sub semplificata:  ['SRP', 'FRP']
+Start:  8
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9, 'activated_transitions': [SRP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP], 'reached_marking': ['n17:1'], 'enabled_transitions_in_marking': {SLRRP, SHRRP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 10, 'remaining_tokens': 1, 'produced_tokens': 10}]
+Reached Marking:  ['n17']
+End:  9
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8391608391608392, 'activated_transitions': [SRP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP, SHRRP], 'reached_marking': ['n1:1', 'n4:1', 'n5:1'], 'enabled_transitions_in_marking': {HRRAN, SHRRPC, HRHA}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 11, 'remaining_tokens': 3, 'produced_tokens': 13}]
+Reached Marking:  ['n4', 'n5', 'n1']
+Added:  SRP s10 --> n59
+Added:  n59 --> FRP s11
+Added: n17 -- > SRP s10
+Added: FRP s11 -- > n4
+Added: FRP s11 -- > n5
+Added: FRP s11 -- > n1
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 60.266666666666666, 'averageFitness': 0.9864838767956429, 'percentage_of_fitting_traces': 60.266666666666666, 'average_trace_fitness': 0.9864838767956429}
+Precision:  0.867741278214213
+Generalization:  0.9615133314148817
+Simplicity:  0.6481481481481483
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 60.266666666666666, 'averageFitness': 0.9864838767956429, 'percentage_of_fitting_traces': 60.266666666666666, 'average_trace_fitness': 0.9864838767956429}
+Precision:  0.867741278214213
+Generalization:  0.9615133314148817
+Simplicity:  0.6481481481481483

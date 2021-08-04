@@ -1,0 +1,36 @@
+Pattern:  ['50']
+Sub Selected:  50
+Numero di grafi in cui occorre la sub: 123
+Graph Selected:  graph108  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '1', 'start', 'v', '2', 'A-SUBMITTED', 'v', '3', 'A-PREACCEPTED', 'v', '4', 'W-Afhandelenleads', 'v', '5', 'A-DECLINED', 'v', '6', 'W-Completerenaanvraag', 'v', '7', 'end', 'd', '1', '2', 'start__A-SUBMITTED', 'd', '2', '3', 'A-SUBMITTED__A-PREACCEPTED', 'd', '3', '4', 'A-PREACCEPTED__W-Afhandelenleads', 'd', '4', '5', 'W-Afhandelenleads__A-DECLINED', 'd', '5', '6', 'A-DECLINED__W-Completerenaanvraag', 'd', '6', '7', 'W-Completerenaanvraag__end', 'Found', '1', 'instances.']
+Sub iniziale:  ['start', 'A-SUBMITTED', 'A-PREACCEPTED', 'W-Afhandelenleads', 'A-DECLINED', 'W-Completerenaanvraag', 'end']
+Trace:  174240
+Alignment: ['[L/M]start', '[L/M]A-SUBMITTED', '[L/M]A-PREACCEPTED', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]W-Afhandelenleads', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L/M]A-DECLINED', '[M-INVI]tau from tree', '[M-INVI]tau from tree', '[L]W-Completerenaanvraag', '[L/M]end']
+Subgraph semplificata:  ['Instance', '1:', 'v', '4', 'W-Afhandelenleads', 'v', '5', 'A-DECLINED', 'v', '6', 'W-Completerenaanvraag', 'd', '4', '5', 'W-Afhandelenleads__A-DECLINED', 'd', '5', '6', 'A-DECLINED__W-Completerenaanvraag', 'Found', '1', 'instances.']
+Sub semplificata:  ['W-Afhandelenleads', 'A-DECLINED', 'W-Completerenaanvraag']
+Start:  4
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.75, 'activated_transitions': [start, A-SUBMITTED, A-PREACCEPTED], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {A-ACCEPTED, W-Completerenaanvraag, W-Beoordelenfraude, W-Validerenaanvraag, A-DECLINED, A-PREACCEPTED, W-Afhandelenleads, end, W-Nabellenincompletedossiers, A-APPROVED}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 4, 'remaining_tokens': 1, 'produced_tokens': 4}]
+Reached Marking:  ['n7']
+End:  6
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9, 'activated_transitions': [start, A-SUBMITTED, A-PREACCEPTED, n31, n55, W-Afhandelenleads, n31, n55, A-DECLINED], 'reached_marking': ['n7:1'], 'enabled_transitions_in_marking': {A-ACCEPTED, W-Validerenaanvraag, A-DECLINED, W-Completerenaanvraag, W-Beoordelenfraude, A-PREACCEPTED, W-Afhandelenleads, end, W-Nabellenincompletedossiers, A-APPROVED}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 10, 'remaining_tokens': 1, 'produced_tokens': 10}]
+Reached Marking:  ['n7']
+Added:  W-Afhandelenleads s1 --> n59
+Added:  n59 --> A-DECLINED s2
+Added:  A-DECLINED s2 --> n60
+Added:  n60 --> W-Completerenaanvraag s3
+Added: n7 -- > W-Afhandelenleads s1
+Added: W-Completerenaanvraag s3 -- > n7
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 46.41180415828303, 'averageFitness': 0.9218568502558983, 'percentage_of_fitting_traces': 46.41180415828303, 'average_trace_fitness': 0.9218568502558983}
+Precision:  0.5429712083071114
+Generalization:  0.9120472697281271
+Simplicity:  0.6888888888888889
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 46.41180415828303, 'averageFitness': 0.9218568502558983, 'percentage_of_fitting_traces': 46.41180415828303, 'average_trace_fitness': 0.9218568502558983}
+Precision:  0.5429712083071114
+Generalization:  0.9120472697281271
+Simplicity:  0.6888888888888889

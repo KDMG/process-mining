@@ -1,0 +1,10 @@
+v 1 RBPC
+v 2 SRPP
+v 3 SUB_51
+v 4 SUB_122
+
+e 3 4 REPC__EPP
+e 3 1 FRPP__RBPC
+e 2 4 SRPP__EPP
+e 1 2 RBPC__SRPP
+

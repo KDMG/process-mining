@@ -1,0 +1,14 @@
+// Subdue 5.2.2 output in dot format
+
+digraph Subdue {
+
+  compound=true;
+
+subgraph cluster_SUB_1 {
+  1 [label="Sub_25",color=black,fontcolor=black];
+  2 [label="Sub_212",color=black,fontcolor=black];
+  1 -> 2 [label="interleaving",color=black,fontcolor=black];
+  label="SUB_1";
+}
+
+}

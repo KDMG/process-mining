@@ -1,0 +1,34 @@
+Pattern:  ['8']
+Sub Selected:  8
+Numero di grafi in cui occorre la sub: 187
+Graph Selected:  graph1000  Matching Cost:  7.0
+Subgraph:  ['Instance', '1:', 'v', '7', 'EPP', 'v', '8', 'SHRRP', 'v', '12', 'HRRAN', 'v', '13', 'HRHA', 'v', '14', 'EPP', 'v', '15', 'SLRRP', 'd', '7', '8', 'EPP__SHRRP', 'd', '8', '12', 'SHRRP__HRRAN', 'd', '8', '13', 'SHRRP__HRHA', 'd', '14', '15', 'EPP__SLRRP', 'd', '12', '14', 'HRRAN__EPP', 'd', '13', '14', 'HRHA__EPP', 'Found', '1', 'instances.']
+Sub iniziale:  ['EPP', 'SHRRP', 'HRRAN', 'HRHA', 'EPP', 'SLRRP']
+Trace:  trace_1335
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]EPP', '[L/M]SHRRP', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]FHRRPC', '[L/M]HRRAN', '[L/M]HRHA', '[L]EPP', '[L]SLRRP', '[M-REAL]HRRR', '[M-REAL]FHRRP', '[M-REAL]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '14', 'EPP', 'v', '15', 'SLRRP', 'd', '14', '15', 'EPP__SLRRP', 'Found', '1', 'instances.']
+Sub semplificata:  ['EPP', 'SLRRP']
+Start:  14
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.8854166666666667, 'activated_transitions': [SRP, SRPP, RIBPC, RBPC, REPC, FRPP, EPP, SHRRP, SHRRPC, AHRRPC, FHRRPC, HRRAN, HRHA], 'reached_marking': ['n10:1', 'n11:1', 'n12:1'], 'enabled_transitions_in_marking': {HRRR, RHRRPC}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 16, 'remaining_tokens': 3, 'produced_tokens': 18}]
+Reached Marking:  ['n11', 'n10', 'n12']
+End:  15
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [SRP, SRPP, RIBPC, RBPC, REPC, FRPP, EPP, SHRRP, SHRRPC, AHRRPC, FHRRPC, HRRAN, HRHA, HRRR, FHRRP, FRP], 'reached_marking': ['n15:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 21, 'remaining_tokens': 0, 'produced_tokens': 21}]
+Reached Marking:  ['n15']
+Added:  EPP s8 --> n58
+Added:  n58 --> SLRRP s9
+Added: n11 -- > EPP s8
+Added: n10 -- > EPP s8
+Added: n12 -- > EPP s8
+Added: SLRRP s9 -- > n15
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 44.46666666666667, 'averageFitness': 0.9706394564511205, 'percentage_of_fitting_traces': 44.46666666666667, 'average_trace_fitness': 0.9706394564511205}
+Precision:  0.8993719061052856
+Generalization:  0.9626219691461384
+Simplicity:  0.6767676767676768
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 44.46666666666667, 'averageFitness': 0.9706394564511205, 'percentage_of_fitting_traces': 44.46666666666667, 'average_trace_fitness': 0.9706394564511205}
+Precision:  0.8993719061052856
+Generalization:  0.9626219691461384
+Simplicity:  0.6767676767676768

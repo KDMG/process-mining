@@ -1,0 +1,11 @@
+v 1 HRRR
+v 2 SUB_1
+v 3 SUB_38
+v 4 SUB_48
+v 5 SUB_489
+
+e 5 2 FLRRP__SRPP
+e 2 1 FRPP__HRRR
+e 1 3 HRRR__REPP
+e 3 4 SRPP__REPP
+

@@ -1,0 +1,8 @@
+v 1 HRRAN
+v 2 SUB_2
+v 3 SUB_82
+
+e 2 2 LRIRV__LRRR
+e 3 2 SRPP__EPP
+e 2 1 FRP__HRRAN
+

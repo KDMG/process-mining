@@ -1,0 +1,12 @@
+v 1 SRP
+v 2 LRERV
+v 3 SUB_27
+v 4 SUB_35
+v 5 SUB_82
+
+e 2 4 LRERV__LRRR
+e 5 3 SRPP__EPP
+e 3 1 SLRRP__SRP
+e 1 2 SRP__LRERV
+e 1 4 SRP__LRIRV
+

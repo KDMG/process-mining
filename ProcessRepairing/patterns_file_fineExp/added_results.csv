@@ -1,0 +1,11 @@
+;Sub;petriNet_PercFitTraces;petriNet_Fitness;petriNet_Precision;petriNet_Simp;petriNet_arcs;petriNet_trans;petriNet_places;NLNI_PercFitTraces;NLNI_Fitness;NLNI_Precision;NLNI_Simp;NLNI_arcs;NLNI_trans;NLNI_places;YLNI_PercFitTraces;YLNI_Fitness;YLNI_Precision;YLNI_Simp;YLNI_arcs;YLNI_trans;YLNI_places
+0;Sub14;;;;;40;20;9;;;;;48;24;10;;;;;60;30;11
+1;Sub19;;;;;40;20;9;;;;;48;24;10;;;;;54;27;10
+2;Sub24;;;;;46;23;12;;;;;48;24;10;;;;;50;25;10
+3;Sub28;;;;;40;20;9;;;;;52;26;11;;;;;58;29;11
+4;Sub30;;;;;42;21;10;;;;;60;30;13;;;;;64;32;13
+5;Sub33;;;;;40;20;9;;;;;44;22;9;;;;;48;24;9
+6;Sub50;;;;;40;20;9;;;;;40;20;9;;;;;44;22;9
+7;Sub56;;;;;40;20;9;;;;;48;24;10;;;;;52;26;10
+8;Sub58;;;;;40;20;9;;;;;56;28;11;;;;;68;34;13
+9;Sub7;;;;;40;20;9;;;;;44;22;9;;;;;50;25;9

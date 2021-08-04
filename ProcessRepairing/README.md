@@ -19,7 +19,7 @@ However, you may need few test to find out the import path working in your syste
 To run the script, open a terminal in the "scripts" folder and run the following command: python .\Repairing.py nameDataset NumSubToRepair.
 The script will generate all the results in the 'patterns_file' folder. If you want to check the content of the sub, you can inspect the submeasures table in the mysql database,
 where you will find all the identifiers and the contents of the subs you can use for the repair. In each folder, there is a "test_repairing" folder where repairing results are listed for each sub
-tested in the experiments described in the paper.
+tested in the experiments described in the paper. Important: note that the event log for the "fine" dataset has been compressed for technical reason. Be sure you uncompress it before running the experiments.
 
 Please report problems or bugs to l.genga@tue.nl
 

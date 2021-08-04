@@ -1,0 +1,12 @@
+Pattern:  ['29']
+Sub Selected:  29
+Numero di grafi in cui occorre la sub: 121
+Graph Selected:  graph1014  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '1', 'SRP', 'v', '2', 'FRPP', 'v', '3', 'RIBPC', 'v', '4', 'RBPC', 'v', '5', 'REPC', 'v', '6', 'SRPP', 'v', '7', 'REPP', 'v', '8', 'SRPP', 'v', '9', 'RBPC', 'v', '10', 'RIBPC', 'v', '11', 'REPC', 'v', '12', 'FRPP', 'd', '7', '8', 'REPP__SRPP', 'd', '8', '9', 'SRPP__RBPC', 'd', '8', '10', 'SRPP__RIBPC', 'd', '8', '11', 'SRPP__REPC', 'd', '9', '12', 'RBPC__FRPP', 'd', '10', '12', 'RIBPC__FRPP', 'd', '11', '12', 'REPC__FRPP', 'd', '1', '2', 'SRP__FRPP', 'd', '2', '3', 'FRPP__RIBPC', 'd', '2', '4', 'FRPP__RBPC', 'd', '2', '5', 'FRPP__REPC', 'd', '5', '6', 'REPC__SRPP', 'd', '4', '6', 'RBPC__SRPP', 'd', '3', '6', 'RIBPC__SRPP', 'd', '6', '7', 'SRPP__REPP', 'Found', '1', 'instances.']
+Sub iniziale:  ['SRP', 'FRPP', 'RIBPC', 'RBPC', 'REPC', 'SRPP', 'REPP', 'SRPP', 'RBPC', 'RIBPC', 'REPC', 'FRPP']
+Trace:  trace_1355
+Alignment: ['[L/M]SRP', '[L/M]FRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L/M]SRPP', '[L/M]REPP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]EPP', '[L/M]SHRRP', '[L/M]HRHA', '[L/M]HRRAN', '[L/M]SHRRPC', '[L/M]MHRRPC', '[L/M]FHRRPC', '[L/M]RHRRPC', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]FHRRPC', '[L/M]HRRR', '[L/M]FHRRP', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'Found', '1', 'instances.']
+Sub semplificata:  []
+
+ Riparazione non necessaria, sub compliant:

@@ -1,0 +1,135 @@
+Sub Selected:  77
+Numero di grafi in cui occorre la sub: 78
+Graph Selected:  graph1043  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '33', 'SHRRPC', 'v', '34', 'FHRRPC', 'd', '33', '34', 'SHRRPC__FHRRPC', 'Found', '1', 'instances.']
+Sub iniziale:  ['SHRRPC', 'FHRRPC']
+Trace:  trace_1044
+Alignment: ['[L]AHRRPC', '[L/M]SRP', '[L/M]SRPP', '[L/M]REPC', '[L]LRERV', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]FRPP', '[L/M]REPP', '[L/M]SRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]REPP', '[L]FRPP', '[M-REAL]SRPP', '[L/M]REPC', '[L/M]RIBPC', '[L/M]RBPC', '[L]SRPP', '[M-REAL]FRPP', '[L/M]EPP', '[L/M]SHRRP', '[L/M]HRRAN', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]HRHA', '[L/M]FHRRPC', '[L/M]RHRRPC', '[L/M]SHRRPC', '[L/M]AHRRPC', '[L/M]FHRRPC', '[L/M]RHRRPC', '[L/M]SHRRPC', '[M-REAL]AHRRPC', '[L/M]FHRRPC', '[L/M]HRRR', '[L/M]FHRRP', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '34', 'FHRRPC', 'Found', '1', 'instances.']
+Sub semplificata:  ['FHRRPC']
+Start:  34
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9493421052631579, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RIBPC, RBPC, REPC, FRPP, REPP, SRPP, REPC, RIBPC, RBPC, FRPP, EPP, SHRRP, HRRAN, SHRRPC, AHRRPC, HRHA, FHRRPC, RHRRPC, SHRRPC, AHRRPC, FHRRPC, RHRRPC, SHRRPC], 'reached_marking': ['n10:1', 'n12:1', 'n3:1'], 'enabled_transitions_in_marking': {MHRRPC, AHRRPC}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 38, 'remaining_tokens': 3, 'produced_tokens': 40}]
+Reached Marking:  ['n10', 'n12', 'n3']
+End:  34
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9517857142857142, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RIBPC, RBPC, REPC, FRPP, REPP, SRPP, REPC, RIBPC, RBPC, FRPP, EPP, SHRRP, HRRAN, SHRRPC, AHRRPC, HRHA, FHRRPC, RHRRPC, SHRRPC, AHRRPC, FHRRPC, RHRRPC, SHRRPC, AHRRPC, FHRRPC], 'reached_marking': ['n10:1', 'n11:1', 'n12:1'], 'enabled_transitions_in_marking': {HRRR, RHRRPC}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 40, 'remaining_tokens': 3, 'produced_tokens': 42}]
+Reached Marking:  ['n10', 'n12', 'n11']
+Added: n10 -- > FHRRPC s1
+Added: n12 -- > FHRRPC s1
+Added: n3 -- > FHRRPC s1
+Added: FHRRPC s1 -- > n10
+Added: FHRRPC s1 -- > n12
+Added: FHRRPC s1 -- > n11
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 0.10025062656641603, 'averageFitness': 0.8461772081401345}
+Precision:  0.9604604873850127
+Generalization:  0.9684726048496041
+Simplicity:  0.6623376623376623
+graph1044 1.0 ##############################################################################
+New Alignment  trace_1045:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('FRPP', '>>'), ('FRPP', '>>')), (('>>', 'n43'), ('>>', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('SRPP', '>>'), ('SRPP', '>>')), (('>>', 'n47'), ('>>', 'FRPP')), (('REPP', 't1'), ('REPP', 'REPP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SRP', '>>'), ('SRP', '>>')), (('FRP', '>>'), ('FRP', '>>')), (('>>', 'n41'), ('>>', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('>>', 'n27'), ('>>', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FRPP', '>>'), ('FRPP', '>>')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 90000, 'queued_states': 158, 'visited_states': 113, 'closed_set_length': 22, 'num_visited_markings': 29, 'exact_heu_calculations': 69, 'fitness': 0.775}]
+La sub non e' stata percorsa nell'alignment!
+Tracce in cui la sub non è stata percorsa:  1
+Usate:  0
+Non usate:  17
+graph110 1.0 ##############################################################################
+New Alignment  trace_109:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('FRPP', '>>'), ('FRPP', '>>')), (('>>', 'n43'), ('>>', 'SRPP')), (('>>', 'n44'), ('>>', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('SRPP', '>>'), ('SRPP', '>>')), (('>>', 'n47'), ('>>', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 50000, 'queued_states': 82, 'visited_states': 47, 'closed_set_length': 19, 'num_visited_markings': 25, 'exact_heu_calculations': 19, 'fitness': 0.8387096774193549}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  1
+Usate:  0
+Non usate:  16
+graph1480 1.0 ##############################################################################
+New Alignment  trace_1483:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 10000, 'queued_states': 89, 'visited_states': 55, 'closed_set_length': 19, 'num_visited_markings': 28, 'exact_heu_calculations': 36, 'fitness': 0.967741935483871}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  1
+Usate:  0
+Non usate:  15
+graph1505 1.0 ##############################################################################
+New Alignment  trace_1508:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('FRPP', '>>'), ('FRPP', '>>')), (('>>', 'n43'), ('>>', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('SRPP', '>>'), ('SRPP', '>>')), (('EPP', '>>'), ('EPP', '>>')), (('>>', 'n47'), ('>>', 'FRPP')), (('>>', 'n49'), ('>>', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('>>', 'n30'), ('>>', 'HRRAN')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 120000, 'queued_states': 119, 'visited_states': 82, 'closed_set_length': 20, 'num_visited_markings': 26, 'exact_heu_calculations': 42, 'fitness': 0.6470588235294117}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  1
+Usate:  0
+Non usate:  14
+graph176 1.0 ##############################################################################
+New Alignment  trace_175:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('FRPP', '>>'), ('FRPP', '>>')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 10000, 'queued_states': 96, 'visited_states': 55, 'closed_set_length': 18, 'num_visited_markings': 25, 'exact_heu_calculations': 30, 'fitness': 0.972972972972973}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  1
+Usate:  0
+Non usate:  13
+graph1801 1.0 ##############################################################################
+New Alignment  trace_1805:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('REPP', 't1'), ('REPP', 'REPP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('FLRRP', '>>'), ('FLRRP', '>>')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('>>', 'n27'), ('>>', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 70000, 'queued_states': 150, 'visited_states': 91, 'closed_set_length': 18, 'num_visited_markings': 28, 'exact_heu_calculations': 57, 'fitness': 0.8333333333333334}]
+La sub non e' stata percorsa nell'alignment!
+Tracce in cui la sub non è stata percorsa:  2
+Usate:  0
+Non usate:  12
+graph197 1.0 ##############################################################################
+New Alignment  trace_196:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('FRPP', '>>'), ('FRPP', '>>')), (('RBPC', '>>'), ('RBPC', '>>')), (('>>', 'n43'), ('>>', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('SRPP', '>>'), ('SRPP', '>>')), (('EPP', '>>'), ('EPP', '>>')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('SRP', '>>'), ('SRP', '>>')), (('FRP', '>>'), ('FRP', '>>')), (('>>', 'n47'), ('>>', 'FRPP')), (('>>', 'n49'), ('>>', 'EPP')), (('>>', 'n41'), ('>>', 'SHRRP')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 100000, 'queued_states': 114, 'visited_states': 69, 'closed_set_length': 22, 'num_visited_markings': 27, 'exact_heu_calculations': 32, 'fitness': 0.736842105263158}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  2
+Usate:  0
+Non usate:  11
+graph1970 1.0 ##############################################################################
+New Alignment  trace_1974:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 10000, 'queued_states': 82, 'visited_states': 51, 'closed_set_length': 18, 'num_visited_markings': 25, 'exact_heu_calculations': 32, 'fitness': 0.967741935483871}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  2
+Usate:  0
+Non usate:  10
+graph24 1.0 ##############################################################################
+New Alignment  trace_23:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRAN', '>>'), ('HRRAN', '>>')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 60000, 'queued_states': 140, 'visited_states': 87, 'closed_set_length': 22, 'num_visited_markings': 30, 'exact_heu_calculations': 49, 'fitness': 0.85}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  2
+Usate:  0
+Non usate:  9
+graph324 1.0 ##############################################################################
+New Alignment  trace_323:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('>>', 'n27'), ('>>', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRP', '>>'), ('SHRRP', '>>')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 20000, 'queued_states': 106, 'visited_states': 63, 'closed_set_length': 21, 'num_visited_markings': 28, 'exact_heu_calculations': 37, 'fitness': 0.9459459459459459}]
+La sub non e' stata percorsa nell'alignment!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  8
+graph521 1.0 ##############################################################################
+New Alignment  trace_522:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('REPP', 't1'), ('REPP', 'REPP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('REPP', '>>'), ('REPP', '>>')), (('REPP', 't1'), ('REPP', 'REPP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('>>', 'n30'), ('>>', 'HRRAN')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 70000, 'queued_states': 131, 'visited_states': 79, 'closed_set_length': 18, 'num_visited_markings': 26, 'exact_heu_calculations': 47, 'fitness': 0.8205128205128205}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  7
+graph56 1.0 ##############################################################################
+New Alignment  trace_55:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SRP', '>>'), ('SRP', '>>')), (('FRP', '>>'), ('FRP', '>>')), (('>>', 'n41'), ('>>', 'SHRRP')), (('>>', 'n31'), ('>>', 'HRHA')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('MHRRPC', 'n29'), ('MHRRPC', 'MHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 40000, 'queued_states': 75, 'visited_states': 40, 'closed_set_length': 18, 'num_visited_markings': 25, 'exact_heu_calculations': 18, 'fitness': 0.875}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  6
+graph85 1.0 ##############################################################################
+New Alignment  trace_84:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('REPP', '>>'), ('REPP', '>>')), (('REPP', 't1'), ('REPP', 'REPP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SRP', '>>'), ('SRP', '>>')), (('FRP', '>>'), ('FRP', '>>')), (('>>', 'n41'), ('>>', 'SHRRP')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('>>', 'n36'), ('>>', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 50000, 'queued_states': 101, 'visited_states': 60, 'closed_set_length': 18, 'num_visited_markings': 26, 'exact_heu_calculations': 35, 'fitness': 0.8571428571428572}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  5
+graph93 1.0 ##############################################################################
+New Alignment  trace_92:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('>>', 'n43'), ('>>', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 10000, 'queued_states': 54, 'visited_states': 23, 'closed_set_length': 18, 'num_visited_markings': 25, 'exact_heu_calculations': 4, 'fitness': 0.967741935483871}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  4
+graph13 2.0 ##############################################################################
+New Alignment  trace_12:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 0, 'queued_states': 43, 'visited_states': 16, 'closed_set_length': 16, 'num_visited_markings': 27, 'exact_heu_calculations': 1, 'fitness': 1}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  3
+graph151 2.0 ##############################################################################
+New Alignment  trace_150:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('FRPP', '>>'), ('FRPP', '>>')), (('>>', 'n43'), ('>>', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('SRPP', '>>'), ('SRPP', '>>')), (('EPP', '>>'), ('EPP', '>>')), (('>>', 'n47'), ('>>', 'FRPP')), (('>>', 'n49'), ('>>', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 110000, 'queued_states': 90, 'visited_states': 61, 'closed_set_length': 18, 'num_visited_markings': 28, 'exact_heu_calculations': 35, 'fitness': 0.5925925925925926}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  2
+graph1560 2.0 ##############################################################################
+New Alignment  trace_1563:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('REPC', 'n46'), ('REPC', 'REPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SRP', '>>'), ('SRP', '>>')), (('FRP', '>>'), ('FRP', '>>')), (('>>', 'n41'), ('>>', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('RHRRPC', 'n38'), ('RHRRPC', 'RHRRPC')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('AHRRPC', 'n27'), ('AHRRPC', 'AHRRPC')), (('FHRRPC', 'n28'), ('FHRRPC', 'FHRRPC')), (('EPP', '>>'), ('EPP', '>>')), (('EPP', '>>'), ('EPP', '>>')), (('SLRRP', '>>'), ('SLRRP', '>>')), (('>>', 'n36'), ('>>', 'HRRR')), (('>>', 'n37'), ('>>', 'FHRRP')), (('>>', 'n39'), ('>>', 'FRP'))], 'cost': 90000, 'queued_states': 135, 'visited_states': 86, 'closed_set_length': 20, 'num_visited_markings': 27, 'exact_heu_calculations': 51, 'fitness': 0.7272727272727273}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  1
+graph1776 2.0 ##############################################################################
+New Alignment  trace_1780:  [{'alignment': [(('SRP', 'n42'), ('SRP', 'SRP')), (('SRPP', 'n43'), ('SRPP', 'SRPP')), (('RIBPC', 'n45'), ('RIBPC', 'RIBPC')), (('RBPC', 'n44'), ('RBPC', 'RBPC')), (('REPC', 'n46'), ('REPC', 'REPC')), (('FRPP', 'n47'), ('FRPP', 'FRPP')), (('EPP', 'n49'), ('EPP', 'EPP')), (('SHRRP', 'n41'), ('SHRRP', 'SHRRP')), (('SHRRPC', 'n50'), ('SHRRPC', 'SHRRPC')), (('HRRAN', 'n30'), ('HRRAN', 'HRRAN')), (('HRHA', 'n31'), ('HRHA', 'HRHA')), (('FHRRPC', 's1'), ('FHRRPC', 'FHRRPC')), (('HRRR', 'n36'), ('HRRR', 'HRRR')), (('FHRRP', 'n37'), ('FHRRP', 'FHRRP')), (('FRP', 'n39'), ('FRP', 'FRP'))], 'cost': 0, 'queued_states': 43, 'visited_states': 16, 'closed_set_length': 16, 'num_visited_markings': 27, 'exact_heu_calculations': 1, 'fitness': 1}]
+La sub fitta perfettamente!
+Tracce in cui la sub non è stata percorsa:  3
+Usate:  0
+Non usate:  0

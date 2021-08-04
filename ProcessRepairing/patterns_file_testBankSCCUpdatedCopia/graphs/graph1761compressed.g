@@ -1,0 +1,15 @@
+v 1 REPP
+v 2 HRHA
+v 3 EPP
+v 4 REPP
+v 5 SUB_1
+v 6 SUB_96
+v 7 SUB_129
+
+e 7 1 FRPP__REPP
+e 5 3 FRPP__EPP
+e 1 2 REPP__HRHA
+e 2 5 HRHA__SRPP
+e 3 4 EPP__REPP
+e 4 6 REPP__SLRRP
+

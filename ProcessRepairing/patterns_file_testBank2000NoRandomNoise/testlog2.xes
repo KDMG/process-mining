@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?><log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7"><string key="lifecycle:model" value="standard"/><string key="creator" value="Fluxicon Disco"/><string key="library" value="Fluxicon Octane"/><string key="concept:name" value="Test.xes"/>
+<trace><string key="concept:name" value="trace_test"/>
+<event><string key="concept:name" value="SRP"/></event>
+<event><string key="concept:name" value="SRPP"/></event>
+<event><string key="concept:name" value="RBPC"/></event>
+<event><string key="concept:name" value="RIBPC"/></event>
+<event><string key="concept:name" value="REPC"/></event>
+<event><string key="concept:name" value="FRPP"/></event>
+<event><string key="concept:name" value="REPP"/></event>
+<event><string key="concept:name" value="SRPP"/></event>
+<event><string key="concept:name" value="RIBPC"/></event>
+<event><string key="concept:name" value="REPC"/></event>
+<event><string key="concept:name" value="RBPC"/></event>
+<event><string key="concept:name" value="FRPP"/></event>
+<event><string key="concept:name" value="REPP"/></event>
+<event><string key="concept:name" value="FRPP"/></event>
+<event><string key="concept:name" value="RBPC"/></event>
+<event><string key="concept:name" value="RIBPC"/></event>
+<event><string key="concept:name" value="REPC"/></event>
+<event><string key="concept:name" value="SRPP"/></event>
+<event><string key="concept:name" value="EPP"/></event>
+<event><string key="concept:name" value="SLRRP"/></event>
+<event><string key="concept:name" value="LRERV"/></event>
+<event><string key="concept:name" value="LRIRV"/></event>
+<event><string key="concept:name" value="FLRRP"/></event>
+<event><string key="concept:name" value="FRP"/></event>
+</trace>
+</log>

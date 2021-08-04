@@ -1,0 +1,33 @@
+Sub Selected:  57
+Numero di grafi in cui occorre la sub: 287
+Graph Selected:  graph10  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '16', 'SRP', 'v', '17', 'FRP', 'd', '16', '17', 'SRP__FRP', 'Found', '1', 'instances.']
+Sub iniziale:  ['SRP', 'FRP']
+Trace:  trace_9
+Alignment: ['[L/M]SRP', '[L/M]SRPP', '[L/M]REPC', '[L/M]RBPC', '[L/M]RIBPC', '[L/M]FRPP', '[L]REPP', '[L/M]REPP', '[L/M]SRPP', '[L/M]RBPC', '[L/M]REPC', '[L/M]RIBPC', '[L/M]FRPP', '[L/M]EPP', '[L]LRRR', '[L]SRP', '[L]FRP', '[M-REAL]SHRRP', '[L/M]SHRRPC', '[L/M]MHRRPC', '[L/M]HRRAN', '[L/M]HRHA', '[L/M]FHRRPC', '[L/M]HRRR', '[L/M]FHRRP', '[M-REAL]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '16', 'SRP', 'v', '17', 'FRP', 'd', '16', '17', 'SRP__FRP', 'Found', '1', 'instances.']
+Sub semplificata:  ['SRP', 'FRP']
+Start:  16
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9444444444444444, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP], 'reached_marking': ['n17:1'], 'enabled_transitions_in_marking': {SHRRP, SLRRP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 18, 'remaining_tokens': 1, 'produced_tokens': 18}]
+Reached Marking:  ['n17']
+End:  17
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9022556390977444, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RBPC, REPC, RIBPC, FRPP, EPP, SHRRP], 'reached_marking': ['n1:1', 'n4:1', 'n5:1'], 'enabled_transitions_in_marking': {HRHA, SHRRPC, HRRAN}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 19, 'remaining_tokens': 3, 'produced_tokens': 21}]
+Reached Marking:  ['n5', 'n4', 'n1']
+Added:  SRP s1 --> n51
+Added:  n51 --> FRP s2
+Added: n17 -- > SRP s1
+Added: FRP s2 -- > n5
+Added: FRP s2 -- > n4
+Added: FRP s2 -- > n1
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 0.15037593984962405, 'averageFitness': 0.8575777102084842}
+Precision:  0.9509193208077966
+Generalization:  0.9701805876449007
+Simplicity:  0.7066666666666667
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!
+Fitness:  {'percFitTraces': 0.15037593984962405, 'averageFitness': 0.8575777102084842}
+Precision:  0.9509193208077966
+Generalization:  0.9701805876449007
+Simplicity:  0.7066666666666667

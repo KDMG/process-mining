@@ -1,0 +1,66 @@
+p p1
+p p2
+p p3
+p p4
+p p5
+p p6
+p p7
+p p8
+p p9
+p p10
+p p11
+p p12
+p p13
+p p14
+p p15
+p p16
+p pini0
+p pfin0
+t 1
+t 2
+t 3
+t 4
+t 5
+t 6
+t 7
+t 8
+t 9
+t 10
+t 11
+t 12
+t 13
+t 14
+f 1 p1 
+f p1 2 
+f 2 p2 
+f p2 3 
+f 2 p3 
+f p3 4 
+f 2 p4 
+f p4 5 
+f 7 p5 
+f p5 8 
+f 8 p6 
+f p6 9 
+f 9 p7 
+f p7 10 
+f 9 p8 
+f p8 11 
+f 11 p9 
+f p9 12 
+f 10 p10 
+f p10 12 
+f 3 p11 
+f p11 6 
+f 4 p12 
+f p12 6 
+f 5 p13 
+f p13 6 
+f 6 p14 
+f p14 7 
+f 12 p15 
+f p15 13 
+f 13 p16 
+f p16 14 
+f pini0 1 
+f 14 pfin0 

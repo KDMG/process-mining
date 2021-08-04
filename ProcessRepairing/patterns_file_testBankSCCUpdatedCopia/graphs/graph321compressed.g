@@ -1,0 +1,8 @@
+v 1 LRIRV
+v 2 SUB_126
+v 3 SUB_211
+
+e 2 3 FRPP__EPP
+e 1 2 LRIRV__FRPP
+e 2 1 RBPC__LRIRV
+

@@ -1,0 +1,8 @@
+v 1 REPC
+v 2 SUB_180
+v 3 SUB_435
+
+e 1 3 REPC__FRPP
+e 2 3 REPP__RIBPC
+e 2 1 REPP__REPC
+

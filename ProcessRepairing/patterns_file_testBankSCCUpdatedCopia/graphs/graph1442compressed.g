@@ -1,0 +1,15 @@
+v 1 SRP
+v 2 REPC
+v 3 RBPC
+v 4 SUB_39
+v 5 SUB_107
+v 6 SUB_172
+
+e 1 2 SRP__REPC
+e 1 3 SRP__RBPC
+e 1 4 SRP__RIBPC
+e 6 1 FRPP__SRP
+e 3 4 RBPC__SRPP
+e 2 4 REPC__SRPP
+e 4 5 SRPP__EPP
+

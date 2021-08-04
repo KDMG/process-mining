@@ -1,0 +1,27 @@
+Sub Selected:  30
+Numero di grafi in cui occorre la sub: 7
+Graph Selected:  graph2707  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '1', 'CreateFine', 'v', '2', 'AppealToPrefecture', 'v', '3', 'SendAppeal', 'v', '4', 'SendFine', 'd', '1', '2', 'CreateFine__AppealToPrefecture', 'd', '3', '4', 'SendAppeal__SendFine', 'd', '2', '3', 'AppealToPrefecture__SendAppeal', 'Found', '1', 'instances.']
+Sub iniziale:  ['CreateFine', 'AppealToPrefecture', 'SendAppeal', 'SendFine']
+Trace:  S62223
+Alignment: ['[L/M]CreateFine', '[L]AppealToPrefecture', '[L]SendAppeal', '[L/M]SendFine', '[L/M]Payment', '[M-INVI]Inv2']
+Subgraph semplificata:  ['Instance', '1:', 'v', '2', 'AppealToPrefecture', 'v', '3', 'SendAppeal', 'd', '2', '3', 'AppealToPrefecture__SendAppeal', 'Found', '1', 'instances.']
+Sub semplificata:  ['AppealToPrefecture', 'SendAppeal']
+Start:  2
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, n28], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 3, 'remaining_tokens': 0, 'produced_tokens': 3}]
+Reached Marking:  ['n3']
+End:  3
+Token-based Replay:  [{'trace_is_fit': True, 'trace_fitness': 1.0, 'activated_transitions': [CreateFine, n28], 'reached_marking': ['n3:1'], 'enabled_transitions_in_marking': set(), 'transitions_with_problems': [], 'missing_tokens': 0, 'consumed_tokens': 3, 'remaining_tokens': 0, 'produced_tokens': 3}]
+Reached Marking:  ['n3']
+Added:  AppealToPrefecture s1 --> n29
+Added:  n29 --> SendAppeal s2
+Added: n3 -- > AppealToPrefecture s1
+Added: SendAppeal s2 -- > n3
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 97.63525055002118, 'averageFitness': 0.9964878535332033}
+Precision:  0.8564374596706835
+Generalization:  0.8895238368173716
+Simplicity:  0.5849056603773586
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!

@@ -1,0 +1,638 @@
+S
+v 1 Sub_665
+v 2 Sub_258
+d 2 1 eventually
+
+S
+v 1 Sub_25
+v 2 Sub_665
+v 3 Sub_258
+d 1 2 eventually
+d 2 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_212
+v 2 Sub_665
+v 3 Sub_258
+d 1 2 eventually
+d 2 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_657
+v 2 Sub_665
+v 3 Sub_258
+d 1 2 eventually
+d 2 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_666
+v 2 Sub_258
+d 1 2 strictlySeq
+
+S
+v 1 Sub_665
+v 2 Sub_666
+v 3 Sub_258
+d 1 2 interleaving
+
+S
+v 1 Sub_39
+v 2 Sub_666
+v 3 Sub_258
+d 1 2 interleaving
+d 3 2 eventually
+
+S
+v 1 Sub_665
+v 2 Sub_39
+v 3 Sub_666
+v 4 Sub_258
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+d 4 3 eventually
+
+S
+v 1 Sub_25
+v 2 Sub_258
+d 1 2 strictlySeq
+
+S
+v 1 Sub_39
+v 2 Sub_258
+
+S
+v 1 Sub_665
+v 2 Sub_39
+v 3 Sub_258
+d 1 2 interleaving
+d 3 1 eventually
+
+S
+v 1 Sub_212
+v 2 Sub_258
+d 1 2 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 interleaving
+d 1 4 strictlySeq
+d 2 2 eventually
+d 2 3 interleaving
+d 2 4 strictlySeq
+d 3 3 eventually
+d 3 4 strictlySeq
+
+S
+v 1 Sub_657
+v 2 Sub_258
+d 1 2 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_17
+v 2 Sub_258
+d 1 2 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_17
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_212
+v 2 Sub_17
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_17
+v 4 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 strictlySeq
+d 3 4 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_17
+v 4 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 1 4 strictlySeq
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 strictlySeq
+d 3 4 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_17
+v 5 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 1 4 interleaving
+d 1 4 eventually
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 interleaving
+d 2 4 eventually
+d 2 5 strictlySeq
+d 3 1 eventually
+d 3 2 eventually
+d 3 3 eventually
+d 3 4 interleaving
+d 3 4 eventually
+d 3 5 strictlySeq
+d 4 4 eventually
+d 4 5 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_17
+v 3 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 strictlySeq
+d 2 3 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_17
+v 4 Sub_258
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 strictlySeq
+d 3 4 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+
+S
+v 1 Sub_212
+v 2 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 1 4 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 interleaving
+d 3 1 eventually
+d 3 2 eventually
+d 3 3 eventually
+d 3 4 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+
+S
+v 1 Sub_17
+v 2 Sub_127
+d 1 2 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_17
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 strictlySeq
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_212
+v 2 Sub_17
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 strictlySeq
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_17
+v 4 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 strictlySeq
+d 1 4 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 strictlySeq
+d 2 4 interleaving
+d 3 4 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_17
+v 4 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 strictlySeq
+d 1 4 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 strictlySeq
+d 2 4 interleaving
+d 3 4 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_17
+v 5 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 eventually
+d 1 4 interleaving
+d 1 4 strictlySeq
+d 1 5 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 eventually
+d 2 4 interleaving
+d 2 4 strictlySeq
+d 2 5 interleaving
+d 3 1 eventually
+d 3 2 eventually
+d 3 3 eventually
+d 3 4 interleaving
+d 3 4 strictlySeq
+d 3 5 interleaving
+d 4 5 interleaving
+
+S
+v 1 Sub_657
+v 2 Sub_17
+v 3 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 strictlySeq
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_17
+v 4 Sub_127
+d 1 1 eventually
+d 1 2 interleaving
+d 1 2 eventually
+d 1 3 interleaving
+d 1 3 strictlySeq
+d 1 4 interleaving
+d 2 1 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 3 strictlySeq
+d 2 4 interleaving
+d 3 4 interleaving
+
+S
+v 1 Sub_124
+v 2 Sub_1051
+d 1 2 interleaving
+
+S
+v 1 Sub_57
+v 2 Sub_124
+v 3 Sub_1051
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_227
+v 2 Sub_1051
+d 1 2 interleaving
+
+S
+v 1 Sub_124
+v 2 Sub_227
+v 3 Sub_1051
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_57
+v 2 Sub_124
+v 3 Sub_227
+v 4 Sub_1051
+d 1 2 interleaving
+d 1 3 interleaving
+d 1 4 interleaving
+d 2 3 interleaving
+d 2 4 interleaving
+d 3 4 interleaving
+
+S
+v 1 Sub_57
+v 2 Sub_227
+v 3 Sub_1051
+d 1 2 interleaving
+d 1 3 interleaving
+d 2 3 interleaving
+
+S
+v 1 Sub_57
+v 2 Sub_1051
+d 1 2 interleaving
+
+S
+v 1 Sub_665
+v 2 Sub_416
+d 1 2 strictlySeq
+
+S
+v 1 Sub_666
+v 2 Sub_416
+d 1 2 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_416
+d 1 2 eventually
+d 1 2 strictlySeq
+
+S
+v 1 Sub_39
+v 2 Sub_416
+d 1 2 strictlySeq
+
+S
+v 1 Sub_212
+v 2 Sub_416
+d 1 2 eventually
+d 1 2 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_416
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 eventually
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_416
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 eventually
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_416
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 interleaving
+d 1 4 eventually
+d 1 4 strictlySeq
+d 2 2 eventually
+d 2 3 interleaving
+d 2 4 eventually
+d 2 4 strictlySeq
+d 3 3 eventually
+d 3 4 eventually
+d 3 4 strictlySeq
+
+S
+v 1 Sub_657
+v 2 Sub_416
+d 1 2 eventually
+d 1 2 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_416
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 eventually
+d 1 3 strictlySeq
+d 2 2 eventually
+d 2 3 eventually
+d 2 3 strictlySeq
+
+S
+v 1 Sub_25
+v 2 Sub_665
+d 1 2 eventually
+d 2 1 eventually
+
+S
+v 1 Sub_212
+v 2 Sub_665
+d 1 2 eventually
+d 2 1 eventually
+
+S
+v 1 Sub_25
+v 2 Sub_212
+v 3 Sub_665
+d 1 2 interleaving
+d 1 3 eventually
+d 2 3 eventually
+d 3 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_657
+v 2 Sub_212
+v 3 Sub_665
+d 1 2 interleaving
+d 1 3 eventually
+d 2 3 eventually
+d 3 1 eventually
+d 3 2 eventually
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_212
+v 4 Sub_665
+d 1 1 eventually
+d 1 2 interleaving
+d 1 3 interleaving
+d 1 4 eventually
+d 2 2 eventually
+d 2 3 interleaving
+d 2 4 eventually
+d 3 3 eventually
+d 3 4 eventually
+d 4 1 eventually
+d 4 2 eventually
+d 4 3 eventually
+
+S
+v 1 Sub_657
+v 2 Sub_665
+d 1 2 eventually
+d 2 1 eventually
+
+S
+v 1 Sub_25
+v 2 Sub_657
+v 3 Sub_665
+d 1 2 interleaving
+d 1 3 eventually
+d 2 3 eventually
+d 3 1 eventually
+d 3 2 eventually
+

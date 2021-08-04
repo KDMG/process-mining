@@ -1,0 +1,31 @@
+Sub Selected:  71
+Numero di grafi in cui occorre la sub: 333
+Graph Selected:  graph1005  Matching Cost:  0.0
+Subgraph:  ['Instance', '1:', 'v', '17', 'LRRR', 'v', '18', 'FRP', 'd', '17', '18', 'LRRR__FRP', 'Found', '1', 'instances.']
+Sub iniziale:  ['LRRR', 'FRP']
+Trace:  trace_1006
+Alignment: ['[L]FRPP', '[M-REAL]SRP', '[M-REAL]SRPP', '[L/M]REPC', '[L/M]RBPC', '[L/M]RIBPC', '[L]SRPP', '[M-REAL]FRPP', '[L/M]REPP', '[L/M]SRPP', '[L/M]RIBPC', '[L/M]RBPC', '[L/M]REPC', '[L/M]FRPP', '[L/M]EPP', '[L/M]SLRRP', '[L/M]LRERV', '[L/M]LRIRV', '[M-REAL]LRRR', '[L/M]FLRRP', '[L]LRRR', '[L/M]FRP']
+Subgraph semplificata:  ['Instance', '1:', 'v', '17', 'LRRR', 'Found', '1', 'instances.']
+Sub semplificata:  ['LRRR']
+Start:  17
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9583333333333334, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RIBPC, RBPC, REPC, FRPP, EPP, SLRRP, LRERV, LRIRV, LRRR, FLRRP], 'reached_marking': ['n16:1'], 'enabled_transitions_in_marking': {FRP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 24, 'remaining_tokens': 1, 'produced_tokens': 24}]
+Reached Marking:  ['n16']
+End:  17
+Token-based Replay:  [{'trace_is_fit': False, 'trace_fitness': 0.9583333333333334, 'activated_transitions': [SRP, SRPP, REPC, RBPC, RIBPC, FRPP, REPP, SRPP, RIBPC, RBPC, REPC, FRPP, EPP, SLRRP, LRERV, LRIRV, LRRR, FLRRP], 'reached_marking': ['n16:1'], 'enabled_transitions_in_marking': {FRP}, 'transitions_with_problems': [], 'missing_tokens': 1, 'consumed_tokens': 24, 'remaining_tokens': 1, 'produced_tokens': 24}]
+Reached Marking:  ['n16']
+Added: n16 -- > LRRR s1
+Added: LRRR s1 -- > n16
+
+Valutazione rete riparata:
+Fitness:  {'percFitTraces': 0.05012531328320802, 'averageFitness': 0.8506818566798398}
+Precision:  0.9631971465629053
+Generalization:  0.9712928873426918
+Simplicity:  0.7391304347826086
+
+Tutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!
+
+Valutazione rete riparata finale:
+Fitness:  {'percFitTraces': 0.05012531328320802, 'averageFitness': 0.8506818566798398}
+Precision:  0.9631971465629053
+Generalization:  0.9712928873426918
+Simplicity:  0.7391304347826086
