@@ -15,7 +15,7 @@ for s in sub:
     # Modello Rete
     net, initial_marking, final_marking = pnml_importer.apply('../patterns_file/reti_Fahland/repaired_'+s+'_adjusted.pnml')
 
-    print("\nValutazione rete sub_" + s + ":")
+    print("\nEvaluation of net sub_" + s + ":")
 
     fitness = replay_evaluator.apply(log, net, initial_marking, final_marking,
                                          variant=replay_evaluator.Variants.ALIGNMENT_BASED)
