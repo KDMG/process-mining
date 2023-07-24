@@ -29,9 +29,9 @@ import argparse
 from pm4py.objects.petri_net.exporter import exporter as pnml_exporter
 from pm4py.objects.log.exporter.xes import exporter as xes_exporter
 
-""" serve per splittare il file con le sub e ritorna una lista
-INPUT: -pathubfile: path al "*_new_patterns_filtered.subs"
-RETURN: -a: lista subfile
+""" Function to split the file containing subs. It returns a list
+INPUT: -pathubfile: path to the file (e.g. *_new_patterns_filtered.subs)
+RETURN: -a: list of sub files
 """
 
 
@@ -52,9 +52,9 @@ def split_subgraph(pathsubfile):
 
 
 """
-INPUT: -sub_ocmatrix_file: path al *_table2_on_file.csv matrice delle occorrenze dei sub
+INPUT: -sub_ocmatrix_file: path to the occurrence matrix for the subs (e.g., *_table2_on_file.csv)
        -subname: subgraph
-RETURN: la lista dei graph in cui occorre il subgraph passato come argomento
+RETURN: list of graphs in which the input subgraph occurs
 """
 
 
@@ -71,8 +71,8 @@ def list_graph_occurence(sub_ocmatrix_file, subname):
 
 
 """ 
-INPUT: -lista: lista di interi
-RETURN: -max: massimo della lista
+INPUT: -lista: list of strings representing integers
+RETURN: -max: max number in the list
 """
 
 
@@ -87,8 +87,8 @@ def massimo_lista(lista):
 
 
 """ 
-INPUT: -lista: lista di stringhe
-RETURN: -min: minimo della lista
+INPUT: -lista: list of strings representing integers
+RETURN: -min: min number in the list
 """
 
 
@@ -103,8 +103,8 @@ def minimo_lista(lista):
 
 
 """
-INPUT: -places: set di place della rete
-RETURN: -new_place: il nome da poter dare ad un nuovo place
+INPUT: -places: set of places in a net
+RETURN: -new_place: the available name for a new place
 """
 
 
@@ -129,8 +129,8 @@ def places_name_available(places, transitions):
 
 
 """
-INPUT: -transations: set di transation della rete
-RETURN: -new_transation: il nome da poter dare ad una nuova transation
+INPUT: -transations: set of transition of the net
+RETURN: -new_transation: an available name for a new transition
 """
 
 
@@ -154,8 +154,8 @@ def transition_hidden_available(transitions):
 
 
 """
-INPUT: -transations: set di transation della rete
-RETURN: -new_transation: il nome da poter dare ad una nuova transation
+INPUT: -transations: set of transitions in the net
+RETURN: -new_transation: an available name for a new transition
 """
 
 
@@ -179,16 +179,16 @@ def transition_name_available(transitions):
 
 
 """
-INPUT: -percorso_file: bpmdemo2_new_patterns_filtered.subs lista pattern con rispettivi sub 
-RETURN: lista di pattern come lista di liste di sub
+INPUT: -path_file: list of patterns with corresponding subs (e.g., bpmdemo2_new_patterns_filtered.subs)
+RETURN: list of patterns (as a list of lists of subs)
 """
 
 
 # "*_new_patterns_filtered.subs"
-def create_patterns_list(percorso_file):
+def create_patterns_list(path_file):
     patterns = []
     sub = []
-    a = split_subgraph(percorso_file)
+    a = split_subgraph(path_file)
     for y in a:
         if y != ['S'] and y[0] != 'd':
             sub.append(y[2][4:])
@@ -201,9 +201,9 @@ def create_patterns_list(percorso_file):
 
 
 """
-INPUT: -pattern_file: bpmdemo2_new_patterns_filtered.subs lista pattern con rispettivi sub 
-       -pattern_number: numero di pattern nella lista
-RETURN: lista di sub del pattern scelto
+INPUT: -pattern_file: list of patterns with corresponding subs (e.g., bpmdemo2_new_patterns_filtered.subs)
+       -pattern_number: index of the pattern in the list
+RETURN: list of sub for the input pattern
 """
 
 
@@ -215,9 +215,9 @@ def list_sub_pattern(pattern_file, pattern_number):
 
 
 """
-INPUT: -n: numero di sub
-       -sub_file: path a nomedataset.subs file lista di tutte i subgraph
-RETURN: ritorna l'IG della sub 
+INPUT: -n: index of a sub
+       -sub_file: path to a file containing the list of all subgraphs (e.g., nomedataset.subs) 
+RETURN: the instance graph of the input sub
 """
 
 
@@ -242,9 +242,9 @@ def sub_graph(n, sub_file):
 
 
 """
+The function writes the file sub_sgiso_input.txt that can be used as a first argument for the sgiso tool
 INPUT: -subgrap: sub risultato di sub_graph()
-       -pattern: path "../patterns_file/"
-RETURN: Scrive il file sub_sgiso_input.txt da dare come primo argomento ad sgiso
+       -pattern: the path "../patterns_file/" 
 """
 
 
@@ -256,12 +256,12 @@ def write_subfile(subgrap, pattern):
     file.close()
 
 
-"""  x stampa di output su file
-INPUT: -output: stringa da scrivere nel file
-       -pattern: path "../patterns_file/"
+"""  The function prints the input string to a file
+INPUT: -output: string to write in the file
+       -pattern: the folder "../patterns_file/"
+       -sub: a string representing the id of the sub 
+       -mod: opening mode for the file
 """
-
-
 def write_outputfile(output, pattern, sub, mod):
     print(output)
     file = open(pattern + "output_" + sub + ".txt", mod)
@@ -271,13 +271,11 @@ def write_outputfile(output, pattern, sub, mod):
 
 
 """
-INPUT: -subgrap: sub risultato di graph_sub()
-       -n: numero di grafo
-       -pattern: path "../patterns_file/"
-RETURN: Scrive i file graphn.g da dare come argomenti a gm
+The function writes files graphn.g that can be used as input for the tool gm
+INPUT: -subgrap: the instance graph of the input sub (i.e. the output of sub_graph())
+       -n: graph number
+       -pattern: the folder "../patterns_file/"
 """
-
-
 def write_graphfile(subgrap, n, pattern):
     subcopy = []
     for x in subgrap:
@@ -309,10 +307,10 @@ def write_graphfile(subgrap, n, pattern):
 
 
 """
-INPUT: -sub_number: numero di sub da passare al metodo sub_graph per ottenere IG della sub
-       -graph_number: numero del grafo (IG della trace) da passare ad sgiso
-       -pattern: path "../patterns_file/"
-RETURN: risultato di sgiso
+INPUT: -sub_number: the number of a sub (it will be used to get the IG from the sub through sub_graph)
+       -graph_number: the number of the graph (IG of the trace) used as input to sgiso
+       -pattern: folder "../patterns_file/"
+RETURN: the output of the sgiso tool
 """
 
 
@@ -392,8 +390,8 @@ def create_subelements_file(name_database, pattern):
 
 
 """
-INPUT: -graph: sub risultato di find_instances()
-RETURN: start_sub: lista di nodi di start della sub, end_sub: lista di nodi di end della sub.
+INPUT: -graph: a sub (i.e. the output of find_instances())
+RETURN: start_sub: list of start nodes in the sub, end_sub: list of end nodes in the sub.
 """
 
 
@@ -427,8 +425,8 @@ def startend_node(graph):
 
 
 """
-INPUT: -graph: sub risultato di find_instances()
-RETURN: start_sub: lista di nodi di start della sub, end_sub: lista di nodi di end della sub.
+INPUT: -graph: a sub (i.e. the output of find_instances())
+RETURN: start_sub: list of starting nodes of the sub, end_sub: list of ending nodes in the sub
 """
 
 
@@ -455,9 +453,9 @@ def startend_graph(graph):
 
 
 """
-INPUT: -graph_number: numero di grafo
-       -pattern: path "../patterns_file/"
-RETURN: identificativo di alignment
+INPUT: -graph_number: the number of a graph
+       -pattern: the folder "../patterns_file/"
+RETURN: id for the alignment
 """
 
 
@@ -483,8 +481,8 @@ def get_id_mapping(graph_number, pattern):
     return y4
 
 
-""" crea il dizionario con numTrace e traceId facendo query al db
-RETURN: -dict_traceid: dizionario con 'numTrace':'idTrace'
+""" The function creates the dict with numTrace and traceId by querying the db
+RETURN: -dict_traceid: a dict with pairs 'numTrace':'idTrace'
 """
 
 
@@ -497,11 +495,11 @@ def create_dict_trace(name_database):
     return dict_traceid
 
 
-""" restituisce dal log l'oggetto trace corrispondente al graph passato in argomento
-INPUT: -log: EventLog
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -graph: numTrace
-RETURN: -trace: oggetto di tipo Trace contenente la trace in esame
+""" The function returns from the log the trace object corresponding to the input graph
+INPUT: -log: an event log
+       -dict_trace: a dictionary of pairs idTrace and numTrace
+       -graph: the number of the trace
+RETURN: -trace: an object of type Trace containing the target trace
 """
 
 
@@ -513,8 +511,8 @@ def search_trace(log, dict_trace, graph):
     return trace
 
 
-""" serve per sapere che tipo di mossa e quella nell' alignment
-INPUT: -move: tupla dell'alignment con label delle transizioni
+""" The functions returns the type of move in an aligment
+INPUT: -move: a tuple of the alignment with labels on trasitions
 RETURN: -"M": move on model
         -"L": move on log
         -"L/M": synchronous move
@@ -530,11 +528,11 @@ def def_move(move):
         return "L/M"
 
 
-""" serve per cercare l'alignment corrispondente al grafo passato in argomento
-INPUT: -pattern: alla cartella contenente tutti i file
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -graph: numTrace
-RETURN: -text: alignment
+""" The functions takes a graph in input and returns the corresponding alignment
+INPUT: -pattern: the folder with the files
+       -dict_trace: a dictionarity with pairs idTrace:numTrace
+       -graph: the number of a trace
+RETURN: -text: the alignment
 """
 
 
@@ -565,11 +563,11 @@ def search_alignment(pattern, dict_trace, graph):
     return text
 
 
-""" serve per controllare che la sub occorra effettivamente ai grafi nella lista
-INPUT: -graph_list: lista di stringhe, nomi dei grafi
-       -subnumber: numero della sub
-       -pattern: path "../patterns_file/"
-RETURN: -graph_list: la lista senza i grafi in cui non occorre la sub
+""" The function checks that the input sub occurs in the graphs in the list
+INPUT: -graph_list: a list of graph names
+       -subnumber: the number of a sub
+       -pattern: the folder "../patterns_file/"
+RETURN: -graph_list: the list containing only graphs with the input sub
 """
 
 
