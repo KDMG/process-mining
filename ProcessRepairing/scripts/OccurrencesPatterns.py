@@ -5,9 +5,9 @@ from progress.bar import Bar
 
 
 """
-INPUT: -dataframe: pandas dataframe della matrice delle occorrenze dei subgraph
+INPUT: -dataframe: Pandas dataframe for the matrix representing the  occurrences of subgraphs
        -subname: subgraph
-RETURN: la colonna delle occorrenze del subgraph passato come argomento
+RETURN: the column representing the occurrences of the input subgraph
 """
 
 
@@ -21,13 +21,13 @@ def count_occurences(dataframe, subname):
 
 
 """ 
-INPUT: -percorso_file: rules_log.txt elenco relazioni d'ordine tra sub di uno stesso patern con graph occurence
-RETURN: lista di righe del file con parole splittate
+INPUT: -path_file: path of a file containing order relations among subs for the same pattern, with graph occurrance (e.g., rules_log.txt)
+RETURN: list of file rows with split words
 """
 
 
-def rules_log_manage(percorso_file):
-    var_lettura = open(percorso_file, "r").readlines()
+def rules_log_manage(path_file):
+    var_lettura = open(path_file, "r").readlines()
     a = []
     for x in var_lettura:
         if x == "file nuovi patterns chiuso\n": break
@@ -40,20 +40,20 @@ def rules_log_manage(percorso_file):
 
 
 """ 
-INPUT: -lista_subgr: pattern cioe lista di sub
-       -rules_log: return di returns_log_manage
-       -len_df: lunghezza del dataframe serve per sapere numero di grafi
-RETURN: lista grafi a cui un pattern occorre
+INPUT: -list_subgr: sub list
+       -rules_log: list of file rows with split words (i.e. the output of rules_log_manage)
+       -len_df: Dataframe length (to know the number of graphs)
+RETURN: list of graphs in which a pattern occurs
 """
 
 
-def count_occurences_multisubs(lista_subgr, rules_log, len_df):
+def count_occurences_multisubs(list_subgr, rules_log, len_df):
 
     sub = []
     relation = []
     column_graphs = []
 
-    for w in lista_subgr:
+    for w in list_subgr:
         if type(w) == str: sub.append(w)
         else: relation.append(w)
 
@@ -131,22 +131,22 @@ def count_occurences_multisubs(lista_subgr, rules_log, len_df):
 
 
 """ 
-INPUT: -dataframe: pandas dataframe della matrice delle occorrenze sub
-       -lista_graf: lista grafi occorrenze pattern
-RETURN: lista grafi a cui un pattern occorre
+INPUT: -dataframe: Pandas dataframe containing a matrix of the sub occurrences
+       -graph_list: list of graph occurrences
+RETURN: list of graphs in which a pattern occurs
 """
 
 
-def count_oc(dataframe,lista_graf):
+def count_oc(dataframe,graph_list):
 
     occuren = []
 
     for x in range(len(dataframe)):
-        trovato = False
-        for y in lista_graf:
+        found = False
+        for y in graph_list:
             if dataframe.loc[x]['grafo'] == y:
-                trovato = True
-        if trovato:
+                found = True
+        if found:
             occuren.append(1)
         else: occuren.append(0)
 
@@ -154,14 +154,14 @@ def count_oc(dataframe,lista_graf):
 
 
 """ 
-INPUT: -percorso_file: *_new_patterns_filtered.subs lista pattern con rispettivi sub 
-RETURN: lista di pattern come lista di liste di sub
+INPUT: -path_file:  path of the file containing the list of patterns with the corresponding sub (e.g., *_new_patterns_filtered.subs)
+RETURN: list of patterns, as a list of lists of subs
 """
 
 
-def create_patterns_list(percorso_file):
+def create_patterns_list(path_file):
 
-    var_lettura2 = open(percorso_file, "r").readlines()
+    var_lettura2 = open(path_file, "r").readlines()
     bar = Bar('Create Pattern List', max=len(var_lettura2))
     a = []
     patterns = []
@@ -204,10 +204,10 @@ def create_patterns_list(percorso_file):
 
 
 """ 
-INPUT: -patterns: return create_patterns_list
-       -df: pandas dataframe
-       -rules: return rules_manage
-RETURN: pandas dataframe matrice delle occorrenze pattern
+INPUT: -patterns:  list of patterns, as a list of lists of subs (i.e., the output of create_patterns_list)
+       -df: Pandas dataframe
+       -rules: list of file rows with split words (e.g., the output of rules_log_manage)
+RETURN: Pandas dataframe representing the matrix of the pattern occurrences
 """
 
 
@@ -250,14 +250,14 @@ def main(path0, datasetname):
 
     data.to_csv(r''+ path + datasetname + '_pattern_occurrence_matrix.csv', index=False)
 
-    return "file creato correttamente!"
+    return "The file has been correctly created."
 
 
 
-parser = argparse.ArgumentParser(description="Crea matrice delle occorrenze dei pattern")
+parser = argparse.ArgumentParser(description="Create the occurrance matrix for the patterns")
 
-parser.add_argument("path", type=str, help="Path della directory contenente: *_table2_on_file.csv | *_new_patterns_filtered.subs | rules_log.txt")
-parser.add_argument("datasetname", type=str, help="Nome del dataset da analizzare")
+parser.add_argument("path", type=str, help="Path of the dir containing: *_table2_on_file.csv | *_new_patterns_filtered.subs | rules_log.txt")
+parser.add_argument("datasetname", type=str, help="Name of the dataset to analyze")
 args = parser.parse_args()
 
 
