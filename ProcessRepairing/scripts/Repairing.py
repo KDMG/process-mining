@@ -586,10 +586,10 @@ def check_graphlist(graph_list, subnumber, pattern):
     return graph_list
 
 
-""" serve per prendere il Raw Fitness Cost dal file alignment.csv relativo alla trace corrispondente al grafo passato in argomento
-INPUT: -pattern: alla cartella contenente tutti i file
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -graph: il nome del grafo
+""" The function gets the Raw Fitness Cost, from file alignment.csv, of the trace corresponding to the input graph
+INPUT: -pattern: folder including the files
+       -dict_trace: a dictionary with pairs idTrace:numTrace
+       -graph: the graph name
 RETURN: -float(cost): Raw Fitness Cost
 """
 
@@ -617,11 +617,11 @@ def search_fitness_cost(pattern, dict_trace, graph):
     return float(cost)
 
 
-""" serve per prendere il Raw Fitness Cost dal file alignment.csv relativo alla trace corrispondente al grafo passato in argomento
-INPUT: -pattern: alla cartella contenente tutti i file
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -graph_list: lista dei grafi in cui occorre la sub considerata
-RETURN: -first_trace: grafo con minore Raw Fitness Cost
+""" The function gets the Raw Fitness Cost, from file alignment.csv, of the trace corresponding to the input graph
+INPUT: -pattern: folder including the files
+       -dict_trace: a dictionary with pairs idTrace:numTrace
+       -graph_list: a list of graphs in which the target sub occurs
+RETURN: -first_trace: a graph with the smallest Raw Fitness Cost
         -mincost: Raw Fitness Cost
 """
 
@@ -643,16 +643,14 @@ def select_graph(pattern, dict_trace, graphlist):
     return first_trace, mincost
 
 
-""" questa funzione va prima ad individuare sull'alignment relativo al grafo passato per argomento
-    la posizione della transizione di start del grafo, contando i synchronous move e log move. 
-    Prende tutte le transizioni prima di questo punto, considerando solo i move on model e synchronous move e applica a queste
-    il token-based replay ottenendo cosi il reached_marking.
-    Per ogni nodo di start.
-INPUT: -pattern: alla cartella contenente tutti i file
-       -dataset: nome del dataset
-       -graph: il nome del grafo/trace
-       -start: lista di nodi di start del grafo
-RETURN: -reached_marking: dizionario 'start':'marking'
+""" The function searches in the input alignment the position of the start transition of the graph, counting synchronous/log moves. 
+    For each start node, it takes all transitions before the identified point, only considering moves on model and synchronous moves. Then it applies a
+    token-based replay, obtaining the reached_marking.
+INPUT: -pattern: the folder containing the files
+       -dataset: the dataset name
+       -trace: the trace name
+       -start: a list of start nodes in the graph
+RETURN: -reached_marking: a dictionary with pairs 'start':'marking'
 """
 
 
@@ -729,16 +727,15 @@ def dirk_marking_start(dataset, start, text, trace, pattern, sub):
     return reached_marking
 
 
-""" questa funzione va prima ad individuare sull'alignment relativo al grafo passato per argomento
-    la posizione della transizione di end del grafo, contando i synchronous move e log move. 
-    Prende tutte le transizioni prima di questo punto, considerando solo i model move e synchronous move e applica a queste
-    il token-based replay ottenendo cosi il reached_marking.
-    Per ogni nodo di end.
-INPUT: -pattern: alla cartella contenente tutti i file
-       -dataset: nome del dataset
-       -graph: il nome del grafo/trace
-       -start: lista di nodi di start del grafo
-RETURN: -reached_marking: dizionario 'end':'marking'
+""" The function searches in the input alignment the position of the end transition of the graph, counting synchronous/log moves. 
+    For each end node, it takes all transitions before the identified point, only considering moves on model and synchronous moves. Then it applies a
+    token-based replay, obtaining the reached_marking.
+INPUT: -pattern: the folder containing the files
+       -dataset: the dataset name
+       -trace: the trace name
+       -end: a list of start nodes in the graph
+RETURN: -reached_marking: a dictionary with pairs 'end':'marking'
+
 """
 
 
@@ -804,12 +801,12 @@ def dirk_marking_end(dataset, end, text, trace, pattern, sub):
     return reached_marking
 
 
-""" serve per semplificare la sub, togliendo la parte che e percorribile nel modello, guardando 
-    l'alignment tagliamo la sub fino a che non incontriamo un move on model o move on log.
-INPUT: -start: lista contenente i nodi di start della sub
-       -text: alignment
-       -subgraph: return di find_instances()
-RETURN: modifica l'oggetto subgraph nella funzione main
+""" The functions simplifies a sub, by removing the part that cannot be followed. 
+By checking the alignment the sub is cut until a move on model/log is found
+INPUT: -start: a list with the start nodes of the sub
+       -text: the alignment
+       -subgraph: the output of find_instances()
+RETURN: a subgraph
 """
 
 
@@ -860,14 +857,15 @@ def start_pre_process_repairing(start, text, subgraph):
     return subgraph
 
 
-""" serve per semplificare la sub, togliendo la parte che e percorribile nel modello, guardando 
-    l'alignment tagliamo la sub dalla fine andando dietro fino a che non incontriamo un move on model o move on log.
-INPUT: -end: lista contenente i nodi di end della sub
-       -text: alignment
-       -subgraph: return di find_instances()
-RETURN: modifica l'oggetto subgraph nella funzione main
-NOTE: 07/21 correzione bug: nel caso in cui il nodo finale fosse [L/M] e prima ci fosse un [M] non veniva eliminato
-                            il nodo finale.
+"""
+ The functions simplifies a sub, by removing the part that cannot be followed. 
+By checking the alignment the sub is cut from the end until a move on model/log is found
+INPUT: -end: a list with the end nodes of the sub
+       -text: the alignment
+       -subgraph: the output of find_instances()
+RETURN: a subgraph
+
+NOTE: 07/21 bug fix: if the final node is [L/M] and before there is a [M], the end node was not correctly deleted.
 """
 
 
@@ -931,13 +929,12 @@ def end_pre_process_repairing(end, text, subgraph):
     return subgraph
 
 
-""" crea la rete di petri del subgraph passato in argomento e ritorna gli oggetti Transitions
-    di inizio e fine in due dizionari
-INPUT: -subgraph: return di find_instances()
-       -net: il modello di rete 
-       -start: lista nodi di start della sub 
-       -end: lista di nodi di end della sub
-RETURN: -start_result, end_result: dizionari 'numero_nodo_start':'oggetto_Transitions_corrispondente'
+""" The function create the Petri net of the input subgraph and returns the start/end Transition objects in two dictionaries
+INPUT: -subgraph: the output of find_instances()
+       -net: the net model
+       -start: list of the sub's start nodes
+       -end: list of the sub's start nodes
+RETURN: -start_result, end_result: dictionaries 'number_node_start':'corresponding_object_Transitions'
 """
 
 
@@ -1007,13 +1004,13 @@ def create_sub_petrinet(subgraph, net, start, end, pattern, sub):
     return start_result, end_result
 
 
-""" ripara con subgraph la rete net
-INPUT: -subgraph: return di find_instances()
-       -net: il modello di rete 
-       -start: lista nodi di start della sub 
-       -end: lista di nodi di end della sub
-       -start_marking: return di dirk_marking_start()
-       -end_marking: return di dirk_marking_end()
+""" The function repairs the subgraph with the net
+INPUT: -subgraph: the output of find_instances()
+       -net: the net model
+       -start: list of the sub's start nodes
+       -end: list of the sub's start nodes
+       -start_marking: the output of dirk_marking_start()
+       -end_marking: the output of  dirk_marking_end()
 """
 
 
@@ -1088,11 +1085,11 @@ def repairing(subgraph, net, initial_marking, final_marking, start, end, start_m
     return start_end_trans, net
 
 
-""" ripara il modello inserendo una hidden transition tra gli ultimi nodi della sub e del modello e il nodo di end
-INPUT: -net: il modello di rete 
-       -arcs: set di archi della rete 
-       -places: set di place della rete
-       -transitions: set di transition della rete
+""" The function repairs the model adding a hidden transition between the last nodes of the subs and the model and the end node
+INPUT: -net: the net model
+       -arcs: set of arcs in the net
+       -places: set of places in the net
+       -transitions: set of transitions in the net
 """
 
 
@@ -1132,12 +1129,12 @@ def hidden_end_transitions(net, arcs, places, transitions, final_marking, patter
             # print("Added: ", h.label, h.name, " --> ", p)
 
 
-""" individua la posizione nell'alignment della sub
-INPUT: -al: alignment
-       -start: name della transizione di start della sub
-       -end: name della transizione di end della sub
-RETURN: -pos_start: indice della lista dell'alignment che contiene il nodo di start
-        -pos_end: indice della lista dell'alignment che contiene il nodo di end
+""" The function finds the position of the alignment in the sub
+INPUT: -al: an alignment
+       -start: the name of the start transition in the sub
+       -end: the name of the end transition in the sub
+RETURN: -pos_start: the index of the alignment list corresponding to the start node
+        -pos_end: the index of the alignment list corresponding to the start node
 """
 
 
@@ -1161,7 +1158,7 @@ def pos_node_alignment(al, start, end):
     return pos_start, pos_end
 
 
-""" Removes an arc from a Petri net
+""" The function removes an arc from a Petri net
 INPUT: -net: Petri net
        -arc: Arc of the Petri net
 RETURNS: -net: Petri net
@@ -1176,12 +1173,13 @@ def remove_arc(net, arc):
     return net
 
 
-""" serve per verificare che la riparazione sia necessaria, controllando se gli archi uscenti dalle due hidden transition (h1,h2) sono diretti agli stessi place
-INPUT: -trans: transition 
-       -tr: transition
-       -places: lista di place della rete
-RETURN: -True: se occorre introdurre la riparazione con le hidden transition
-        -False: se non occorre riparare
+""" The function checks that the repairment is necessary, in case the outgoing arcs of the two hidden transition (h1,h2) 
+are directed to the same places
+INPUT: -trans: a transition 
+       -tr: a transition
+       -places: list of places of the net
+RETURN: -True: if repairment with the hidden transition is necessary
+        -False: if repairment is not necessary
 """
 
 
@@ -1208,20 +1206,21 @@ def check_rep_ltrans(c_trans, c_tr, c_places):
 
 
 
-""" ripara il modello una seconda volta in modo da fa fittare la trace passatagli in argomento, correggendo i move on log passo passo
-INPUT: -trace: oggetto di tipo Trace contenente la trace in esame
-       -start: name della transizione di start
-       -end: name della transizione di end
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello
-       -sub: lista delle label delle transizioni della sub
-       -pattern: path per 'patterns_file'
-       -nsub: numero della sub 
-RETURN: -'U': la sub fitta perfettamente senza aggiunta di archi
-        -'UA': sono stati aggiunti degli archi per far fittare la sub
-        -'UNA': la sub non e stata percorsa nell'alignment
-        -'UNG': E' presente il caso non gestito!
+""" The function repairs the model a second time in order to make the input trace fit, 
+fixing the move on log step by step
+INPUT: -trace: the target trace
+       -start: name of the start transition
+       -end: name of the end transition
+       -net: the net model
+       -initial_marking: initial marking of the model
+       -final_marking: ending marking of the model
+       -sub: list of transition labels for the sub
+       -pattern: path for 'patterns_file'
+       -nsub: number of the sub 
+RETURN: -'U': if the sub is perfectly fitting with no need to add arcs
+        -'UA': some arcs have been added to make the sub fitting
+        -'UNA': the sub was not followed in the alignment
+        -'UNG': the case was not managed
 """
 
 
@@ -1250,9 +1249,9 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
     caso = False
     p = ""
 
-    # CONTROLLO CHE NON CI SIA NELL'ALIGNMENT IL CASO M-L CHE ANCORA NON GESTIAMO
-    # SOLUZIONE DA IMPLEMENTARE:
-    # SE C'È [M/L] INSERIRE UNA HIDDEN TRANSITION TRA L'ATTIVITA PRECEDENTE E LA SUCCESSIVA
+    # Here we check that the case M-L is not in the alignment (still not managed)
+    # To do:
+    # if a [M/L] is present -> add a HIDDEN TRANSITION between the previous and the next activity
     while pos <= pos_end:
         if def_move(move[pos][1]) == 'L' and def_move(move[pos - 1][1]) == 'M' and move[pos - 1][1][1] != None:
             caso = True
@@ -1308,7 +1307,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                                                         name_p.append(place1.name)
                                         else:
                                             write_outputfile(
-                                                "CASO 4) La riparazione non è necessaria [" + str(
+                                                "CASE 4) Repairment is not necessary [" + str(
                                                     trans.name) + ' ' + str(
                                                     trans.label) + ", " + str(tr.name) + ' ' + str(tr.label) + ']',
                                                 pattern, nsub, "a")
@@ -1344,7 +1343,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                                                         name_p.append(place2.name)
                                         else:
                                             write_outputfile(
-                                                "CASO 4) La riparazione non è necessaria [" + str(
+                                                "CASE 4) Repairment is not necessary [" + str(
                                                     trans.name) + ' ' + str(
                                                     trans.label) + ", " + str(tr.name) + ' ' + str(tr.label) + ']',
                                                 pattern, nsub, "a")
@@ -1475,7 +1474,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                                                     # name_p.append(place5.name)
                                     else:
                                         write_outputfile(
-                                            "CASO 4) La riparazione non è necessaria [" + str(trans.name) + ' ' + str(
+                                            "CASE 4) Repairment is not necessary [" + str(trans.name) + ' ' + str(
                                                 trans.label) + ", " + str(tr.name) + ' ' + str(tr.label) + ']',
                                             pattern, nsub, "a")
                     else:
@@ -1513,7 +1512,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                                                         # name_p.append(place5.name)
                                         else:
                                             write_outputfile(
-                                                "CASO 4) La riparazione non è necessaria [" + str(trans.name) + ' ' + str(trans.label) + ", " + str(tr.name) + ' ' + str(tr.label) + ']',
+                                                "CASE 4) Repairment is not necessary [" + str(trans.name) + ' ' + str(trans.label) + ", " + str(tr.name) + ' ' + str(tr.label) + ']',
                                                 pattern, nsub, "a")
             pos = pos + 1
 
@@ -1524,7 +1523,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                     write_outputfile("Deleted:  " + str(a), pattern, nsub, "a")
                 except:
                     write_outputfile(
-                        "!!! ERROR(2): remove_arc failed, ha tentato di rimuovere un arco non esistente " + str(
+                        "!!! ERROR(2): remove_arc failed, trying to remove a nonexistent arc " + str(
                             tr.name) + " - " + str(trans.name), pattern, nsub, "a")
                     continue
         if len(t_to_add) != 0:
@@ -1539,7 +1538,7 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
                 write_outputfile("Added:  " + str(ar[0]) + " --> " + str(ar[1]), pattern, nsub, "a")
                 # print("Added: ", ar[0], " --> ", ar[1])
         if added == 0:
-            write_outputfile("La sub fitta perfettamente!", pattern, nsub, "a")
+            write_outputfile("The sub is perfectly fitting!", pattern, nsub, "a")
             # print("La sub fitta perfettamente!")
             return 'U'
         else:
@@ -1547,29 +1546,29 @@ def first_postrepairing_algorithm(trace, start, end, net, initial_marking, final
             return list
     elif pos_start == 0:
         #write_outputfile("New Alignment  " + trace.attributes['concept:name'] + ":  " + str(al), pattern, nsub, "a")
-        write_outputfile("La sub non e' stata percorsa nell'alignment!", pattern, nsub, "a")
+        write_outputfile("The sub was not followed in the alignment!", pattern, nsub, "a")
         # print("New Alignment " + trace.attributes['concept:name'] + ": ", al)
         # print("La sub non e' stata percorsa nell'alignment!")
         return 'UNA'
     elif caso:
-        write_outputfile("E' presente il caso non gestito!", pattern, nsub, "a")
+        write_outputfile("The case is not managed", pattern, nsub, "a")
         # ("E' presente il caso non gestito!")
         return 'UNG'
 
 
-""" ripara il modello una seconda volta collegando la prima transizione della sub ai place che abilitano 
-    la transizione del primo move on log incontrato nell'alignment, e aggiungendo un arco che va dai place in cui mette un token
-    il firing della transizione dell'ultimo move on log incontrato nell'alignment, fino alla transizione successiva nel log.
-INPUT: -trace: oggetto di tipo Trace contenente la trace in esame
-       -start: name della transizione di start
-       -end: name della transizione di end
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
-       -sub: lista delle label delle transizioni della sub 
-RETURN: -'U': la sub fitta perfettamente senza aggiunta di archi
-        -'UA': sono stati aggiunti degli archi per far fittare la sub
-        -'UNA': la sub non e stata percorsa nell'alignment
+""" The function repairs the model a second time connecting the first transition of the sub to the places enabling
+the transition of the first move on log in the alignment. This is done by adding an arc going from the places in which the firing of the transition (of the last move on log in the alignment) put a token  
+    to the next transition in the log.
+INPUT: -trace: the target trace
+       -start: name of the start transition
+       -end: name of the end transition
+        -net: the net model
+      -initial_marking: initial marking of the model
+       -final_marking: ending marking of the model
+       -sub: list of the labels for the transitions in the sub
+RETURN: -'U': if the sub is perfectly fitting with no need to add arcs
+        -'UA': some arcs have been added to make the sub fitting
+        -'UNA': the sub was not followed in the alignment
 """
 
 
@@ -1612,8 +1611,8 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
                                         for ar in place.in_arcs:
                                             if ar.source.name == trans.name:
                                                 trovato = True
-                                                print("Arco:1 ", trans.label, trans.name, "-->", place,
-                                                      " gia esistente")
+                                                print("Arc:1 ", trans.label, trans.name, "-->", place,
+                                                      " already existent")
                                                 break
                                         if trovato:
                                             continue
@@ -1630,8 +1629,8 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
                                     for ar in place.in_arcs:
                                         if ar.source.name == trans.name:
                                             trovato = True
-                                            print("Arco:1 ", trans.label, trans.name, "-->", place,
-                                                  " gia esistente")
+                                            print("Arc:1 ", trans.label, trans.name, "-->", place,
+                                                  " already existent")
                                             break
                                     if trovato:
                                         continue
@@ -1651,7 +1650,7 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
                                         for ar in place.out_arcs:
                                             if ar.target.name == trans.name:
                                                 trovato2 = True
-                                                print("Arco: ", place, "-->", trans.label, trans.name, " gia esistente")
+                                                print("Arc: ", place, "-->", trans.label, trans.name, " already existent")
                                                 break
                                         if trovato2:
                                             continue
@@ -1668,7 +1667,7 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
                                     for ar in place.out_arcs:
                                         if ar.target.name == trans.name:
                                             trovato2 = True
-                                            print("Arco: ", place, "-->", trans.label, trans.name, " gia esistente")
+                                            print("Arc: ", place, "-->", trans.label, trans.name, " already existent")
                                             break
                                     if trovato2:
                                         continue
@@ -1678,7 +1677,7 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
                                         added = added + 1
 
         if added == 0:
-            print("La sub fitta perfettamente!")
+            print("The sub is perfectly fitting!")
             return 'U'
         else:
             # visualizza rete
@@ -1687,17 +1686,17 @@ def second_postrepairing_algorithm(trace, start, end, net, initial_marking, fina
             petrinet_visualizer.view(gvz)
             return 'UA'
     else:
-        print("La sub non e' stata percorsa nell'alignment!")
+        print("The sub was not followed in the alignment!")
         return 'UNA'
 
 
-"""restituisce le misure di Precision, Fitness, Generalization e Simplicity rispetto ad EventLog composto dai grafi in cui occorre la sub 
-INPUT: -graph_list: lista dei grafi in cui occorre la sub considerata
-       -log: EventLog
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
+"""Computes Precision, Fitness, Generalization and Simplicity w.r.t. an Event Log composed by graphs in which the sub occurs
+INPUT: -graph_list: list of graphs in which the sub occurs
+       -log: Event Log
+       -dict_trace: dictionary with pairs idTrace:numTrace
+       -net: the net model
+       -initial_marking: initial marking of the model
+       -final_marking: final marking of the model 
 """
 
 
@@ -1725,13 +1724,12 @@ def valutazione_rete(graph_list, log, dict_trace, net, initial_marking, final_ma
     # print("Simplicity: ", simplicity)
 
 
-"""restituisce le misure di Precision, Fitness, Generalization e Simplicity rispetto ad EventLog completo 
-INPUT: -log: EventLog
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
+"""Computes Precision, Fitness, Generalization and Simplicity w.r.t. a complete Event Log
+INPUT: -log: Event Log
+       -net: the net model
+       -initial_marking: initial marking of the model
+       -final_marking: final marking of the model 
 """
-
 
 def valutazione_rete_logcompleto(log, net, initial_marking, final_marking, pattern, sub):
     fitness = replay_evaluator.apply(log, net, initial_marking, final_marking,
@@ -1754,11 +1752,11 @@ def valutazione_rete_logcompleto(log, net, initial_marking, final_marking, patte
     #print("Simplicity: ", simplicity)
 
 
-""" visualizzazione rete semplice
-INPUT: -log: EventLog
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
+""" The function shows a Petri net
+INPUT: -log: Event Log
+       -net: the model net
+       -initial_marking: initial marking of the model
+       -final_marking: final marking of the model
 """
 
 
@@ -1768,13 +1766,12 @@ def visualizza_rete(log, net, im, fm):
     petrinet_visualizer.view(gvz)
 
 
-""" visualizzazione della rete con performance
-INPUT: -log: EventLog
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
+""" The function shows a Petri net with performances
+INPUT: -log: Event Log
+       -net: the model net
+       -initial_marking: initial marking of the model
+       -final_marking: final marking of the model
 """
-
 
 def visualizza_rete_performance(log, net, im, fm):
     agg_statistics = token_decoration_frequency.get_decorations(log, net, im, fm)
@@ -1784,11 +1781,11 @@ def visualizza_rete_performance(log, net, im, fm):
     petrinet_visualizer.view(gvz)
 
 
-""" export event log con le tracce in cui occorre la sub
-INPUT: -graph_list: lista dei grafi in cui occorre la sub considerata
-       -log: EventLog
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -sub: numero di sub.
+""" The function exports an event log with the traces in which the sub occurs
+INPUT: -graph_list: a list of graphs in which the sub occurs
+       -log:  Event Log
+       -dict_trace: dictionary with pairs idTrace:numTrace
+       -sub: the number of the sub
 """
 
 
@@ -1801,18 +1798,18 @@ def export_eventlog_test(graph_list, log, dict_trace, sub):
     xes_exporter.apply(new_eventlog, '../testlog_' + sub + '.xes')
 
 
-""" fa l'alignment di ogni trace in cui occorre la sub
-INPUT: -graph_list: lista dei grafi in cui occorre la sub considerata
-       -log: EventLog
-       -dict_trace: dizioanrio che contiene i match tra idTrace e numTrace
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
+""" The functions performs the alignment of each trace in which the sub occurs
+INPUT: -graph_list: a list of graphs in which the sub occurs
+       -log:  Event Log
+       -dict_trace: dictionary with pairs idTrace:numTrace
+       -net: the net model
+       -initial_marking: initial marking of the model
+       -final_marking: final marking of the model 
 """
 
 
 def all_alignment(graph_list, log, dict_trace, net, initial_marking, final_marking):
-    print("Alignment di tutte le trace in cui occorre la sub: ")
+    print("Alignment of all traces in which the following sub occurs: ")
     for graph in graph_list:
         traccia = search_trace(log, dict_trace, graph)
         new_eventlog = EventLog()
@@ -1822,11 +1819,11 @@ def all_alignment(graph_list, log, dict_trace, net, initial_marking, final_marki
         print("New Alignment " + traccia.attributes['concept:name'] + ": ", align)
 
 
-""" serve per tagliare il grafo passato in argomento per scriverlo sul file graph+n+.g da passare a gm
-INPUT: -pattern: alla cartella contenente tutti i file
-       -graph: il nome del grafo
-       -subnumber: numero della sub
-RETURN: -n_sub: la parte di grafo che contiene la sub da scrivere sul file
+""" The function cut the input graph to write it in the graph+n+.g file that can be passed to the tool gm
+INPUT: -pattern: the folder containing files
+       -graph: the graph name
+       -subnumber: the number of the sub
+RETURN: -n_sub: the graph part containing the sub to write on the file
 """
 
 
@@ -1858,9 +1855,10 @@ def graph_sub(pattern, graph, sub_number):
     return n_sub
 
 
-""" lancia l'eseguibile gm per calcolare il matching cost tra i due grafi passati in argomento 
-INPUT: -graph1: il nome del primo grafo, "sub" si riferisce al grafo che rappresenta la vera e propria sub
-       -graph1: il nome del secondo grafo
+""" The function runs the gm tool to calculate the matching cost between the two input graphs
+INPUT: -graph1: name of the first graph
+       -graph1: name of the second graph
+        - sub_number: the number of the sub
 RETURN: -float(sub2[3]): Matching Cost
 """
 
@@ -1891,13 +1889,13 @@ def graph_matching(pattern, graph1, graph2, sub_number):
     return float(sub2[3])
 
 
-""" sceglie il grafo con minor costo di matching
-INPUT: -pattern: alla cartella contenente tutti i file
-       -graph: il nome del grafo
-       -graph_list: lista dei grafi in cui occorre la sub considerata
-       -sub_number: numero della sub
-RETURN: -mingraph: lista dei grafi con minor costo
-        -mincost: costo minore
+""" The functions return the graph with the smallest matching cost
+INPUT: -pattern: the folder containing files
+       -graph: the graph name
+       -graph_list: list of graphs in which the sub occurs
+       -sub_number: the sub number
+RETURN: -mingraph: list of graphs with the smallest cost
+        -mincost: the smallest cost
 """
 
 
@@ -1916,12 +1914,12 @@ def graph_choice(pattern, graph, graph_list, sub_number):
     return mingraph, mincost
 
 
-""" crea il dizionario con la classifica dei grafi che matchano con la sub in ordine di costo crescente
-INPUT: -pattern: alla cartella contenente tutti i file
-       -graph: il nome del grafo
-       -graph_list: lista dei grafi in cui occorre la sub considerata
-       -sub_number: numero della sub
-RETURN: -dict: dizionario con classifica dei grafi in base al costo di matching
+""" The function creates the dictionaty with the ranking of the graphs matching the sub, ordered by increasing cost
+INPUT: -pattern: the folder containing the files
+       -graph: the graph name
+       -graph_list: list of graphs in which the sub occurs
+       -sub_number: the sub number
+RETURN: -dict: dictionary with the ranking of the graphs based on the matching cost
 """
 
 
@@ -1944,17 +1942,17 @@ def create_dict_graph(pattern, graph, graph_list, sub_number):
     return dict
 
 
-""" sceglie il grafo con minor costo di matching
-INPUT: -graph: il nome del grafo
-       -graph_dict: dizionario risultato di create_dict_graph
+""" The functions returns the graph with the smallest matching cost
+INPUT: -graph: the graph name
+       -graph_dict: dictionary including the output of create_dict_graph
        -log: Event Log
-       -dict_trace: dizionario con 'numTrace':'idTrace'
-       -start_name: name della transizione di start
-       -end_name: name della transizione di end
-       -net: il modello di rete 
-       -initial_marking: marking iniziale del modello 
-       -final_marking: marking finale del modello 
-       -sub: lista delle label delle transizioni della sub 
+       -dict_trace: dictionary with pairs 'numTrace':'idTrace'
+       -start_name: name of the start transition
+       -end_name: name of the end transition
+       -net: the net model
+       -initial_marking: initial marking of the model
+       -final_marking: final marking finale of the model
+       -sub: list of the labels of the transitions in the sub
 """
 
 
@@ -1985,7 +1983,7 @@ def second_repairing(graph, graph_dict, log, dict_trace, start_name, end_name, n
                                                        sub_label, pattern, sub)
                 if type(result) == type([]):
                     # visualizza_rete_performance(log, result[0], result[1], result[2])
-                    write_outputfile("\nValutazione rete riparata " + str(i) + " :", pattern, sub, "a")
+                    write_outputfile("\nEvaluation repaired net " + str(i) + " :", pattern, sub, "a")
                     # print("\nValutazione rete riparata " + str(i) + " :")
                     # valutazione_rete(new_graph_list, log, dict_trace, result[0], result[1], result[2], pattern, sub)
                     valutazione_rete_logcompleto(log, result[0], result[1], result[2], pattern, sub)
@@ -1998,7 +1996,7 @@ def second_repairing(graph, graph_dict, log, dict_trace, start_name, end_name, n
                 if type(result) == type([]):
                     # if i > 32: #da togliere
                     # visualizza_rete_performance(log, result[0], result[1], result[2])
-                    write_outputfile("\nValutazione rete riparata " + str(i) + " :", pattern, sub, "a")
+                    write_outputfile("\nEvaluation repaired net " + str(i) + " :", pattern, sub, "a")
                     # print("\nValutazione rete riparata " + str(i) + " :")
                     # valutazione_rete(new_graph_list, log, dict_trace, result[0], result[1], result[2], pattern, sub)
                     valutazione_rete_logcompleto(log, result[0], result[1], result[2], pattern, sub)
@@ -2009,48 +2007,48 @@ def second_repairing(graph, graph_dict, log, dict_trace, start_name, end_name, n
             if result == 'UNA':
                 non_funzionanti.append(gr)
                 non_usate.remove(gr)
-                write_outputfile("Tracce in cui la sub non è stata percorsa:  " + str(len(non_funzionanti)), pattern, sub, "a")
+                write_outputfile("Traces in which the sub was not followed:  " + str(len(non_funzionanti)), pattern, sub, "a")
                 # print("Non funzionanti: ", len(non_funzionanti))
-                write_outputfile("Usate:  " + str(len(usate)), pattern, sub, "a")
+                write_outputfile("Used:  " + str(len(usate)), pattern, sub, "a")
                 # print("Usate: ", len(usate))
-                write_outputfile("Non usate:  " + str(len(non_usate)), pattern, sub, "a")
+                write_outputfile("Not used:  " + str(len(non_usate)), pattern, sub, "a")
                 # print("Non usate: ", len(non_usate))
             elif result == 'UNG':
                 non_funzionanti.append(gr)
                 non_usate.remove(gr)
-                write_outputfile("La " + str(tr.attributes['concept:name']) + " e stata ignorata! ", pattern, sub, "a")
+                write_outputfile("The " + str(tr.attributes['concept:name']) + " was ignored! ", pattern, sub, "a")
                 # print("La", tr.attributes['concept:name'], "e stata ignorata")
-                write_outputfile("Tracce in cui la sub non è stata percorsa:  " + str(len(non_funzionanti)), pattern, sub, "a")
+                write_outputfile("Traces in which the sub was not followed:  " + str(len(non_funzionanti)), pattern, sub, "a")
                 # print("Non funzionanti: ", len(non_funzionanti))
-                write_outputfile("Usate:  " + str(len(usate)), pattern, sub, "a")
+                write_outputfile("Used:  " + str(len(usate)), pattern, sub, "a")
                 # print("Usate: ", len(usate))
-                write_outputfile("Non usate:  " + str(len(non_usate)), pattern, sub, "a")
+                write_outputfile("Not used:  " + str(len(non_usate)), pattern, sub, "a")
                 # print("Non usate: ", len(non_usate))
             elif result == 'U':
                 non_usate.remove(gr)
-                write_outputfile("Tracce in cui la sub non è stata percorsa:  " + str(len(non_funzionanti)), pattern, sub, "a")
+                write_outputfile("Traces in which the sub was not followed:  " + str(len(non_funzionanti)), pattern, sub, "a")
                 # print("Non funzionanti: ", len(non_funzionanti))
-                write_outputfile("Usate:  " + str(len(usate)), pattern, sub, "a")
+                write_outputfile("Used:  " + str(len(usate)), pattern, sub, "a")
                 # print("Usate: ", len(usate))
-                write_outputfile("Non usate:  " + str(len(non_usate)), pattern, sub, "a")
+                write_outputfile("Not used:  " + str(len(non_usate)), pattern, sub, "a")
                 # print("Non usate: ", len(non_usate))
             else:
                 usate.append(gr)
                 non_usate.remove(gr)
-                write_outputfile("Tracce in cui la sub non è stata percorsa:  " + str(len(non_funzionanti)), pattern, sub, "a")
+                write_outputfile("Traces in which the sub was not followed:  " + str(len(non_funzionanti)), pattern, sub, "a")
                 # print("Non funzionanti: ", len(non_funzionanti))
-                write_outputfile("Usate:  " + str(len(usate)), pattern, sub, "a")
+                write_outputfile("Used:  " + str(len(usate)), pattern, sub, "a")
                 # print("Usate: ", len(usate))
-                write_outputfile("Non usate:  " + str(len(non_usate)), pattern, sub, "a")
+                write_outputfile("Not used:  " + str(len(non_usate)), pattern, sub, "a")
                 # print("Non usate: ", len(non_usate))
 
             if len(usate) == nrep:
-                write_outputfile("\nSono state effettuate " + str(nrep) + " riparazioni!", pattern, sub, "a")
+                write_outputfile("\n" + str(nrep) + " repairments have been done!", pattern, sub, "a")
                 # print("\nSono state effettuate " + str(nrep) + " riparazioni!")
                 break
     if rip == 0:
         write_outputfile(
-            "\nTutte le tracce hanno GM = 0 rispetto la sub, non sono state necessarie ulteriori riparazioni!", pattern,
+            "\nAll traces have GM = 0 w.r.t. the sub: no further repairments are needed!", pattern,
             sub, "a")
     if list_rete1 != []:
         return list_rete1, non_funzionanti
@@ -2086,13 +2084,13 @@ def main(pattern, dataset, numsub):
     # passata una sub ritorna la lista di grafi in cui occorre la sub
     graph_list = list_graph_occurence(pattern + dataset + "_table2_on_file.csv", sub)
     new_graph_list = check_graphlist(graph_list, sub, pattern)
-    write_outputfile("Numero di grafi in cui occorre la sub: " + str(len(new_graph_list)), pattern, sub, "a")
+    write_outputfile("Number of graphs in which the sub occurs: " + str(len(new_graph_list)), pattern, sub, "a")
     dict_graph = create_dict_graph(pattern, "sub", new_graph_list, sub)
     graph = dict_graph[1][0]
     # print("Graph Selected: ", graph, " Matching Cost: ", dict_graph[1][1])
     write_outputfile("Graph Selected:  " + str(graph) + "  Matching Cost:  " + str(dict_graph[1][1]), pattern, sub, "a")
 
-    write_outputfile("\nValutazione rete iniziale:", pattern, sub, "a")
+    write_outputfile("\nEvaluation initial net:", pattern, sub, "a")
     #print("\nValutazione rete sub_" + str(x) + ":")
     # valutazione sul log composto dalle sole trace in cui occorre la sub
     # valutazione_rete(new_graph_list, log, dict_trace, net, initial_marking, final_marking, pattern, sub)
@@ -2112,7 +2110,7 @@ def main(pattern, dataset, numsub):
     # ritorna i nodi di inizio e fine sub
     start, end, sub_label = startend_node(subgraph)
     # print("Sub iniziale: ", sub_label)
-    write_outputfile("Sub iniziale:  " + str(sub_label), pattern, sub, "a")
+    write_outputfile("Initial sub:  " + str(sub_label), pattern, sub, "a")
 
     # Trace
     trace = search_trace(log, dict_trace, graph)
@@ -2128,12 +2126,12 @@ def main(pattern, dataset, numsub):
     new_subgrap = start_pre_process_repairing(start, text, subgraph)
     new_subgraph = end_pre_process_repairing(end, text, new_subgrap)
     # print("Subgraph semplificata: ", new_subgraph)
-    write_outputfile("Subgraph semplificata:  " + str(new_subgraph), pattern, sub, "a")
+    write_outputfile("Simplified subgraph:  " + str(new_subgraph), pattern, sub, "a")
 
     # ritorna i nodi di inizio e fine sub
     start, end, sub_label = startend_node(new_subgraph)
     # print("Sub semplificata: ", sub_label)
-    write_outputfile("Sub semplificata:  " + str(sub_label), pattern, sub, "a")
+    write_outputfile("Simplified sub:  " + str(sub_label), pattern, sub, "a")
 
     # print("Start: ", minimo_lista(start))
     write_outputfile("Start:  " + str(minimo_lista(start)), pattern, sub, "a")
@@ -2156,7 +2154,7 @@ def main(pattern, dataset, numsub):
     start_name = start_end_name[0]
     end_name = start_end_name[1]
 
-    write_outputfile("\nValutazione rete riparata:", pattern, sub, "a")
+    write_outputfile("\nEvaluation repaired net:", pattern, sub, "a")
     # print("\nValutazione rete riparata:")
     # valutazione sul log composto dalle sole trace in cui occorre la sub
     # valutazione_rete(new_graph_list, log, dict_trace, net_repaired, initial_marking, final_marking, pattern, sub)
@@ -2165,26 +2163,26 @@ def main(pattern, dataset, numsub):
     # visualizza rete
     visualizza_rete_performance(log, net, initial_marking, final_marking)
 
-    # ripara il modello una seconda volta con uno dei due algoritmi
+    # repairs the model a second time with one of the two algorithms
     #CHANGE LAURA 13/07/2021: we only want to repair once, for now.
     rete = [net_repaired, initial_marking, final_marking]                                                                                                                 
     #rete, non_funzionanti = second_repairing(graph, dict_graph, log, dict_trace, start_name, end_name, net_repaired,initial_marking, final_marking, sub_label, 20, pattern, sub)
 
-    # CALCOLO TEMPO DI ESECUZIONE ISTRUZIONI
+    # EXECUTION TIME INSTRUCTIONS
     # tempo2 = timer()
     # print('\n\n', tempo2 - tempo1)
     # print('\n\n', tempo2 - tempo3)
 
-    # visualizza rete
+    # show the net
     visualizza_rete_performance(log, rete[0], rete[1], rete[2])
     write_outputfile("\nValutazione rete riparata finale:", pattern, sub, "a")
     # print("\nValutazione rete riparata finale:")
-    # valutazione sul log composto dalle sole trace in cui occorre la sub
+    # evaluation on the log composed by traces in which the sub occurs
     # valutazione_rete(new_graph_list, log, dict_trace, net_repaired, initial_marking, final_marking)
-    # valutazione sul log completo
+    # evaluation on the complete log
     valutazione_rete_logcompleto(log, rete[0], rete[1], rete[2], pattern, sub)
 
-    # esporta pnml rete
+    # export the pnml net
     pnml_exporter.apply(rete[0], rete[1], "../repaired_" + "Sub" + sub + "_petriNet.pnml", final_marking=rete[2])
 
 
@@ -2193,8 +2191,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Model Repair Supported by Frequent Anomalous Local Instance Graphs")
     #parser.add_argument("path", type=str,
       #                  help="Path della directory contenente: *_table2_on_file.csv | *_new_patterns_filtered.subs | rules_log.txt")
-    parser.add_argument("datasetname", type=str, help="Nome del dataset da analizzare")
-    parser.add_argument("numsub", type=str, help="Numero sub con cui riparare il modello")
+    parser.add_argument("datasetname", type=str, help="Name of the dataset to analyse")
+    parser.add_argument("numsub", type=str, help="Number of the sub with which the model is to be repaired")
     args = parser.parse_args()
     main("../patterns_file/", args.datasetname, args.numsub) #BPI2017Denied, testBank2000NoRandomNoise
 
