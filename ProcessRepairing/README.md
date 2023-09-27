@@ -10,7 +10,7 @@ the .sql dump file of each dataset in the corresponding fodler);
 
 Python dependencies:
 - argparse (https://docs.python.org/3/library/argparse.html)
-- mysql (
+- mysql-connector-python (https://pypi.org/project/mysql-connector-python/)
 - pandas (https://pandas.pydata.org/)
 - pmp4py (https://pm4py.fit.fraunhofer.de/install)
 - progress (https://pypi.org/project/progress/)
