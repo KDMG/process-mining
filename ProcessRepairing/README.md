@@ -5,9 +5,20 @@ This repository contains supplementary material for the paper "Model Repair Supp
 
 Before running the scripts, the following tools must be installed:
 --install the C version of SUBDUE available at http://ailab.wsu.edu/subdue/ . Place the executables sgiso and gm in the experiment folder you want to test;
---install the pm4py python library available at https://pm4py.fit.fraunhofer.de/install
 -- install the xampp tool available at https://www.apachefriends.org/download.html  and be sure the mysql server is on and you imported the database of the dataset you want to test before running the experiments (you find
 the .sql dump file of each dataset in the corresponding fodler);
+
+Python dependencies:
+- argparse (https://docs.python.org/3/library/argparse.html)
+- mysql (
+- pandas (https://pandas.pydata.org/)
+- pmp4py (https://pm4py.fit.fraunhofer.de/install)
+- progress (https://pypi.org/project/progress/)
+- random (https://docs.python.org/3/library/random.html)
+- subprocess (https://docs.python.org/3/library/subprocess.html)
+- timeit (https://docs.python.org/3/library/timeit.html)
+
+Python version: 3.7+
 
 
 Note: before running the code, rename the directory to be used in 'patterns_file' by removing dataset name. 
