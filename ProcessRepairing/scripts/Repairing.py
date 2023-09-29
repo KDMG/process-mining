@@ -2060,28 +2060,28 @@ def second_repairing(graph, graph_dict, log, dict_trace, start_name, end_name, n
 def main(pattern, dataset, numsub):
     debug = False
 
-    # Eventlog
+    # Event log
     log = xes_importer.apply(pattern + dataset + '.xes')
-    # Modello Rete
+    # Model
     net, initial_marking, final_marking = pnml_importer.apply(pattern + dataset + '_petriNet.pnml')
-    # qui per i test mi importavo la rete di Fahland per calcolare fitness ecc..
+    
     # net, initial_marking, final_marking = pnml_importer.apply(pattern + '/reti_Fahland/repaired_'+str(x)+'.pnml')
 
-    # passato il numero di pattern ritorna la lista di sub
+    # given the pattern number, return the list of subs
     # lista = list_sub_pattern(pattern + dataset + "_new_patterns_filtered.subs", 2)
     # print("Pattern: ", lista)
     # write_outputfile("Pattern:  " + str(lista), pattern, sub, "w")
 
-    sub = numsub  # lista[0] se prendiamo la sub dalla lista di pattern
+    sub = numsub  # lista[0] if we take the sub from the list of patterns
     # print("Sub Selected: ", sub)
     write_outputfile("Sub Selected:  " + str(sub), pattern, sub, "w")
 
-    # ritorna dizionario 'numTrace':'traceId'
+    # dict 'numTrace':'traceId'
     dict_trace = create_dict_trace(dataset)
-    # crea il file subelements.txt con le sub estese (DECOMMENTARE SE GIÀ CREATO)
+    # create file subelements.txt with extended subs (TODO: decomment if already created)
     create_subelements_file(dataset, pattern)
 
-    # passata una sub ritorna la lista di grafi in cui occorre la sub
+    # given a sub, returns the list of graphs in which the sub occurs
     graph_list = list_graph_occurence(pattern + dataset + "_table2_on_file.csv", sub)
     new_graph_list = check_graphlist(graph_list, sub, pattern)
     write_outputfile("Number of graphs in which the sub occurs: " + str(len(new_graph_list)), pattern, sub, "a")
@@ -2092,22 +2092,22 @@ def main(pattern, dataset, numsub):
 
     write_outputfile("\nEvaluation initial net:", pattern, sub, "a")
     #print("\nValutazione rete sub_" + str(x) + ":")
-    # valutazione sul log composto dalle sole trace in cui occorre la sub
+    # evaluation of the log composed by only traces in which the sub occurs
     # valutazione_rete(new_graph_list, log, dict_trace, net, initial_marking, final_marking, pattern, sub)
-    # valutazione sul log completo
+    # evaluation on the complete log
     valutazione_rete_logcompleto(log, net, initial_marking, final_marking, pattern, sub)
-    # visualizza rete
+    # visualization of the net
     visualizza_rete_performance(log, net, initial_marking, final_marking)
 
-    # esegue sgiso e ritorna la sub con i nodi rispetto al grafo
+    # executes sgiso and returns the sub with the nodes w.r.t the graph
     subgraph = find_instances(sub, graph, pattern)
     # print("Subgraph: ", subgraph)
     write_outputfile("Subgraph:  " + str(subgraph), pattern, sub, "a")
 
-    # crea l'event log con tracce in cui occorre la sub
+    # create the event log with the traces in which the sub occurs
     export_eventlog_test(graph_list, log, dict_trace, sub)
 
-    # ritorna i nodi di inizio e fine sub
+    # returns the start and end nodes
     start, end, sub_label = startend_node(subgraph)
     # print("Sub iniziale: ", sub_label)
     write_outputfile("Initial sub:  " + str(sub_label), pattern, sub, "a")
@@ -2122,45 +2122,45 @@ def main(pattern, dataset, numsub):
     # print('Alignment: ' + text)
     write_outputfile('Alignment: ' + str(text), pattern, sub, "a")
 
-    # Pre-filtraggio della sub gia presente nel modello
+    # Pre-filtering of the sub already present in the model
     new_subgrap = start_pre_process_repairing(start, text, subgraph)
     new_subgraph = end_pre_process_repairing(end, text, new_subgrap)
     # print("Subgraph semplificata: ", new_subgraph)
     write_outputfile("Simplified subgraph:  " + str(new_subgraph), pattern, sub, "a")
 
-    # ritorna i nodi di inizio e fine sub
+    # returns the start and end nodes
     start, end, sub_label = startend_node(new_subgraph)
     # print("Sub semplificata: ", sub_label)
     write_outputfile("Simplified sub:  " + str(sub_label), pattern, sub, "a")
 
     # print("Start: ", minimo_lista(start))
     write_outputfile("Start:  " + str(minimo_lista(start)), pattern, sub, "a")
-    # ritorna place a cui agganciare il nodo di start della sub
+    # returns the places where to attach the start nodes
     reached_marking_start = dirk_marking_start(dataset, start, text, trace, pattern, sub)
     # print("Reached Marking: ", reached_marking_start)
     write_outputfile("Reached Marking:  " + str(reached_marking_start), pattern, sub, "a")
 
     # print("End: ", massimo_lista(end))
     write_outputfile("End:  " + str(massimo_lista(end)), pattern, sub, "a")
-    # ritorna place a cui agganciare i nodi di end della sub
+    # returns the place where to attach the end nodes
     reached_marking_end = dirk_marking_end(dataset, end, text, trace, pattern, sub)
     # print("Reached Marking: ", reached_marking_end)
     write_outputfile("Reached Marking:  " + str(reached_marking_end), pattern, sub, "a")
 
     # tempo1 = timer()
-    # ripara modello con subgraph
+    # repair the model with the subgraph
     start_end_name, net_repaired = repairing(new_subgraph, net, initial_marking, final_marking, start, end,
                                              reached_marking_start, reached_marking_end, pattern, sub)
     start_name = start_end_name[0]
     end_name = start_end_name[1]
 
     write_outputfile("\nEvaluation repaired net:", pattern, sub, "a")
-    # print("\nValutazione rete riparata:")
-    # valutazione sul log composto dalle sole trace in cui occorre la sub
+    # print("\nEvaluation of the repaired net:")
+    # Evaluation on the log only including traces with the sub
     # valutazione_rete(new_graph_list, log, dict_trace, net_repaired, initial_marking, final_marking, pattern, sub)
-    # valutazione sul log completo
+    # Evauation on the complete log
     valutazione_rete_logcompleto(log, net_repaired, initial_marking, final_marking, pattern, sub)
-    # visualizza rete
+    # Visualization of the net
     visualizza_rete_performance(log, net, initial_marking, final_marking)
 
     # repairs the model a second time with one of the two algorithms
