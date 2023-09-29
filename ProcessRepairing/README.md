@@ -9,16 +9,12 @@ Before running the scripts, the following tools must be installed:
 the .sql dump file of each dataset in the corresponding fodler);
 
 Python dependencies:
-- argparse (https://docs.python.org/3/library/argparse.html)
 - mysql-connector-python (https://pypi.org/project/mysql-connector-python/)
 - pandas (https://pandas.pydata.org/)
 - pmp4py (https://pm4py.fit.fraunhofer.de/install)
 - progress (https://pypi.org/project/progress/)
-- random (https://docs.python.org/3/library/random.html)
-- subprocess (https://docs.python.org/3/library/subprocess.html)
-- timeit (https://docs.python.org/3/library/timeit.html)
 
-Python version: 3.7+
+Python version: >= 3.7
 
 
 Note: before running the code, rename the directory to be used in 'patterns_file' by removing dataset name. 
