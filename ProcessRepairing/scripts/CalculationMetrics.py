@@ -5,14 +5,14 @@ from pm4py.evaluation.precision import evaluator as precision_evaluator
 from pm4py.evaluation.generalization import evaluator as generalization_evaluator
 from pm4py.evaluation.simplicity import evaluator as simplicity_evaluator
 
-# Eventlog
+# Event log
 log = xes_importer.apply("../patterns_file/BPI2017Denied" + '.xes')
 
 sub = ['3','4','15','65','92']
 
 for s in sub:
 
-    # Modello Rete
+    # Model
     net, initial_marking, final_marking = pnml_importer.apply('../patterns_file/reti_Fahland/repaired_'+s+'_adjusted.pnml')
 
     print("\nEvaluation of net sub_" + s + ":")
