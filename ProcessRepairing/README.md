@@ -8,11 +8,11 @@ Before running the scripts, the following tools must be installed:
 -- install the xampp tool available at https://www.apachefriends.org/download.html  and be sure the mysql server is on and you imported the database of the dataset you want to test before running the experiments (you find
 the .sql dump file of each dataset in the corresponding fodler);
 
-Python dependencies:
-- mysql-connector-python (https://pypi.org/project/mysql-connector-python/)
-- pandas (https://pandas.pydata.org/)
-- pmp4py (https://pm4py.fit.fraunhofer.de/install)
-- progress (https://pypi.org/project/progress/)
+The code has been tested with the following Python dependencies:
+- mysql-connector-repackaged (https://pypi.org/project/mysql-connector-repackaged/) == 0.3.1
+- pandas (https://pandas.pydata.org/) == 2.1.3
+- pmp4py (https://pm4py.fit.fraunhofer.de/install) == 2.7.6
+- progress (https://pypi.org/project/progress/) == 1.6
 
 Python version: >= 3.7
 
